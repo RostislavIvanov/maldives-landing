@@ -1,0 +1,8 @@
+.header {
+    @apply flex justify-between text-white text-2xl items-center mt-2;
+}
+
+.header__logo img {
+    @apply w-40 h-auto;
+}
+

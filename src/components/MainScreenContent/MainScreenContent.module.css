@@ -1,0 +1,9 @@
+.content {
+    @apply absolute h-full w-full top-0 left-0 z-[3];
+
+
+}
+.content__container {
+    @apply container mx-auto px-4 h-full flex flex-col justify-between;
+}
+

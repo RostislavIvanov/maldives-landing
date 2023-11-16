@@ -1,0 +1,10 @@
+/* TODO переделать */
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
+
+.video__media {
+    @apply absolute top-0 left-0 w-full h-auto;
+}

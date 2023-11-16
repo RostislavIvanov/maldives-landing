@@ -1,0 +1,19 @@
+.huge__title {
+    @apply text-center text-5xl leading-none font-thin tracking-widest;
+}
+
+.huge__subtitle {
+    @apply text-center text-3xl font-extralight;
+}
+
+.huge__stripe {
+    @apply text-center text-[80px] font-thin leading-tight;
+}
+
+.huge__btn {
+    @apply flex justify-center mt-4;
+}
+
+.huge__btn button {
+    @apply text-3xl py-4 px-8 border border-white rounded-3xl font-extralight;
+}
