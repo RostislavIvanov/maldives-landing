@@ -1,0 +1,3 @@
+.title {
+    @apply text-center text-5xl leading-none font-thin tracking-widest;
+}
