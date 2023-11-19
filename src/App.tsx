@@ -1,12 +1,11 @@
 import MainScreenBlock from "./Blocks/MainScreenBlock/MainScreenBlock.tsx";
+import AboutIslandBlock from "./Blocks/AboutIslandBlock/AboutIslandBlock.tsx";
 
 const App = () => {
     return (
         <>
             <MainScreenBlock/>
-            <div className={'bg-amber-400 h-56 container'}>
-                sfgdfgdfgdf
-            </div>
+            <AboutIslandBlock/>
         </>
     );
 };

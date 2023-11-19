@@ -1,0 +1,11 @@
+.content {
+  @apply bg-center bg-cover;
+}
+
+.wrapper {
+  @apply container mx-auto py-8;
+}
+
+.titleWrapper {
+  @apply my-16;
+}
