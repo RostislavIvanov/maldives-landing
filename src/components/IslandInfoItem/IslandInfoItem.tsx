@@ -10,26 +10,25 @@ interface IIslandInfoItemProps {
 const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
     const textRef = useRef<HTMLDivElement>(null);
     const imageRef = useRef<HTMLDivElement>(null);
-    const observer1 = useRef<IntersectionObserver>();
 
     useEffect(() => {
-        const textElement = textRef.current;
+        const imgElement = imageRef.current;
 
-        observer1.current = new IntersectionObserver(entries => {
+        const observer= new IntersectionObserver(entries => {
             if (entries[0].isIntersecting) {
-                imageRef.current?.classList.remove(classes.slideToLeft);
-                imageRef.current?.classList.add(classes.slideToRight);
+                imgElement?.classList.remove(classes.slideToLeft);
+                imgElement?.classList.add(classes.slideToRight);
             } else {
-                if (imageRef.current?.classList.contains(classes.slideToRight)) {
-                    imageRef.current?.classList.remove(classes.slideToRight);
-                    imageRef.current?.classList.add(classes.slideToLeft);
+                if (imgElement?.classList.contains(classes.slideToRight)) {
+                    imgElement?.classList.remove(classes.slideToRight);
+                    imgElement?.classList.add(classes.slideToLeft);
                 }
             }
         }, {});
 
-        textElement && observer1.current.observe(textElement);
+        textRef.current && observer.observe(textRef.current);
 
-        return () => observer1.current?.disconnect();
+        return () => observer.disconnect();
     }, []);
 
     return (
