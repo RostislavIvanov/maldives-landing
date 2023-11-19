@@ -1,5 +1,5 @@
 .header {
-    @apply flex justify-between text-white text-2xl items-center mt-2;
+    @apply flex justify-between text-white text-default items-center mt-2;
 }
 
 .header__logo img {
