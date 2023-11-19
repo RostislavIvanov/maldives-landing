@@ -1,0 +1,27 @@
+.islandInfo {
+    @apply flex items-center mt-10;
+}
+
+.islandInfo__con {
+    @apply w-2/4;
+}
+
+.islandInfo__imgContainer {
+    @apply mr-8 opacity-0;
+}
+
+.islandInfo__subtitle {
+    @apply text-subtitle inline-block border-blue border-b-2;
+}
+
+.islandInfo__text {
+    @apply mt-6 text-default;
+}
+
+.slideToRight {
+    @apply animate-slide-to-right;
+}
+
+.slideToLeft {
+    @apply animate-slide-to-left;
+}
