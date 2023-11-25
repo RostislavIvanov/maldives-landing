@@ -11,9 +11,8 @@ const MainScreenContent = () => {
 
                 <HugeTitle/>
 
-                <div className={'flex justify-center mb-4'}>
-                    {/*TODO рефактор*/}
-                    <img className={'w-16 h-16 animate-bounce'} src={Arrow} alt="Arrow"/>
+                <div className={classes.content__arrow}>
+                    <img src={Arrow} alt="Arrow"/>
                 </div>
             </div>
         </div>

@@ -6,3 +6,11 @@
     @apply container mx-auto px-4 h-full flex flex-col justify-between;
 }
 
+.content__arrow {
+    @apply flex justify-center mb-4;
+}
+
+.content__arrow img {
+    @apply w-16 h-16 animate-bounce;
+}
+
