@@ -1,5 +1,5 @@
 .islandInfo {
-    @apply flex items-center mt-10;
+    @apply flex mt-10 overflow-hidden;
 }
 
 .islandInfo__con {

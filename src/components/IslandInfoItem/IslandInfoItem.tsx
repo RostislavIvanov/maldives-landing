@@ -8,13 +8,45 @@ interface IIslandInfoItemProps {
 }
 
 const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
-    const textRef = useRef<HTMLDivElement>(null);
-    const imageRef = useRef<HTMLDivElement>(null);
+    const textRef = useRef<HTMLDivElement>(null); // элемент с текстом
+    const imageRef = useRef<HTMLDivElement>(null); // элемент с фоткой
+    const initialOffset = useRef(0);
+    const pictureBlockHeight = useRef<HTMLDivElement>(null);
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            // @ts-ignore
+            const offset = (scrollY) + window.innerHeight / 2 - initialOffset.current; // TODO вот тут подумать
+            if(text === 'Тут я пока текст не придумал') {
+                // @ts-ignore
+                console.log([(scrollY) + window.innerHeight/2 - initialOffset.current, scrollY + window.innerHeight, initialOffset.current + window.innerHeight /2])
+            }
+
+
+            // @ts-ignore
+            if (textRef.current && scrollY + window.innerHeight > initialOffset.current + window.innerHeight /2  && offset <=500) { // TODO условие момента, когда нужно добавлять оффсет работает только с одним компонентом
+                textRef.current.style.transform = `translateY(${offset}px)`;
+            }
+        };
+
+        const setInitialOffset = () => {
+            if (textRef.current) {
+                const rect = textRef.current.getBoundingClientRect();
+                initialOffset.current = rect.top;
+            }
+        };
+
+        setInitialOffset(); // Получаем изначальное смещение при монтировании компонента
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const imgElement = imageRef.current;
 
-        const observer= new IntersectionObserver(entries => {
+        const observer = new IntersectionObserver(entries => {
             if (entries[0].isIntersecting) {
                 imgElement?.classList.remove(classes.slideToLeft);
                 imgElement?.classList.add(classes.slideToRight);
@@ -33,25 +65,20 @@ const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
 
     return (
         <div className={classes.islandInfo}>
-
             <div className={classes.islandInfo__con}>
                 <div className={classes.islandInfo__imgContainer} ref={imageRef}>
                     <img src={img} alt=""/>
                 </div>
             </div>
-
             <div className={classes.islandInfo__con} ref={textRef}>
-
-                <h5 className={classes.islandInfo__subtitle}>
-                    {subtitle}
-                </h5>
-
-                {/*<div className={'w-1/5 border-blue border-b-2'}></div>*/}
-
-                <p className={classes.islandInfo__text}>
-                    {text}
-                </p>
-
+                <div ref={pictureBlockHeight}>
+                    <h5 className={classes.islandInfo__subtitle}>
+                        {subtitle}
+                    </h5>
+                    <p className={classes.islandInfo__text}>
+                        {text}
+                    </p>
+                </div>
             </div>
 
         </div>
