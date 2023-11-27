@@ -1,0 +1,11 @@
+.content {
+    @apply bg-white text-black;
+}
+
+.wrapper {
+    @apply container mx-auto py-8;
+}
+
+.titleWrapper {
+    @apply my-16;
+}

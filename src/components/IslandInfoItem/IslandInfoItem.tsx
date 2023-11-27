@@ -24,9 +24,9 @@ const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
 
 
             // @ts-ignore
-            if (textRef.current && scrollY + window.innerHeight > initialOffset.current + window.innerHeight /2  && offset <=500) { // TODO условие момента, когда нужно добавлять оффсет работает только с одним компонентом
-                textRef.current.style.transform = `translateY(${offset}px)`;
-            }
+            // if (textRef.current && scrollY + window.innerHeight > initialOffset.current + window.innerHeight /2  && offset <=500) { // TODO условие момента, когда нужно добавлять оффсет работает только с одним компонентом
+            //     textRef.current.style.transform = `translateY(${offset}px)`;
+            // }
         };
 
         const setInitialOffset = () => {
