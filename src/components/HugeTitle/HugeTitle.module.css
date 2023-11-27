@@ -3,7 +3,7 @@
 }
 
 .huge__subtitle {
-    @apply text-center text-button font-extralight;
+    @apply text-center text-subtitle font-extralight;
 }
 
 .huge__stripe {
@@ -15,5 +15,5 @@
 }
 
 .huge__btn button {
-    @apply text-button py-4 px-8 border border-white rounded-3xl font-extralight;
+    @apply text-default py-4 px-8 border border-white rounded-3xl font-extralight;
 }

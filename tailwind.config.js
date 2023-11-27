@@ -4,10 +4,9 @@ module.exports = {
     theme: {
         extend: {
             fontSize: {
-                'default': '20px',
-                'subtitle': '45px',
+                'default': '18px',
+                'subtitle': '24px',
                 '5xl': '160px',
-                'button': '28px',
             },
             colors: {
                 'blue': '#27c9d9',
