@@ -5,9 +5,10 @@ interface IIslandInfoItemProps {
     img: any;
     subtitle: string;
     text: string;
+    reverse?: boolean;
 }
 
-const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
+const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle, reverse }) => {
     const textRef = useRef<HTMLDivElement>(null); // элемент с текстом
     const imageRef = useRef<HTMLDivElement>(null); // элемент с фоткой
     const initialOffset = useRef(0);
@@ -17,9 +18,9 @@ const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
             const scrollY = window.scrollY;
             // @ts-ignore
             const offset = (scrollY) + window.innerHeight / 2 - initialOffset.current; // TODO вот тут подумать
-            if(text === 'Тут я пока текст не придумал') {
+            if (text === 'Тут я пока текст не придумал') {
                 // @ts-ignore
-                console.log([(scrollY) + window.innerHeight/2 - initialOffset.current, scrollY + window.innerHeight, initialOffset.current + window.innerHeight /2])
+                console.log([(scrollY) + window.innerHeight / 2 - initialOffset.current, scrollY + window.innerHeight, initialOffset.current + window.innerHeight / 2])
             }
 
 
@@ -65,22 +66,42 @@ const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle }) => {
 
     return (
         <div className={classes.islandInfo}>
-            <div className={classes.islandInfo__con}>
-                <div className={classes.islandInfo__imgContainer} ref={imageRef}>
-                    <img src={img} alt=""/>
-                </div>
-            </div>
-            <div className={classes.islandInfo__con} ref={textRef}>
-                <div ref={pictureBlockHeight}>
-                    <h5 className={classes.islandInfo__subtitle}>
-                        {subtitle}
-                    </h5>
-                    <p className={classes.islandInfo__text}>
-                        {text}
-                    </p>
-                </div>
-            </div>
-
+            {reverse
+                ? <>
+                    <div className={classes.islandInfo__conReverse} ref={textRef}>
+                        <div ref={pictureBlockHeight}>
+                            <h5 className={classes.islandInfo__subtitle}>
+                                {subtitle}
+                            </h5>
+                            <p className={classes.islandInfo__text}>
+                                {text}
+                            </p>
+                        </div>
+                    </div>
+                    <div className={classes.islandInfo__conReverse}>
+                        <div className={classes.islandInfo__imgContainerReverse} ref={imageRef}>
+                            <img src={img} alt=""/>
+                        </div>
+                    </div>
+                </>
+                : <>
+                    <div className={classes.islandInfo__con}>
+                        <div className={classes.islandInfo__imgContainer} ref={imageRef}>
+                            <img src={img} alt=""/>
+                        </div>
+                    </div>
+                    <div className={classes.islandInfo__con} ref={textRef}>
+                        <div ref={pictureBlockHeight}>
+                            <h5 className={classes.islandInfo__subtitle}>
+                                {subtitle}
+                            </h5>
+                            <p className={classes.islandInfo__text}>
+                                {text}
+                            </p>
+                        </div>
+                    </div>
+                </>
+            }
         </div>
     );
 };

@@ -30,6 +30,7 @@ const AboutIslandBlock = () => {
                             img={prices}
                             subtitle={'У нас не дорого!'}
                             text={'Тут я пока текст не придумал'} // TODO
+                            reverse
                         />
 
                         <IslandInfoItem
@@ -46,6 +47,7 @@ const AboutIslandBlock = () => {
                             img={underwater}
                             subtitle={'Подводная жизнь, которую нигде не увидеть!'}
                             text={'В декабре и январе его окружает светящийся планктон – настоящее чудо природы!'} // TODO Здесь еще хочется что-то написать
+                            reverse
                         />
 
                         <IslandInfoItem

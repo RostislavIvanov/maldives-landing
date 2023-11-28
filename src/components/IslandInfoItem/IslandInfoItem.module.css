@@ -3,11 +3,23 @@
 }
 
 .islandInfo__con {
-    @apply w-2/4;
+    @apply w-2/4 ml-8;
+}
+
+.islandInfo__conReverse{
+    @apply text-right w-2/4 mr-8;
 }
 
 .islandInfo__imgContainer {
-    @apply mr-8 opacity-0;
+    @apply flex justify-end opacity-0 h-[70vh];
+}
+
+.islandInfo__imgContainerReverse {
+    @apply opacity-0 h-[70vh];
+}
+
+.islandInfo__imgContainer img {
+    @apply h-full;
 }
 
 .islandInfo__subtitle {
