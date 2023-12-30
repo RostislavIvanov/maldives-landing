@@ -1,8 +1,29 @@
 .header {
-    @apply flex justify-between text-white text-default items-center mt-2;
+    @apply text-white text-default mt-2;
 }
 
-.header__logo img {
+.nav {
+    @apply flex justify-center items-center;
+}
+
+.nav ul {
+    @apply flex w-2/5;
+}
+
+.nav__left {
+    @apply flex-row-reverse;
+}
+
+.nav__left li {
+    @apply mr-8;
+}
+
+.nav__right li {
+    @apply ml-8;
+}
+
+.nav__logo img {
     @apply w-40 h-auto;
 }
+
 

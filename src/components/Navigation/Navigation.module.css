@@ -1,7 +1,0 @@
-.nav ul {
-    @apply flex;
-}
-
-.nav ul li {
-    @apply mr-8;
-}
