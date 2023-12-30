@@ -20,7 +20,7 @@ const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle, reverse
             const offset = (scrollY) + window.innerHeight / 2 - initialOffset.current; // TODO вот тут подумать
             if (text === 'Тут я пока текст не придумал') {
                 // @ts-ignore
-                console.log([(scrollY) + window.innerHeight / 2 - initialOffset.current, scrollY + window.innerHeight, initialOffset.current + window.innerHeight / 2])
+                // console.log([(scrollY) + window.innerHeight / 2 - initialOffset.current, scrollY + window.innerHeight, initialOffset.current + window.innerHeight / 2])
             }
 
 
