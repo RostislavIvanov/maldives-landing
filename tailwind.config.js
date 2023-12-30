@@ -6,7 +6,7 @@ module.exports = {
             fontSize: {
                 'default': '18px',
                 'subtitle': '24px',
-                '5xl': '160px',
+                '5xl': '140px',
             },
             colors: {
                 'blue': '#27c9d9',
