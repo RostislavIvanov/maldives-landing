@@ -1,5 +1,5 @@
 .excursion {
-    @apply rounded-[50px] overflow-hidden w-[32%] mb-8 h-[700px] relative shadow-2xl;
+    @apply rounded-default overflow-hidden w-[32%] mb-8 h-[700px] relative shadow-excursion;
 }
 
 .excursion__dark {
@@ -7,7 +7,7 @@
 }
 
 .excursion__back {
-    @apply bg-cover w-full h-full flex flex-col items-end justify-end;
+    @apply bg-cover bg-center w-full h-full flex flex-col items-end justify-end;
 }
 
 .excursion__info {
@@ -15,7 +15,7 @@
 }
 
 .excursion__title {
-    @apply text-[40px] font-bold mr-8;
+    @apply text-[40px] font-bold mr-8 ml-8;
 }
 
 .excursion__content {
@@ -26,6 +26,3 @@
     @apply z-20;
 }
 
-.excursion__button {
-    @apply text-default py-4 px-8 border border-white rounded-3xl mt-6;
-}

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import classes from "./ExcursionItem.module.css";
+import Button from "~/components/UI/Button/Button.tsx";
 
 interface IExcursionItemProps {
     title: string;
@@ -18,9 +19,7 @@ const ExcursionItem: FC<IExcursionItemProps> = ({ title, description, imageUrl }
                     <h5 className={classes.excursion__title}>{title}</h5>
                     <div className={classes.excursion__content}>
                         <div className={classes.excursion__desc}>{description}</div>
-                        <button className={classes.excursion__button}>Отправиться в
-                            тур
-                        </button>
+                        <Button color={'white'}>Подробнее</Button>
                     </div>
                 </div>
             </div>

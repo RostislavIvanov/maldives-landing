@@ -15,5 +15,5 @@
 }
 
 .huge__btn button {
-    @apply text-default py-4 px-8 border border-white rounded-3xl font-extralight;
+    @apply text-default py-4 px-8 border border-white rounded-default font-extralight;
 }
