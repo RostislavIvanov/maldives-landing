@@ -6,10 +6,18 @@ module.exports = {
             fontSize: {
                 'default': '18px',
                 'subtitle': '24px',
+                'label': '36px',
+                '4xl': '100px',
                 '5xl': '140px',
             },
             colors: {
-                'blue': '#27c9d9',
+                'green': '#146B2F',
+            },
+            boxShadow: {
+                'excursion': '11px 12px 24px -3px rgba(0,0,0,0.5);'
+            },
+            borderRadius: {
+                'default': '50px',
             },
             fontFamily: {
                 serif: ['Montserrat', 'sans-serif']
