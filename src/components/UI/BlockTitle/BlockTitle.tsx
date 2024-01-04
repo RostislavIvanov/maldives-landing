@@ -1,11 +1,22 @@
 import classes from './BlockTitle.module.css'
 import { FC, PropsWithChildren } from "react";
 
-const BlockTitle:FC<PropsWithChildren> = ({children}) => {
+interface IBlockTitle extends PropsWithChildren {
+    label?: string;
+}
+
+const BlockTitle: FC<IBlockTitle> = ({ children, label }) => {
     return (
-        <h2 className={classes.title}>
-            {children}
-        </h2>
+        <>
+            <h2 className={classes.title}>
+                {children}
+            </h2>
+            {!!label &&
+                <p className={classes.label}>
+                    {label}
+                </p>
+            }
+        </>
     );
 };
 
