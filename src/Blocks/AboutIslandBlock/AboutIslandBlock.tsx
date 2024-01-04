@@ -1,27 +1,25 @@
-import img from "../../assets/images/AboutIslandBack-dark.jpeg";
-import ship from "../../assets/images/Ship.jpg";
 import prices from "../../assets/images/Democratic-prices.jpg";
 import beach from "../../assets/images/Beach.jpg";
-import underwater from "../../assets/images/Underwater-life.jpg";
+import underwater from "../../assets/images/under.jpg";
 import amenities from "../../assets/images/Amenities.jpg";
 import classes from './AboutIslandBlock.module.css'
 import BlockTitle from "../../components/UI/BlockTitle/BlockTitle.tsx";
 import IslandInfoItem from "../../components/IslandInfoItem/IslandInfoItem.tsx";
+import test from '../../assets/images/test.jpeg'
 
 const AboutIslandBlock = () => {
 
     return (
-        <div style={{ backgroundImage: `url(${img})` }}
-             className={classes.content}>
+        <div className={classes.content}>
             <div className={classes.wrapper}>
                 <div>
                     <div className={classes.titleWrapper}>
-                        <BlockTitle children={'Об Острове'}/>
+                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об Острове'}/>
                     </div>
 
-                    <div>
+                    <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem
-                            img={ship}
+                            img={test}
                             subtitle={'Это НЕ скучный пляжный отдых'}
                             text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
                         />

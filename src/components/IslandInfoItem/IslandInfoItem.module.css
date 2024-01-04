@@ -1,39 +1,31 @@
-.islandInfo {
-    @apply flex mt-10 overflow-hidden;
-}
-
 .islandInfo__con {
-    @apply w-2/4 ml-8;
+    @apply flex items-center;
 }
 
-.islandInfo__conReverse{
-    @apply text-right w-2/4 mr-8;
+.islandInfoReverse__con {
+    @apply flex justify-end items-center;
 }
 
-.islandInfo__imgContainer {
-    @apply flex justify-end opacity-0 h-[70vh];
+.islandInfo__img {
+    @apply w-3/5 rounded-default overflow-hidden;
 }
 
-.islandInfo__imgContainerReverse {
-    @apply opacity-0 h-[70vh];
-}
-
-.islandInfo__imgContainer img {
-    @apply h-full;
-}
-
-.islandInfo__subtitle {
-    @apply text-subtitle inline-block border-blue border-b-2;
+.islandInfo__img img {
+    @apply w-full;
 }
 
 .islandInfo__text {
-    @apply mt-6 text-default;
+    @apply ml-40 max-w-[400px]
 }
 
-.slideToRight {
-    @apply animate-slide-to-right;
+.islandInfoReverse__text {
+    @apply mr-40 max-w-[400px]
 }
 
-.slideToLeft {
-    @apply animate-slide-to-left;
+.islandInfo__label {
+    @apply text-label mb-4
+}
+
+.islandInfo__desc {
+    @apply leading-loose;
 }
