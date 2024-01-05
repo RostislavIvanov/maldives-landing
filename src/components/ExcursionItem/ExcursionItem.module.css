@@ -23,6 +23,6 @@
 }
 
 .excursion__desc {
-    @apply z-20;
+    @apply z-20 mb-6;
 }
 

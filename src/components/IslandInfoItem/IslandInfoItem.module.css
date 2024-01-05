@@ -27,5 +27,5 @@
 }
 
 .islandInfo__desc {
-    @apply leading-loose;
+    @apply leading-loose mb-6;
 }
