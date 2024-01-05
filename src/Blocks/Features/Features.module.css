@@ -1,0 +1,46 @@
+.titleWrapper {
+    @apply text-black mb-8;
+}
+
+.features {
+    @apply flex w-full;
+}
+
+.features__left {
+    @apply flex flex-col w-1/2 h-[900px];
+}
+
+.features__right {
+    @apply w-1/2;
+}
+
+.features__picture {
+    @apply bg-cover bg-center;
+}
+
+.featuresCard__left {
+    @apply opacity-0 h-[450px] flex justify-center items-center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.featuresCard__right {
+    @apply opacity-0 h-[900px] flex justify-center items-center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.featuresCard__left:hover {
+    @apply opacity-100 bg-black bg-opacity-50;
+}
+
+.featuresCard__right:hover {
+    @apply opacity-100 bg-black bg-opacity-50;
+}
+
+.featuresCard {
+    @apply flex flex-col items-center;
+}
+
+.features__label {
+    @apply text-white text-[50px] text-center font-light;
+}
+
