@@ -1,11 +1,11 @@
-import prices from "../../assets/images/Democratic-prices.jpg";
-import beach from "../../assets/images/Beach.jpg";
+                                                                                                                        import beach from "../../assets/images/Beach.jpg";
 import underwater from "../../assets/images/under.jpg";
 import amenities from "../../assets/images/Amenities.jpg";
 import classes from './AboutIslandBlock.module.css'
 import BlockTitle from "../../components/UI/BlockTitle/BlockTitle.tsx";
 import IslandInfoItem from "../../components/IslandInfoItem/IslandInfoItem.tsx";
-import test from '../../assets/images/test.jpeg'
+import notBoring from '../../assets/images/not-boring.jpg'
+import cheep from '../../assets/images/cheep.jpg'
 
 const AboutIslandBlock = () => {
 
@@ -19,15 +19,15 @@ const AboutIslandBlock = () => {
 
                     <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem
-                            img={test}
+                            img={notBoring}
                             subtitle={'Это НЕ скучный пляжный отдых'}
                             text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
                         />
 
                         <IslandInfoItem
-                            img={prices}
+                            img={cheep}
                             subtitle={'У нас не дорого!'}
-                            text={'Тут я пока текст не придумал'} // TODO
+                            text={'Вопреки всеобщему мнению, отдых на Мальдивах, который мы предлагаем, не обойдется Вам в огромную сумму. Каждый желающий сможет ощутить красоту Мальдив на собственном примере!'}
                             reverse
                         />
 

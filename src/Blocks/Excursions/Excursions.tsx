@@ -18,7 +18,7 @@ const Excursions = () => {
 
                 <div className={'flex justify-between flex-wrap items-end text-white'}>
                     <ExcursionItem
-                        title={'3 точки снорклинга'}
+                        title={'3 точки для ныряния с маской'}
                         description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, itaque, porro. Ab accusamus architecto consequuntur, cum explicabo impedit laudantium maiores praesentium sapiente tempora veniam voluptatem. Fugiat iste iusto pariatur reprehenderit?'}
                         imageUrl={snorkeling}
                     />
