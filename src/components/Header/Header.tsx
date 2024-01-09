@@ -14,7 +14,7 @@ const Header = () => {
                     <img src={logo} alt="logo"/>
                 </div>
                 <ul className={classes.nav__right}>
-                    <li><a href="#interesting">Наши особенности</a></li>
+                    <li><a href="#interesting">Наши программы</a></li>
                     <li><a href="#prices">Цены и контакты</a></li>
                 </ul>
             </nav>
