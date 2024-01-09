@@ -4,7 +4,7 @@ const HugeTitle = () => {
     return (
         <div>
             <h1 className={classes.huge__title}>Мальдивы</h1>
-            <div className={classes.huge__subtitle}>Ваше незабываемое приключение на Мальдивах</div>
+            <div className={classes.huge__subtitle}>Ваше незабываемое приключение</div>
 
             <div className={classes.huge__stripe}>|</div>
 

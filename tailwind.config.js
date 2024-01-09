@@ -8,7 +8,7 @@ module.exports = {
                 'subtitle': '24px',
                 'label': '36px',
                 '4xl': '100px',
-                '5xl': '140px',
+                '5xl': '120px',
             },
             colors: {
                 'green': '#146B2F',

@@ -5,7 +5,7 @@ import Button from "~/components/UI/Button/Button.tsx";
 interface IIslandInfoItemProps {
     img: string;
     subtitle: string;
-    text: string;
+    text: React.ReactNode;
     reverse?: boolean;
 }
 

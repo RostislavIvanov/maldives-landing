@@ -1,4 +1,4 @@
-                                                                                                                        import beach from "../../assets/images/Beach.jpg";
+import beach from "../../assets/images/Beach.jpg";
 import underwater from "../../assets/images/under.jpg";
 import amenities from "../../assets/images/Amenities.jpg";
 import classes from './AboutIslandBlock.module.css'
@@ -14,13 +14,13 @@ const AboutIslandBlock = () => {
             <div className={classes.wrapper}>
                 <div>
                     <div className={classes.titleWrapper}>
-                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об Острове'}/>
+                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об острове'}/>
                     </div>
 
                     <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem
                             img={notBoring}
-                            subtitle={'Это НЕ скучный пляжный отдых'}
+                            subtitle={'Это НЕскучный пляжный отдых'}
                             text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
                         />
 
@@ -43,8 +43,19 @@ const AboutIslandBlock = () => {
 
                         <IslandInfoItem
                             img={underwater}
-                            subtitle={'Подводная жизнь, которую нигде не увидеть!'}
-                            text={'В декабре и январе его окружает светящийся планктон – настоящее чудо природы!'} // TODO Здесь еще хочется что-то написать
+                            subtitle={'Подводная жизнь, которая Вас удивит!'}
+                            text={<>
+                                <p>Вы увидите стаи диких дельфинов, огромных океанских мант, скатов, черепах, китовых
+                                    акул,
+                                    акул-нянек и других обитателей Мальдив,
+                                    а со многими из них вы сможете безопасно поплавать и даже поймать - у нас большой
+                                    выбор
+                                    морского сафари и рыбалки.</p>
+                                <br/>
+                                <p>С декабря по февраль вам посчастливится увидеть настоящее чудо природы - светящийся
+                                    планктон.
+                                    А коралловые рифы потрясут своей красотой даже искушённых дайверов!</p>
+                            </>}
                             reverse
                         />
 
