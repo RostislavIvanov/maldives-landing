@@ -6,9 +6,9 @@ import BlockTitle from "../../components/UI/BlockTitle/BlockTitle.tsx";
 import IslandInfoItem from "../../components/IslandInfoItem/IslandInfoItem.tsx";
 import notBoring from '../../assets/images/not-boring.jpg'
 import cheep from '../../assets/images/cheep.jpg'
+import Description from "~/components/Description/Description.tsx";
 
 const AboutIslandBlock = () => {
-
     return (
         <div className={classes.content}>
             <div className={classes.wrapper}>
@@ -16,21 +16,18 @@ const AboutIslandBlock = () => {
                     <div className={classes.titleWrapper}>
                         <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об острове'}/>
                     </div>
-
                     <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem
                             img={notBoring}
                             subtitle={'Это НЕскучный пляжный отдых'}
                             text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
                         />
-
                         <IslandInfoItem
                             img={cheep}
                             subtitle={'У нас не дорого!'}
                             text={'Вопреки всеобщему мнению, отдых на Мальдивах, который мы предлагаем, не обойдется Вам в огромную сумму. Каждый желающий сможет ощутить красоту Мальдив на собственном примере!'}
                             reverse
                         />
-
                         <IslandInfoItem
                             img={beach}
                             subtitle={'Мы САМИ обустраивали пляж для вашего удобства на острове'}
@@ -40,7 +37,6 @@ const AboutIslandBlock = () => {
                                 'Вход в воду комфортный, а вода - изумрудная. Этот пляж был открыт усилиями нашей\n' +
                                 'компании. Мы следим за его чистотой для своих гостей.'}
                         />
-
                         <IslandInfoItem
                             img={underwater}
                             subtitle={'Подводная жизнь, которая Вас удивит!'}
@@ -58,7 +54,6 @@ const AboutIslandBlock = () => {
                             </>}
                             reverse
                         />
-
                         <IslandInfoItem
                             img={amenities}
                             subtitle={'На острове есть всё для полноценной беззаботной жизни'}
@@ -68,7 +63,10 @@ const AboutIslandBlock = () => {
                                 'гулять в любое время суток,\n' +
                                 'наслаждаясь ласковой летней погодой круглый год.'}
                         />
-
+                        <Description>Локальный остров K. Guraidhoo (Гурайду) находится в 31 км южнее Мале,
+                            в атолле Каафу и относится к Южному Мале Атоллу. Добраться до острова можно на общественном
+                            транспорте (пароме),
+                            но своих гостей мы встречаем на собственном брендированном катере.</Description>
                     </div>
                 </div>
 
