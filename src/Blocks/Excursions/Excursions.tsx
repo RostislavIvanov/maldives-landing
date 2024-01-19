@@ -10,11 +10,12 @@ import shark from '../../assets/images/sharks.jpg'
 import points from '../../assets/images/points.jpg'
 import island from '../../assets/images/island.jpg'
 import dinner from '../../assets/images/dinner.jpg'
-import {useState} from "react";
+import { useState } from "react";
 import ModalPanel from "~/components/ModalPanel/ModalPanel";
 
 const Excursions = () => {
-    const [isModalOpened, setIsModalOpened] = useState(false)
+    const [ isModalOpened, setIsModalOpened ] = useState(false)
+    const closeModal = () => setIsModalOpened(false)
 
     return (
             <div className={classes.content}>
@@ -71,7 +72,7 @@ const Excursions = () => {
                         />
                     </div>
                 </div>
-                {isModalOpened && <ModalPanel images={[]} text={''}/>}
+                {isModalOpened && <ModalPanel images={[]} text={''} closeModal={closeModal}/>}
             </div>
     );
 };

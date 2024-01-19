@@ -1,8 +1,9 @@
-import {FC} from "react";
+import { FC } from "react";
 
 type ModalPanelProps = {
     images: string[],
-    text: string
+    text: string,
+    closeModal: VoidFunction
 }
 
 const ModalPanel: FC<ModalPanelProps> = () => {

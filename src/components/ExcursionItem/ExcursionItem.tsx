@@ -1,4 +1,4 @@
-import {FC} from "react";
+import { FC } from "react";
 import classes from "./ExcursionItem.module.css";
 import Button from "~/components/UI/Button/Button.tsx";
 
@@ -8,7 +8,7 @@ type ExcursionItemProps = {
     imageUrl: string;
 }
 
-const ExcursionItem: FC<ExcursionItemProps> = ({title, description, imageUrl}) => {
+const ExcursionItem: FC<ExcursionItemProps> = ({ title, description, imageUrl }) => {
     return (
         <div className={classes.excursion}>
             <div className={classes.excursion__dark}></div>
