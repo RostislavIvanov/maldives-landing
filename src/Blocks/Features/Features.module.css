@@ -15,7 +15,7 @@
 }
 
 .features__picture {
-    @apply bg-cover bg-center;
+    @apply bg-cover bg-center cursor-pointer;
 }
 
 .featuresCard__left {
@@ -41,6 +41,10 @@
 }
 
 .features__label {
-    @apply text-white text-[50px] text-center font-light;
+    @apply text-white text-[50px] text-center font-light leading-10;
+}
+
+.features__subLabel {
+    @apply mt-4 text-default font-light text-center max-w-[400px];
 }
 
