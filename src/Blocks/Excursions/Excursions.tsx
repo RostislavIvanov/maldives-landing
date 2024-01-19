@@ -1,6 +1,7 @@
 import classes from './Excursions.module.css'
 import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
 import ExcursionItem from "~/components/ExcursionItem/ExcursionItem.tsx";
+import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
 import fishing from '../../assets/images/fishing.jpg'
 import snorkeling from '../../assets/images/snorkeling.jpg'
 import dolphine from '../../assets/images/dolphine-tour.jpg'
@@ -11,7 +12,6 @@ import points from '../../assets/images/points.jpg'
 import island from '../../assets/images/island.jpg'
 import dinner from '../../assets/images/dinner.jpg'
 import { useState } from "react";
-import ModalPanel from "~/components/ModalPanel/ModalPanel";
 
 const Excursions = () => {
     const [ isModalOpened, setIsModalOpened ] = useState(false)
