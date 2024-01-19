@@ -1,15 +1,15 @@
 import classes from "./IslandInfoItem.module.css";
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import Button from "~/components/UI/Button/Button.tsx";
 
-interface IIslandInfoItemProps {
+type IslandInfoItemProps = {
     img: string;
     subtitle: string;
-    text: React.ReactNode;
+    text: ReactNode;
     reverse?: boolean;
 }
 
-const IslandInfoItem: FC<IIslandInfoItemProps> = ({ img, text, subtitle, reverse }) => {
+const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse }) => {
     return (
         <div className={reverse ? classes.islandInfoReverse__con : classes.islandInfo__con}>
             {reverse

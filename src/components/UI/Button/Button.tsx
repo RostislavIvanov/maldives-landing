@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 
-interface IButtonProps extends PropsWithChildren {
+type IButtonProps = PropsWithChildren & {
     color?: 'black' | 'white';
 }
 
