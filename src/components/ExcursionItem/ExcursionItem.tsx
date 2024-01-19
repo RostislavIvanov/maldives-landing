@@ -14,7 +14,8 @@ const ExcursionItem: FC<IExcursionItemProps> = ({ title, description, imageUrl }
             <div className={classes.excursion__dark}></div>
             <div
                 style={{ backgroundImage: `url(${imageUrl})` }} // TODO переделать в tailwind (тут style даже алиасы не принимает)
-                className={classes.excursion__back}>
+                className={classes.excursion__back}
+            >
                 <div className={classes.excursion__info}>
                     <h5 className={classes.excursion__title}>{title}</h5>
                     <div className={classes.excursion__content}>
