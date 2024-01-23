@@ -3,12 +3,13 @@ import { FC, PropsWithChildren } from "react";
 
 interface IBlockTitle extends PropsWithChildren {
     label?: string;
+    id?: string;
 }
 
-const BlockTitle: FC<IBlockTitle> = ({ children, label }) => {
+const BlockTitle: FC<IBlockTitle> = ({ children, label, id = '' }) => {
     return (
         <>
-            <h2 className={classes.title}>
+            <h2 id={id} className={classes.title}>
                 {children}
             </h2>
             {!!label &&

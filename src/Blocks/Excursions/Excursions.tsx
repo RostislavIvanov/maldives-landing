@@ -16,7 +16,7 @@ const Excursions = () => {
             <div className={classes.content}>
                 <div className={classes.wrapper}>
                     <div className={classes.titleWrapper}>
-                        <BlockTitle label={'Насладитесь возможностями нашего острова'}>Экскурсии</BlockTitle>
+                        <BlockTitle label={'Насладитесь возможностями нашего острова'} id={'excursions'}>Экскурсии</BlockTitle>
                     </div>
 
                     <div className={'flex justify-between flex-wrap items-end text-white'}>

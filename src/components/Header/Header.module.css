@@ -14,6 +14,10 @@
     @apply flex-row-reverse;
 }
 
+.header a {
+    @apply cursor-pointer;
+}
+
 .nav__left li {
     @apply mr-8;
 }

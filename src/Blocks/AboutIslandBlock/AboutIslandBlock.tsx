@@ -14,7 +14,7 @@ const AboutIslandBlock = () => {
             <div className={classes.wrapper}>
                 <div>
                     <div className={classes.titleWrapper}>
-                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об острове'}/>
+                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об острове'} id={'about'}/>
                     </div>
                     <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem

@@ -11,7 +11,7 @@ const Features = () => {
     return (
             <>
                 <div className={classes.titleWrapper}>
-                    <BlockTitle>Особенности<br/> нашего острова</BlockTitle>
+                    <BlockTitle id={'features'}>Особенности<br/> нашего острова</BlockTitle>
                 </div>
 
                 <div className={classes.features}>
