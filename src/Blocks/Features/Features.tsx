@@ -23,7 +23,7 @@ const Features = () => {
                                 <div className={classes.featuresCard}>
                                     <h2 className={classes.features__label}>Свадьбы</h2>
                                     <p className={classes.features__subLabel}>Организуем красивую свадебную
-                                        церемонию на любой вкус и кошелек.</p>
+                                        церемонию на любой вкус и бюджет</p>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,8 @@ const Features = () => {
                             <div className={classes.featuresCard__left}>
                                 <div className={classes.featuresCard}>
                                     <h2 className={classes.features__label}>Лечение</h2>
-                                    <p className={classes.features__subLabel}>Совместите приятное с полезным</p>
+                                    <p className={classes.features__subLabel}>Совместите приятное с полезным. Предлагаем
+                                        вам массаж и аюрведические процедуры</p>
                                 </div>
                             </div>
                         </div>
@@ -45,8 +46,8 @@ const Features = () => {
                             <div className={classes.featuresCard__right}>
                                 <div className={classes.featuresCard}>
                                     <h2 className={classes.features__label}>Круизы</h2>
-                                    <p className={classes.features__subLabel}>Арендуйте яхту и отправьтесь в ваш маршрут
-                                        или выберите один из готовых вариантов</p>
+                                    <p className={classes.features__subLabel}>Арендуйте яхту с друзьями или семьей и
+                                        отправьтесь в путешествие по своему уникальному маршруту</p>
                                 </div>
                             </div>
                         </div>
@@ -61,8 +62,8 @@ const Features = () => {
                             <div className={classes.featuresCard__right}>
                                 <div className={classes.featuresCard}>
                                     <h2 className={classes.features__label}>День на резорте</h2>
-                                    <p className={classes.features__subLabel}>Вы сможете насладиться беззаботным
-                                        отдыхом, находясь целый день в райском месте: острове - отеле.</p>
+                                    <p className={classes.features__subLabel}>Мы отвезем вас в один из отелей-резортов,
+                                        где вы сможете насладиться беззаботным отдыхом в райском месте</p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +87,8 @@ const Features = () => {
                             <div className={classes.featuresCard__left}>
                                 <div className={classes.featuresCard}>
                                     <h2 className={classes.features__label}>Культура Мальдив</h2>
-                                    <p className={classes.features__subLabel}>Мы сможем скрасить ваше пребывание на нашем
+                                    <p className={classes.features__subLabel}>Мы сможем скрасить ваше пребывание на
+                                        нашем
                                         острове национальными танцами, песнями, организовать мастер-классы по
                                         изготовлению мальдивского сувенира, а так же фотосессию в национальных
                                         костюмах.</p>
