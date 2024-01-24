@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren } from "react";
+import classes from './Button.module.css'
 
 type ButtonProps = PropsWithChildren & {
     onClick?: VoidFunction;
@@ -9,7 +10,7 @@ const Button: FC<ButtonProps> = ({ children, color = 'black', onClick }) => {
     return (
         <div>
             <button
-                className={`${color === 'black' ? 'border-black text-black' : 'border-white text-white'} text-default py-4 px-8 border rounded-default`}
+                className={`${color === 'black' ? classes.black : classes.white} ${classes.default}`}
                 onClick={onClick}
             >
                 {children}

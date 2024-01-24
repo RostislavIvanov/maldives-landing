@@ -1,13 +1,25 @@
 .islandInfo__con {
-    @apply flex items-center;
+    @apply
+    max-w-full items-center
+    sm:block
+    md:block
+    lg:flex
 }
 
 .islandInfoReverse__con {
-    @apply flex justify-end items-center;
+    @apply
+    items-center
+    sm:flex sm:flex-col-reverse sm:justify-normal
+    md:flex md:flex-col-reverse md:justify-normal
+    lg:flex lg:flex-row lg:justify-end
 }
 
 .islandInfo__img {
-    @apply w-3/5 rounded-default overflow-hidden;
+    @apply
+    rounded-default overflow-hidden
+    sm:w-full
+    md:w-full
+    lg:w-3/5;
 }
 
 .islandInfo__img img {
@@ -15,17 +27,31 @@
 }
 
 .islandInfo__text {
-    @apply ml-40 max-w-[400px]
+    @apply
+    sm:w-full sm:max-w-full sm:text-center
+    md:w-full md:max-w-full md:text-center
+    lg:ml-40 lg:max-w-[400px] lg:text-left;
 }
 
 .islandInfoReverse__text {
-    @apply mr-40 max-w-[400px]
+    @apply
+    sm:w-full sm:max-w-full sm:text-center
+    md:w-full md:max-w-full md:text-center
+    lg:mr-40 lg:max-w-[400px] lg:text-left;
 }
 
 .islandInfo__label {
-    @apply text-label mb-4
+    @apply
+    mb-4
+    sm:text-[46px] sm:mt-4
+    md:text-[46px] md:mt-4
+    lg:text-label lg:mt-0
 }
 
 .islandInfo__desc {
-    @apply leading-loose mb-6;
+    @apply
+    leading-loose mb-6
+    sm:text-[30px]
+    md:text-[30px]
+    lg:text-default
 }

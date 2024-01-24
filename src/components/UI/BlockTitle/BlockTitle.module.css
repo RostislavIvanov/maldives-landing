@@ -3,5 +3,9 @@
 }
 
 .label {
-    @apply mt-4 text-center text-subtitle font-light text-[#505050];
+    @apply
+    mt-4 text-center font-light text-[#505050]
+    sm:text-[46px]
+    md:text-[46px]
+    lg:text-subtitle
 }
