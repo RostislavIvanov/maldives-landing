@@ -6,7 +6,7 @@ type BlockTitleProps = PropsWithChildren & {
     id?: string;
 }
 
-const BlockTitle: FC<BlockTitleProps> = ({ children, label }) => {
+const BlockTitle: FC<BlockTitleProps> = ({ children, label, id }) => {
     return (
         <>
             <h2 id={id} className={classes.title}>

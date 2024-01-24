@@ -40,11 +40,12 @@ const Excursions = () => {
     }
 
     return (
-            <div className={classes.content}>
-                <div className={classes.wrapper}>
-                    <div className={classes.titleWrapper}>
-                        <BlockTitle label={'Насладитесь возможностями нашего острова'} id={'excursions'}>Экскурсии</BlockTitle>
-                    </div>
+        <div className={classes.content}>
+            <div className={classes.wrapper}>
+                <div className={classes.titleWrapper}>
+                    <BlockTitle label={'Насладитесь возможностями нашего острова'}
+                                id={'excursions'}>Экскурсии</BlockTitle>
+                </div>
 
                 <div className={'flex justify-between flex-wrap items-end text-white'}>
                     <ExcursionItem
@@ -52,7 +53,7 @@ const Excursions = () => {
                         description={'Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!'}
                         imageUrl={points}
                         openModal={openModal}
-                        images={[points,fishing,dolphin,shark]}
+                        images={[ points, fishing, dolphine, shark ]}
                         text={'еееыыыкекеке'}
                     />
                     <ExcursionItem
