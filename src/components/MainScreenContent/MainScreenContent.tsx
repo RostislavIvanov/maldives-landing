@@ -4,10 +4,18 @@ import Header from "../Header/Header.tsx";
 import HugeTitle from "../HugeTitle/HugeTitle.tsx";
 
 const MainScreenContent = () => {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+        e.preventDefault();
+        const el = document.getElementById(link);
+        el?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
     return (
         <div className={classes.content}>
             <div className={classes.content__container}>
-                <Header/>
+                <Header handleLinkClick={handleClick}/>
 
                 <HugeTitle/>
 
