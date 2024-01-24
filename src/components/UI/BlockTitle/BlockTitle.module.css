@@ -1,10 +1,13 @@
 .title {
-    @apply text-center text-4xl leading-none font-extralight tracking-widest;
+    @apply
+    text-[50px] text-center leading-none font-extralight tracking-widest
+    sm:text-4xl;
+
 }
 
 .label {
     @apply
-    mt-4 text-center font-light text-[#505050]
+    mt-4 text-center font-light text-[#505050] text-[30px]
     sm:text-[46px]
     md:text-[46px]
     lg:text-subtitle
