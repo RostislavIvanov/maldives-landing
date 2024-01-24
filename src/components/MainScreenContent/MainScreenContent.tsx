@@ -4,7 +4,7 @@ import Header from "../Header/Header.tsx";
 import HugeTitle from "../HugeTitle/HugeTitle.tsx";
 
 const MainScreenContent = () => {
-    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+    const handleClick = (e: React.MouseEvent<HTMLElement>, link: string) => {
         e.preventDefault();
         const el = document.getElementById(link);
         el?.scrollIntoView({
@@ -19,7 +19,7 @@ const MainScreenContent = () => {
 
                 <HugeTitle/>
 
-                <div className={classes.content__arrow}>
+                <div onClick={e => handleClick(e, 'about')} className={classes.content__arrow}>
                     <img src={Arrow} alt="Arrow"/>
                 </div>
             </div>

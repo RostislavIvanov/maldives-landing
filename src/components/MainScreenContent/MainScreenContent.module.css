@@ -7,7 +7,7 @@
 }
 
 .content__arrow {
-    @apply flex justify-center mb-4;
+    @apply flex justify-center mb-4 cursor-pointer;
 }
 
 .content__arrow img {
