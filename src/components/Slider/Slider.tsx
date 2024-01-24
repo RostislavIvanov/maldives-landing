@@ -89,7 +89,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
 
     useEffect(() => {
         setSlide(0)
-    }, [images.length]);
+    }, [ images.length ]);
 
     return (
         <div className={classes.slider} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
@@ -102,7 +102,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
                     images,
                 }}
             >
-                <SlidesList />
+                <SlidesList/>
                 <Dots/>
                 <Arrows/>
             </SliderContext.Provider>

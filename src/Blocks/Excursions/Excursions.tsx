@@ -4,7 +4,7 @@ import ExcursionItem from "~/components/ExcursionItem/ExcursionItem.tsx";
 import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
 import fishing from '../../assets/images/fishing.jpg'
 import snorkeling from '../../assets/images/snorkeling.jpg'
-import dolphine from '../../assets/images/dolphine-tour.jpg'
+import dolphin from '../../assets/images/dolphine-tour.jpg'
 import ship from '../../assets/images/Ship.jpg'
 import whaleShark from '../../assets/images/whale-shark.jpg'
 import shark from '../../assets/images/sharks.jpg'
@@ -31,7 +31,7 @@ const Excursions = () => {
             text: ''
         })
     }
-    const openModal = (images: string[], text?:string) => {
+    const openModal = (images: string[], text?: string) => {
         setCurrentExcursion({
             images: images,
             text: text
@@ -53,7 +53,7 @@ const Excursions = () => {
                         description={'Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!'}
                         imageUrl={points}
                         openModal={openModal}
-                        images={[ points, fishing, dolphine, shark ]}
+                        images={[ points, fishing, dolphin, shark ]}
                         text={'еееыыыкекеке'}
                     />
                     <ExcursionItem
@@ -65,7 +65,7 @@ const Excursions = () => {
                     <ExcursionItem
                         title={'Тур с дельфинами'}
                         description={'Мы отправимся в настоящее морское сафари - будем искать диких дельфинов. Вы увидите несколько стай, сможете наблюдать их грациозные прыжки и даже поплавать с ними под водой.'}
-                        imageUrl={dolphine}
+                        imageUrl={dolphin}
                         openModal={openModal}
                     />
                     <ExcursionItem

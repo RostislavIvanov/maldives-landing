@@ -13,7 +13,7 @@ const ModalPanel: FC<ModalPanelProps> = ({ images, text, closeModal }) => {
         <>
             <div className={classes.modal}>
                 <Slider autoPlay={true} autoPlayTime={4000} images={images}/>
-                <div style={{width:'40%'}}>
+                <div style={{ width: '40%' }}>
                     Лорем ипсум
                     <button onClick={closeModal}>
                         Закрыть🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄👍
