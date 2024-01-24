@@ -1,6 +1,7 @@
 import classes from './ModalPanel.module.css'
 import { FC } from "react";
 import Slider from "~/components/Slider/Slider.tsx";
+import Button from "~/components/UI/Button/Button.tsx";
 
 type ModalPanelProps = {
     closeModal: VoidFunction;
@@ -13,12 +14,9 @@ const ModalPanel: FC<ModalPanelProps> = ({ images, text, closeModal }) => {
         <>
             <div className={classes.modal}>
                 <Slider autoPlay={true} autoPlayTime={4000} images={images}/>
-                <div style={{ width: '40%' }}>
-                    Лорем ипсум
-                    <button onClick={closeModal}>
-                        Закрыть🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄🙄👍
-                    </button>
+                <div className={classes.modal__text}>
                     <p>{text}</p>
+                    <Button onClick={closeModal}>Закрыть</Button>
                 </div>
             </div>
             <div className={classes.modal__back} onClick={closeModal}/>

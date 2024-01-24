@@ -58,7 +58,7 @@ const Excursions = () => {
                         imageUrl={points}
                         openModal={openModal}
                         images={[ points, fishing, dolphin, shark ]}
-                        text={'еееыыыкекеке'}
+                        text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aspernatur autem cum, dignissimos dolor explicabo illo, minima necessitatibus nisi nulla odio optio quaerat quas quo reprehenderit saepe unde vitae?'}
                     />
                     <ExcursionItem
                         title={'Рыбалка'}

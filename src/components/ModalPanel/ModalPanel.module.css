@@ -1,8 +1,13 @@
 .modal {
-    @apply fixed inset-x-1/2 inset-y-1/2 -translate-x-1/2 -translate-y-1/2 bg-white z-50 rounded-default;
-    @apply p-10 w-[50vw] h-[80vh] opacity-100 flex
+    @apply fixed inset-x-1/2 inset-y-1/2 -translate-x-1/2 -translate-y-1/2
+    bg-white z-50 rounded-default
+    p-10 w-[50vw] h-[80vh] opacity-100 flex;
 }
 
 .modal__back {
     @apply fixed inset-0 bg-black/30 h-screen w-screen z-40;
+}
+
+.modal__text {
+    @apply w-2/5 flex justify-between flex-col text-right
 }
