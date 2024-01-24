@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-
+import classes from './Button.module.css'
 interface IButtonProps extends PropsWithChildren {
     color?: 'black' | 'white';
 }
@@ -7,8 +7,7 @@ interface IButtonProps extends PropsWithChildren {
 const Button: FC<IButtonProps> = ({ children, color = 'black' }) => {
     return (
         <div>
-            <button
-                className={`${color === 'black' ? 'border-black text-black' : 'border-white text-white'} text-default py-4 px-8 border rounded-default`}>
+            <button className={`${color === 'black' ? classes.black : classes.white} ${classes.default}`}>
                 {children}
             </button>
         </div>
