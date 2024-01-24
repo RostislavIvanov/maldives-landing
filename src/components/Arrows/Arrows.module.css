@@ -1,0 +1,15 @@
+.arrows {
+    @apply flex justify-between w-full absolute top-[40%]
+}
+
+.arrow {
+    @apply h-8 w-8 cursor-pointer fill-black
+}
+
+.arrow__right {
+    @apply -rotate-90
+}
+
+.arrow__left {
+    @apply rotate-90
+}

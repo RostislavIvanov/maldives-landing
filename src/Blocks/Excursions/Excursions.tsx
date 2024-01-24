@@ -13,9 +13,31 @@ import island from '../../assets/images/island.jpg'
 import dinner from '../../assets/images/dinner.jpg'
 import { useState } from "react";
 
+type CurrentExcursion = {
+    images: string[];
+    text?: string;
+}
+
 const Excursions = () => {
     const [ isModalOpened, setIsModalOpened ] = useState(false)
-    const closeModal = () => setIsModalOpened(false)
+    const [ currentExcursion, setCurrentExcursion ] = useState<CurrentExcursion>({
+        images: [],
+        text: ''
+    })
+    const closeModal = () => {
+        setIsModalOpened(false);
+        setCurrentExcursion({
+            images: [],
+            text: ''
+        })
+    }
+    const openModal = (images: string[], text?:string) => {
+        setCurrentExcursion({
+            images: images,
+            text: text
+        })
+        setIsModalOpened(true)
+    }
 
     return (
             <div className={classes.content}>
@@ -24,56 +46,73 @@ const Excursions = () => {
                         <BlockTitle label={'Насладитесь возможностями нашего острова'} id={'excursions'}>Экскурсии</BlockTitle>
                     </div>
 
-                    <div className={'flex justify-between flex-wrap items-end text-white'}>
-                        <ExcursionItem
-                                title={'3 точки для плавания с маской'}
-                                description={'Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!'}
-                                imageUrl={points}
-                        />
-                        <ExcursionItem
-                                title={'Рыбалка'}
-                                description={'Предлагаем несколько видов рыбалок: вечерняя рыбалка на закате и утренняя на восходе. Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров.'}
-                                imageUrl={fishing}
-                        />
-                        <ExcursionItem
-                                title={'Тур с дельфинами'}
-                                description={'Мы отправимся в настоящее морское сафари - будем искать диких дельфинов. Вы увидите несколько стай, сможете наблюдать их грациозные прыжки и даже поплавать с ними под водой.'}
-                                imageUrl={dolphine}
-                        />
-                        <ExcursionItem
-                                title={'Приключение с акулами'}
-                                description={'Плавание с акулами "няньками" - настоящая психологическая терапия. Если соблюдать инструктаж - нахождение с ними безопасно и более того, акулы очень тактильные, к ними приятно прикасаться и они не сопротивляются.'}
-                                imageUrl={shark}
-                        />
-                        <ExcursionItem
-                                title={'Путешествие на затонувший корабль'}
-                                description={'Приглашаем Вас погрузиться к затонувшему кораблю! Это возможно сделать и с обычной маской для снорклинга, и с аквалангом. Впечатления гарантированы!'}
-                                imageUrl={ship}
-                        />
-                        <ExcursionItem
-                                title={'Тур с китовыми акулами'}
-                                description={'Это приключение оставит впечатление на всю жизнь! Гигантское морское животное может достигать даже 20 метров!'}
-                                imageUrl={whaleShark}
-                        />
-                        <ExcursionItem
-                                title={'Ночь на необитаемом острове'}
-                                description={'Почувствуйте себя как Робинзон Крузо - проведите ночь на необитаемом острове! Мы так же можем организовать тематическую вечеринку, танцы под звездами. С вами остается наша команда, которая поможет все обустроить: поставит палатки, приготовит ужин.'}
-                                imageUrl={island}
-                        />
-                        <ExcursionItem
-                                title={'Обед на необитаемом острове'}
-                                description={'Вы попадете на необитаемый остров, где сможете заняться чем угодно. Можете купаться, наслаждаться видами или вкусно пообедать. На таких островах получаются особенно яркие фотографии. Обязательно возьмите с собой одежду для фотосессии!'}
-                                imageUrl={dinner}
-                        />
-                        <ExcursionItem
-                                title={'Снорклинг на домашнем рифе'}
-                                description={'Не выезжая с острова Вы получите удовольствие от наблюдения за кораллами и разноцветными рыбками. Отличительной особенностью нашего домашнего рифа являются затонувшие предметы: качели с надписью Guraidhoo, катер, велосипеды с "глазами", смотрящие на вас со дна.'}
-                                imageUrl={snorkeling}
-                        />
-                    </div>
+                <div className={'flex justify-between flex-wrap items-end text-white'}>
+                    <ExcursionItem
+                        title={'3 точки для плавания с маской'}
+                        description={'Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!'}
+                        imageUrl={points}
+                        openModal={openModal}
+                        images={[points,fishing,dolphin,shark]}
+                        text={'еееыыыкекеке'}
+                    />
+                    <ExcursionItem
+                        title={'Рыбалка'}
+                        description={'Предлагаем несколько видов рыбалок: вечерняя рыбалка на закате и утренняя на восходе. Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров.'}
+                        imageUrl={fishing}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Тур с дельфинами'}
+                        description={'Мы отправимся в настоящее морское сафари - будем искать диких дельфинов. Вы увидите несколько стай, сможете наблюдать их грациозные прыжки и даже поплавать с ними под водой.'}
+                        imageUrl={dolphine}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Приключение с акулами'}
+                        description={'Плавание с акулами "няньками" - настоящая психологическая терапия. Если соблюдать инструктаж - нахождение с ними безопасно и более того, акулы очень тактильные, к ними приятно прикасаться и они не сопротивляются.'}
+                        imageUrl={shark}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Путешествие на затонувший корабль'}
+                        description={'Приглашаем Вас погрузиться к затонувшему кораблю! Это возможно сделать и с обычной маской для снорклинга, и с аквалангом. Впечатления гарантированы!'}
+                        imageUrl={ship}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Тур с китовыми акулами'}
+                        description={'Это приключение оставит впечатление на всю жизнь! Гигантское морское животное может достигать даже 20 метров!'}
+                        imageUrl={whaleShark}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Ночь на необитаемом острове'}
+                        description={'Почувствуйте себя как Робинзон Крузо - проведите ночь на необитаемом острове! Мы так же можем организовать тематическую вечеринку, танцы под звездами. С вами остается наша команда, которая поможет все обустроить: поставит палатки, приготовит ужин.'}
+                        imageUrl={island}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Обед на необитаемом острове'}
+                        description={'Вы попадете на необитаемый остров, где сможете заняться чем угодно. Можете купаться, наслаждаться видами или вкусно пообедать. На таких островах получаются особенно яркие фотографии. Обязательно возьмите с собой одежду для фотосессии!'}
+                        imageUrl={dinner}
+                        openModal={openModal}
+                    />
+                    <ExcursionItem
+                        title={'Снорклинг на домашнем рифе'}
+                        description={'Не выезжая с острова Вы получите удовольствие от наблюдения за кораллами и разноцветными рыбками. Отличительной особенностью нашего домашнего рифа являются затонувшие предметы: качели с надписью Guraidhoo, катер, велосипеды с "глазами", смотрящие на вас со дна.'}
+                        imageUrl={snorkeling}
+                        openModal={openModal}
+                    />
                 </div>
-                {isModalOpened && <ModalPanel images={[]} text={''} closeModal={closeModal}/>}
             </div>
+            <div className={isModalOpened ? classes.modalShow : classes.modalHide}>
+                <ModalPanel
+                    images={currentExcursion.images}
+                    text={currentExcursion.text}
+                    closeModal={closeModal}
+                />
+            </div>
+        </div>
     );
 };
 

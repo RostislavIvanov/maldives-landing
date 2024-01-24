@@ -1,14 +1,17 @@
 import { FC, PropsWithChildren } from "react";
 
-type IButtonProps = PropsWithChildren & {
+type ButtonProps = PropsWithChildren & {
+    onClick?: VoidFunction;
     color?: 'black' | 'white';
 }
 
-const Button: FC<IButtonProps> = ({ children, color = 'black' }) => {
+const Button: FC<ButtonProps> = ({ children, color = 'black', onClick }) => {
     return (
         <div>
             <button
-                className={`${color === 'black' ? 'border-black text-black' : 'border-white text-white'} text-default py-4 px-8 border rounded-default`}>
+                className={`${color === 'black' ? 'border-black text-black' : 'border-white text-white'} text-default py-4 px-8 border rounded-default`}
+                onClick={onClick}
+            >
                 {children}
             </button>
         </div>

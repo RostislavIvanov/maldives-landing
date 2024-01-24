@@ -9,3 +9,11 @@
 .titleWrapper {
     @apply mb-8;
 }
+
+.modalHide {
+    @apply opacity-0 transition-opacity duration-200;
+}
+
+.modalShow {
+    @apply fixed inset-0 z-40 opacity-100 transition-opacity duration-200;
+}

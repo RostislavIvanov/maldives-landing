@@ -17,7 +17,7 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse 
                 <>
                     <div className={classes.islandInfoReverse__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
-                        <p className={classes.islandInfo__desc}>{text}</p>
+                        <div className={classes.islandInfo__desc}>{text}</div>
                         <Button>Отправиться в тур</Button>
                     </div>
                     <div className={classes.islandInfo__img}>
@@ -30,7 +30,7 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse 
                     </div>
                     <div className={classes.islandInfo__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
-                        <p className={classes.islandInfo__desc}>{text}</p>
+                        <div className={classes.islandInfo__desc}>{text}</div>
                         <Button>Отправиться в тур</Button>
                     </div>
                 </>
