@@ -103,8 +103,8 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
                 }}
             >
                 <SlidesList/>
-                <Dots/>
-                <Arrows/>
+                {images.length > 1 && <Dots/>}
+                {images.length > 1 && <Arrows/>}
             </SliderContext.Provider>
         </div>
     )
