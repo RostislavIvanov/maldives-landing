@@ -52,7 +52,6 @@
 
 .islandInfo__desc {
     @apply
-    text-[24px]
     leading-loose mb-6
     sm:text-[30px]
     md:text-[30px]
