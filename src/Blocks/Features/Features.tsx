@@ -6,6 +6,7 @@ import heal from '../../assets/images/healing.jpg'
 import resortDay from '../../assets/images/resort-day.jpg'
 import romantic from '../../assets/images/romantic.jpeg'
 import culture from '../../assets/images/culture.jpg'
+import tap from '../../assets/icons/Tap.svg'
 
 const Features = () => {
     return (
@@ -24,6 +25,7 @@ const Features = () => {
                                     <h2 className={classes.features__label}>Свадьбы</h2>
                                     <p className={classes.features__subLabel}>Организуем красивую свадебную
                                         церемонию на любой вкус и бюджет</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -35,6 +37,7 @@ const Features = () => {
                                     <h2 className={classes.features__label}>Лечение</h2>
                                     <p className={classes.features__subLabel}>Совместите приятное с полезным. Предлагаем
                                         вам массаж и аюрведические процедуры</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -48,6 +51,7 @@ const Features = () => {
                                     <h2 className={classes.features__label}>Круизы</h2>
                                     <p className={classes.features__subLabel}>Арендуйте яхту с друзьями или семьей и
                                         отправьтесь в путешествие по своему уникальному маршруту</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -64,6 +68,7 @@ const Features = () => {
                                     <h2 className={classes.features__label}>День на резорте</h2>
                                     <p className={classes.features__subLabel}>Мы отвезем вас в один из отелей-резортов,
                                         где вы сможете насладиться беззаботным отдыхом в райском месте</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -78,6 +83,7 @@ const Features = () => {
                                     <h2 className={classes.features__label}>Романтический ужин</h2>
                                     <p className={classes.features__subLabel}>Мы поможем красиво отметить любое ваше
                                         событие</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>
@@ -92,6 +98,7 @@ const Features = () => {
                                         острове национальными танцами, песнями, организовать мастер-классы по
                                         изготовлению мальдивского сувенира, а так же фотосессию в национальных
                                         костюмах.</p>
+                                    <img className={classes.features__icon} src={tap} alt=""/>
                                 </div>
                             </div>
                         </div>

@@ -57,3 +57,6 @@
     @apply mt-4 text-default font-light text-center max-w-[400px];
 }
 
+.features__icon {
+    @apply block w-8 h-8 mt-4 animate-bounce;
+}
