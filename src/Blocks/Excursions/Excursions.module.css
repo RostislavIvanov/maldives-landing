@@ -3,7 +3,8 @@
 }
 
 .wrapper {
-    @apply container mx-auto py-8 px-8;
+    @apply container mx-auto py-8 px-2
+    sm:px-8;
 }
 
 .titleWrapper {
