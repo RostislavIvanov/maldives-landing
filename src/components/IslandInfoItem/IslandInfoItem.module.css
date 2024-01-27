@@ -44,7 +44,7 @@
 
 .islandInfo__label {
     @apply
-    mb-4 text-[36px]
+    mb-4 text-[24px]
     sm:text-[46px] sm:mt-4
     md:text-[46px] md:mt-4
     lg:text-label lg:mt-0
