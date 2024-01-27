@@ -43,7 +43,7 @@
 }
 
 .featuresCard {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center px-4;
 }
 
 .features__label {
