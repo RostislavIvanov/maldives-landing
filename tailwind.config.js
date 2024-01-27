@@ -7,8 +7,9 @@ module.exports = {
                 'default': '18px',
                 'subtitle': '24px',
                 'label': '36px',
+                '2xl': '2vw',
                 '4xl': '100px',
-                '5xl': '120px',
+                '5xl': '5vw',
             },
             colors: {
                 'green': '#146B2F',
