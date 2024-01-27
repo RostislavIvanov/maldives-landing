@@ -1,5 +1,5 @@
 .huge__title {
-    @apply text-center text-5xl leading-none font-thin tracking-widest uppercase;
+    @apply text-center text-[120px] leading-none font-thin tracking-widest uppercase;
 }
 
 .huge__subtitle {
