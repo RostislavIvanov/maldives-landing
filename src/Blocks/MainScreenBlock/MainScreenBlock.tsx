@@ -1,11 +1,11 @@
 import classes from "./MainScreenBlock.module.css";
-import VideoBackground from "../../components/VideoBackground/VideoBackground.tsx";
 import MainScreenContent from "../../components/MainScreenContent/MainScreenContent.tsx";
+import ImageBackground from "~/components/VideoBackground/ImageBackground.tsx";
 
 const MainScreenBlock = () => {
     return (
         <div className={classes.intro}>
-            <VideoBackground/>
+            <ImageBackground/>
             <MainScreenContent/>
         </div>
 

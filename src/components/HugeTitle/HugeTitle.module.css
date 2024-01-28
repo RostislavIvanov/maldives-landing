@@ -1,19 +1,26 @@
 .huge__title {
-    @apply text-center text-[120px] leading-none font-thin tracking-widest uppercase;
+    @apply
+    text-center leading-none font-thin tracking-widest uppercase
+    text-[12vw]
+    sm:text-[70px]
+    md:text-[100px]
+    lg:text-[120px];
 }
 
 .huge__subtitle {
-    @apply text-center text-subtitle font-extralight;
+    @apply text-center font-extralight
+    text-[3vw]
+    lg:text-subtitle;
 }
 
 .huge__stripe {
-    @apply text-center text-[80px] font-thin leading-tight;
+    @apply text-center font-thin leading-tight
+        text-[6vh]
+    sm:text-[60px]
+    md:text-[80px];
 }
 
 .huge__btn {
-    @apply flex justify-center mt-4;
+    @apply flex justify-center mt-4 font-light;
 }
 
-.huge__btn button {
-    @apply text-default py-4 px-8 border border-white rounded-default font-extralight;
-}
