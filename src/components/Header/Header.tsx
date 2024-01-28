@@ -1,12 +1,15 @@
-import logo from "../../assets/icons/logo-without-back.svg";
+import logo from "../../assets/icons/logo-white.svg";
 import classes from "./Header.module.css";
 import { FC } from "react";
+import BurgerMenu from "~/components/BurgerMenu/BurgerMenu.tsx";
 
 type HeaderProps = {
-    handleLinkClick: (e: React.MouseEvent<HTMLAnchorElement>, link: string) => void
+    handleLinkClick: (e: React.MouseEvent<HTMLElement>, link: string) => void
 }
 const Header: FC<HeaderProps> = ({ handleLinkClick }) => {
     return (
+        <>
+            <BurgerMenu handleLinkClick={handleLinkClick}/>
             <div className={classes.header}>
                 <nav className={classes.nav}>
                     <ul className={classes.nav__left}>
@@ -23,6 +26,7 @@ const Header: FC<HeaderProps> = ({ handleLinkClick }) => {
                     </ul>
                 </nav>
             </div>
+        </>
     );
 };
 

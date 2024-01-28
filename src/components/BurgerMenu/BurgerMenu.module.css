@@ -1,0 +1,63 @@
+.burger {
+    @apply
+    fixed top-2 right-2 text-5xl z-40 block bg-white w-[64px] h-[64px] rounded-default shadow-burger cursor-pointer
+    lg:hidden
+}
+
+.burger:after {
+    @apply content-[''] absolute top-[25px] left-[16px] w-8 h-[2px] bg-black
+}
+
+.burger span {
+    @apply content-[''] absolute top-[30px] left-[16px] w-8 h-[2px] bg-black
+}
+
+.burger:before {
+    @apply content-[''] absolute bottom-[27px] left-[16px] w-8 h-[2px] bg-black
+}
+
+.burger__menu {
+    @apply fixed h-screen w-60 z-50 right-0 bg-white translate-x-[100%];
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger__content {
+    @apply w-60 h-screen bg-white absolute right-0 translate-x-[100%];
+    transition: transform 0.3s ease-in-out;
+}
+
+.burger__logo {
+    @apply flex justify-between;
+}
+
+.burger__logo img {
+    @apply h-24 w-auto
+}
+
+.burger__logo div {
+    @apply h-[44px] w-[44px] relative mt-2 mr-2
+}
+
+.burger__logo div:before {
+    @apply content-[''] absolute bottom-[21px] left-[7px] w-8 h-[2px] bg-black -rotate-45
+}
+
+.burger__logo div:after {
+    @apply content-[''] absolute top-[21px] left-[7px] w-8 h-[2px] bg-black rotate-45
+}
+
+.burger__list {
+    @apply text-black p-6 text-subtitle;
+}
+
+.burger__list li {
+    @apply mb-2
+}
+
+.openMenu {
+    @apply translate-x-0;
+}
+
+.blur {
+    @apply bg-black opacity-30 fixed left-0 w-screen h-screen z-40;
+}
