@@ -1,5 +1,5 @@
 .content {
-  @apply bg-white text-black;
+  @apply bg-lightGrey text-black;
 }
 
 .wrapper {
