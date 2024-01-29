@@ -3,15 +3,20 @@
 }
 
 .features {
-    @apply flex w-full;
+    @apply
+    block w-full
+    md:flex;
 }
 
 .features__left {
-    @apply flex flex-col w-1/2 h-[900px];
+    @apply
+    flex flex-col h-[900px]
+    md:w-1/2;
 }
 
 .features__right {
-    @apply w-1/2;
+    @apply
+    md:w-1/2;
 }
 
 .features__picture {
@@ -24,7 +29,8 @@
 }
 
 .featuresCard__right {
-    @apply opacity-0 h-[900px] flex justify-center items-center;
+    @apply opacity-0 h-[450px] flex justify-center items-center
+    md:h-[900px];
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -37,14 +43,20 @@
 }
 
 .featuresCard {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center px-4;
 }
 
 .features__label {
-    @apply text-white text-[50px] text-center font-light leading-10;
+    @apply
+    text-white text-center font-light leading-10
+    text-[30px]
+    lg:text-[50px]
 }
 
 .features__subLabel {
     @apply mt-4 text-default font-light text-center max-w-[400px];
 }
 
+.features__icon {
+    @apply block w-8 h-8 mt-4 animate-bounce;
+}

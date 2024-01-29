@@ -1,0 +1,7 @@
+.back {
+    @apply h-screen
+}
+
+.back img {
+    @apply object-cover h-full w-full
+}

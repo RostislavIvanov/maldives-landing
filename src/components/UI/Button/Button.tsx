@@ -8,14 +8,12 @@ type ButtonProps = PropsWithChildren & {
 
 const Button: FC<ButtonProps> = ({ children, color = 'black', onClick }) => {
     return (
-        <div>
-            <button
-                className={`${color === 'black' ? classes.black : classes.white} ${classes.default}`}
-                onClick={onClick}
-            >
-                {children}
-            </button>
-        </div>
+        <button
+            className={`${color === 'black' ? classes.black : classes.white} ${classes.default}`}
+            onClick={onClick}
+        >
+            {children}
+        </button>
     );
 };
 

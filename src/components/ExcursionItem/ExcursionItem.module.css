@@ -1,5 +1,8 @@
 .excursion {
-    @apply rounded-default overflow-hidden w-[32%] mb-8 h-[700px] relative shadow-excursion;
+    @apply rounded-default overflow-hidden mb-8 h-[700px] relative shadow-excursion
+    md:w-[48%]
+    lg:w-[48%]
+    xl:w-[32%]
 }
 
 .excursion__dark {
@@ -15,7 +18,8 @@
 }
 
 .excursion__title {
-    @apply text-[40px] font-bold mr-8 ml-8;
+    @apply text-[30px] font-bold mr-8 ml-8
+    lg:text-[40px]
 }
 
 .excursion__content {

@@ -1,4 +1,5 @@
 import classes from "./HugeTitle.module.css";
+import Button from "~/components/UI/Button/Button.tsx";
 
 const HugeTitle = () => {
     return (
@@ -9,7 +10,7 @@ const HugeTitle = () => {
             <div className={classes.huge__stripe}>|</div>
 
             <div className={classes.huge__btn}>
-                <button>Подобрать тур</button>
+                <Button color={'white'}>Подобрать тур</Button>
             </div>
         </div>
     );

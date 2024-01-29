@@ -7,14 +7,16 @@ module.exports = {
                 'default': '18px',
                 'subtitle': '24px',
                 'label': '36px',
+                '2xl': '2vw',
                 '4xl': '100px',
-                '5xl': '120px',
+                '5xl': '5vw',
             },
             colors: {
-                'green': '#146B2F',
+                'lightGrey': '#f3f4f6',
             },
             boxShadow: {
-                'excursion': '11px 12px 24px -3px rgba(0,0,0,0.5);'
+                'excursion': '11px 12px 24px -3px rgba(0,0,0,0.5);',
+                'burger': '0px 4px 23px -3px rgba(0,0,0,0.1);',
             },
             borderRadius: {
                 'default': '50px',

@@ -1,9 +1,8 @@
 .default {
     @apply
-    border rounded-default
-    sm:text-[30px] sm:px-12 sm:py-8
-    md:text-[30px] md:px-12 md:py-8
-    lg:text-default lg:px-8 lg:py-4;
+    border rounded-default px-6 py-4 text-[20px]
+    md:text-[24px]
+    lg:text-default lg:px-8;
 }
 
 .black {

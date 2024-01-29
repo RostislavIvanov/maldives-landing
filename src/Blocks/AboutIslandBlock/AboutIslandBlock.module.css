@@ -1,15 +1,17 @@
 .content {
-  @apply bg-white text-black;
+  @apply bg-lightGrey text-black;
 }
 
 .wrapper {
-  @apply container mx-auto py-8
-  md:px-2
+  @apply
+  container mx-auto py-8 px-2
   lg:px-8;
 }
+
 .titleWrapper {
   @apply mb-8;
 }
+
 .aboutIslandBlock__list > div:not(:first-child) {
   @apply mt-20;
 }

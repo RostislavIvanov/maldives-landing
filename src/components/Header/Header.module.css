@@ -7,11 +7,13 @@
 }
 
 .nav ul {
-    @apply flex w-2/5;
+    @apply
+    w-2/5 hidden
+    lg:flex;
 }
 
 .nav__left {
-    @apply flex-row-reverse;
+    @apply justify-end items-center;
 }
 
 .header a {
@@ -19,15 +21,21 @@
 }
 
 .nav__left li {
-    @apply mr-8;
+    @apply mr-8 last:mr-0
+    hidden
+    lg:block;
 }
 
 .nav__right li {
-    @apply ml-8;
+    @apply ml-8 first:ml-0
+    hidden
+    lg:block;
 }
 
 .nav__logo img {
-    @apply w-40 h-auto;
+    @apply
+    h-20 w-auto
+    xl:h-24 xl:w-auto;
 }
 
 
