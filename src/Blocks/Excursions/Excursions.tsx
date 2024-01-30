@@ -51,7 +51,7 @@ const Excursions = () => {
                     </BlockTitle>
                 </div>
 
-                <div className={'flex justify-between flex-wrap items-end text-white'}>
+                <div className={classes.items}>
                     <ExcursionItem
                         title={'3 точки для плавания с маской'}
                         description={'Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!'}

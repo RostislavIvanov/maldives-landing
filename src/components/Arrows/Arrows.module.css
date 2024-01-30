@@ -1,5 +1,6 @@
 .arrows {
-    @apply flex justify-between w-full absolute top-[47.5%] -translate-y-1/2
+    @apply flex justify-between w-[110%] absolute -left-[5%] top-1/2 -translate-y-1/2
+    sm:w-full sm:left-0
 }
 
 .arrow {
