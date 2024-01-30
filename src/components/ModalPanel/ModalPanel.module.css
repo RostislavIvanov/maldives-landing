@@ -1,7 +1,7 @@
 .modal {
     @apply fixed inset-x-1/2 inset-y-1/2 -translate-x-1/2 -translate-y-1/2
     bg-white z-50 rounded-default
-    p-10 w-[50vw] h-[80vh] opacity-100 flex;
+    p-10 pl-2.5 w-[50vw] h-[80vh] opacity-100 flex;
 }
 
 .modal__back {

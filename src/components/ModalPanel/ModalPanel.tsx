@@ -6,14 +6,16 @@ import Button from "~/components/UI/Button/Button.tsx";
 type ModalPanelProps = {
     closeModal: VoidFunction;
     images: string[];
+    autoplay: boolean;
+    autoplayTime: number;
     text?: string;
 }
 
-const ModalPanel: FC<ModalPanelProps> = ({ images, text, closeModal }) => {
+const ModalPanel: FC<ModalPanelProps> = ({ images, closeModal, autoplay, autoplayTime, text }) => {
     return (
         <>
             <div className={classes.modal}>
-                <Slider autoPlay={true} autoPlayTime={4000} images={images}/>
+                <Slider autoPlay={autoplay} autoPlayTime={autoplayTime} images={images}/>
                 <div className={classes.modal__text}>
                     <p>{text}</p>
                     <Button onClick={closeModal}>Закрыть</Button>

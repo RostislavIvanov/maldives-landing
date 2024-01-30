@@ -117,6 +117,8 @@ const Excursions = () => {
                     images={currentExcursion.images}
                     text={currentExcursion.text}
                     closeModal={closeModal}
+                    autoplay={true}
+                    autoplayTime={4000}
                 />
             </div>
         </div>

@@ -1,5 +1,5 @@
 .slidesWindow {
-    @apply h-[95%] w-4/5 mx-auto mt-0 mb-1 overflow-hidden rounded-default
+    @apply h-full w-4/5 mx-auto mt-0 mb-1 overflow-hidden rounded-default
 }
 
 .slidesList {
