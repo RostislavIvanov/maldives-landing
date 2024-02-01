@@ -45,7 +45,7 @@ const Excursions = () => {
             body.className = isModalOpened ? classes.body : ''
         }
 
-    }, [body,isModalOpened]);
+    }, [ body, isModalOpened ]);
 
 
     return (
@@ -121,7 +121,7 @@ const Excursions = () => {
                     />
                 </div>
             </div>
-            <div className={isModalOpened ? classes.modalShow : classes.modalHide}>
+            {isModalOpened && (
                 <ModalPanel
                     images={currentExcursion.images}
                     text={currentExcursion.text}
@@ -129,7 +129,7 @@ const Excursions = () => {
                     autoplay={true}
                     autoplayTime={4000}
                 />
-            </div>
+            )}
         </div>
     );
 };
