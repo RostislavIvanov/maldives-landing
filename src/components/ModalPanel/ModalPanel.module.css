@@ -1,0 +1,17 @@
+.modal {
+    @apply fixed inset-x-1/2 inset-y-1/2 -translate-x-1/2 -translate-y-1/2
+    bg-white z-50 rounded-default
+    p-8 w-[90vw] h-max max-h-[90vh] opacity-100 flex flex-col overflow-scroll
+    sm:h-[80vh] sm:pl-2.5 sm:flex-row sm:p-10
+    lg:w-[70vw]
+    xl:w-[60vw]
+}
+
+.modal__back {
+    @apply fixed inset-0 bg-black/30 h-screen w-screen z-40
+}
+
+.modal__text {
+    @apply w-full flex justify-between flex-col text-left gap-3
+    sm:w-1/2 sm:text-left
+}

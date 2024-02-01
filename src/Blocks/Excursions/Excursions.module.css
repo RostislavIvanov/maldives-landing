@@ -10,3 +10,15 @@
 .titleWrapper {
     @apply mb-8;
 }
+
+.items {
+    @apply flex justify-between flex-wrap items-end text-white;
+}
+
+.modalHide {
+    @apply opacity-0 transition-opacity duration-300;
+}
+
+.modalShow {
+    @apply fixed inset-0 z-40 opacity-100 transition-opacity duration-300;
+}

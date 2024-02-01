@@ -1,12 +1,12 @@
 import classes from './BlockTitle.module.css'
 import { FC, PropsWithChildren } from "react";
 
-interface IBlockTitle extends PropsWithChildren {
+type BlockTitleProps = PropsWithChildren & {
     label?: string;
     id?: string;
 }
 
-const BlockTitle: FC<IBlockTitle> = ({ children, label, id = '' }) => {
+const BlockTitle: FC<BlockTitleProps> = ({ children, label, id }) => {
     return (
         <>
             <h2 id={id} className={classes.title}>

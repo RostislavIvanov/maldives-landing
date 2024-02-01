@@ -1,0 +1,7 @@
+.slide {
+    @apply flex-[1_0_100%] relative
+}
+
+.slide__image {
+    @apply mx-auto my-0 object-cover w-full h-full
+}

@@ -1,0 +1,7 @@
+.dot {
+    @apply w-[9px] h-[9px] bg-slate-300 rounded-full cursor-pointer transition-colors duration-300
+}
+
+.selected {
+    @apply bg-slate-500
+}

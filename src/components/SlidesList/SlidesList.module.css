@@ -1,0 +1,8 @@
+.slidesWindow {
+    @apply h-full w-[90%] mx-auto mt-0 mb-1 overflow-hidden rounded-default
+    sm:w-4/5
+}
+
+.slidesList {
+    @apply flex h-full w-full transition-transform duration-500
+}
