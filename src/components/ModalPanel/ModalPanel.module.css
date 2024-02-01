@@ -2,7 +2,7 @@
     @apply fixed inset-x-1/2 inset-y-1/2 -translate-x-1/2 -translate-y-1/2
     bg-white z-50 rounded-default
     p-8 w-[90vw] h-max max-h-[90vh] opacity-100 flex flex-col overflow-scroll
-    sm:h-[80vh] sm:pl-2.5 sm:flex-row sm:p-10
+    sm:h-[80vh] sm:pl-2.5 sm:flex-row sm:p-10 sm:overflow-auto
     lg:w-[70vw]
     xl:w-[60vw]
 }

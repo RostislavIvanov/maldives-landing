@@ -11,7 +11,7 @@ import shark from '../../assets/images/sharks.jpg'
 import points from '../../assets/images/points.jpg'
 import island from '../../assets/images/island.jpg'
 import dinner from '../../assets/images/dinner.jpg'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type CurrentExcursion = {
     images: string[];
@@ -38,6 +38,15 @@ const Excursions = () => {
         })
         setIsModalOpened(true)
     }
+
+    const body = document.querySelector('body')
+    useEffect(() => {
+        if (body) {
+            body.className = isModalOpened ? classes.body : ''
+        }
+
+    }, [body,isModalOpened]);
+
 
     return (
         <div className={classes.content}>
