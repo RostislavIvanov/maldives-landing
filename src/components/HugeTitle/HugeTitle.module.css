@@ -1,6 +1,6 @@
 .huge__title {
     @apply
-    text-center leading-none font-thin tracking-widest uppercase
+    text-center leading-none font-thin tracking-widest uppercase px-1
     text-[12vw]
     sm:text-[70px]
     md:text-[100px]

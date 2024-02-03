@@ -48,7 +48,7 @@
 
 .features__label {
     @apply
-    text-white text-center font-light leading-10
+    text-white text-center font-light leading-10 break-words
     text-[30px]
     lg:text-[50px]
 }
