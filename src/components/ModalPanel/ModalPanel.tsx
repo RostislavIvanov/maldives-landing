@@ -1,5 +1,5 @@
 import classes from './ModalPanel.module.css'
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Slider from "~/components/Slider/Slider.tsx";
 import Button from "~/components/UI/Button/Button.tsx";
 
@@ -12,6 +12,17 @@ type ModalPanelProps = {
 }
 
 const ModalPanel: FC<ModalPanelProps> = ({ images, closeModal, autoplay, autoplayTime, text }) => {
+    useEffect(() => {
+        const handleEscape = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        };
+        document.addEventListener('keydown', handleEscape);
+        return () => {
+            document.removeEventListener('keydown', handleEscape);
+        };
+    }, [ closeModal ]);
     return (
         <>
             <div className={classes.modal}>
