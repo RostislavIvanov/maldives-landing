@@ -54,6 +54,14 @@
     @apply mb-2
 }
 
+.burger__icons {
+    @apply p-6 flex flex-wrap;
+}
+
+.burger__icons img {
+    @apply w-[30px] h-[30px] mr-[2px];
+}
+
 .openMenu {
     @apply translate-x-0;
 }
