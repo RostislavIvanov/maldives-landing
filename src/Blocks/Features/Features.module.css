@@ -24,13 +24,14 @@
 }
 
 .featuresCard__left {
-    @apply opacity-0 h-[450px] flex justify-center items-center;
+    @apply opacity-100 bg-black bg-opacity-50 h-[450px] flex justify-center items-center
+    md:opacity-0 md:bg-transparent;
     transition: opacity 0.3s ease-in-out;
 }
 
 .featuresCard__right {
-    @apply opacity-0 h-[450px] flex justify-center items-center
-    md:h-[900px];
+    @apply opacity-100 bg-black bg-opacity-50 h-[450px] flex justify-center items-center
+    md:h-[900px] md:opacity-0 md:bg-transparent;
     transition: opacity 0.3s ease-in-out;
 }
 
