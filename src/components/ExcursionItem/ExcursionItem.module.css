@@ -6,7 +6,7 @@
 }
 
 .excursion__dark {
-    @apply bg-black absolute inset-0 opacity-30 z-0;
+    @apply bg-black absolute inset-0 opacity-20;
 }
 
 .excursion__back {
@@ -14,11 +14,11 @@
 }
 
 .excursion__info {
-    @apply z-10 text-right;
+    @apply text-right;
 }
 
 .excursion__title {
-    @apply text-[30px] font-bold mr-8 ml-8
+    @apply text-[30px] font-bold mr-8 ml-8 relative
     lg:text-[40px]
 }
 
