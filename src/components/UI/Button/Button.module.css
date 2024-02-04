@@ -10,7 +10,19 @@
     border-black text-black;
 }
 
+.black:hover {
+    @apply
+    bg-black text-white;
+    transition: all 0.3s ease-in-out;
+}
+
 .white {
     @apply
     border-white text-white;
+}
+
+.white:hover {
+    @apply
+    bg-white text-black;
+    transition: all 0.3s ease-in-out;
 }
