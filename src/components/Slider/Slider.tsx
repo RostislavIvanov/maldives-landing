@@ -1,9 +1,10 @@
-import { createContext, FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import * as React from "react";
 import Arrows from "~/components/Arrows/Arrows.tsx";
 import Dots from "~/components/Dots/Dots.tsx";
 import classes from "./Slider.module.css";
 import SlidesList from "~/components/SlidesList/SlidesList.tsx";
+import SliderContext from "~/utils/SliderContext/SliderContext.ts";
 
 type SliderProps = {
     autoPlay: boolean;
@@ -13,30 +14,12 @@ type SliderProps = {
 
 type TouchPosition = number | null
 
-type SliderContextType = {
-    goToSlide: (number: number) => void;
-    changeSlide: (direction?: number) => void;
-    slidesCount: number;
-    slideNumber: number;
-    images: string[];
-}
-
-export const SliderContext = createContext<SliderContextType>({
-    goToSlide: () => {
-    },
-    changeSlide: () => {
-    },
-    slidesCount: 0,
-    slideNumber: 0,
-    images: [],
-});
-
 const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
     const [ slide, setSlide ] = useState(0);
     const [ touchPosition, setTouchPosition ] = useState<TouchPosition>(null)
 
     const changeSlide = (direction = 1) => {
-        let slideNumber = 0;
+        let slideNumber;
 
         if (slide + direction < 0) {
             slideNumber = images.length - 1;
