@@ -8,6 +8,7 @@
 .black {
     @apply
     border-black text-black;
+    transition: all 0.3s ease-in-out;
 }
 
 .black:hover {
@@ -19,6 +20,7 @@
 .white {
     @apply
     border-white text-white;
+    transition: all 0.3s ease-in-out;
 }
 
 .white:hover {
