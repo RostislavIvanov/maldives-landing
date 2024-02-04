@@ -6,6 +6,7 @@ import heal from '../../assets/images/healing.jpg'
 import resortDay from '../../assets/images/resort-day.jpg'
 import romantic from '../../assets/images/romantic.jpeg'
 import culture from '../../assets/images/culture.jpg'
+import culture1 from '../../assets/images/culture-1.jpg'
 import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
 import { FC, useEffect, useState } from "react";
 import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
@@ -116,7 +117,7 @@ const Features:FC = () => {
                                   subLabel={'Насладитесь национальными танцами, песнями, и мастер-классами на нашем острове'}
                                   imageUrl={culture} side={"left"}
                                   openModal={openModal}
-                                  modalImages={[ culture ]}
+                                  modalImages={[ culture, culture1 ]}
                                   modalText={'Мы сможем скрасить ваше пребывание на нашем острове национальными танцами, ' +
                                       'песнями, организовать мастер-классы по изготовлению мальдивского сувенира, а так ' +
                                       'же фотосессию в национальных костюмах.'}

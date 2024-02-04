@@ -16,6 +16,10 @@ import snorkeling3 from '../../assets/images/snorkeling-3.jpg'
 import snorkeling4 from '../../assets/images/snorkeling-4.jpg'
 import dolphin from '../../assets/images/dolphine-tour.jpg'
 import ship from '../../assets/images/Ship.jpg'
+import ship1 from '../../assets/images/ship-1.jpg'
+import ship2 from '../../assets/images/ship-2.jpg'
+import ship3 from '../../assets/images/ship-3.jpg'
+import ship4 from '../../assets/images/ship-4.jpg'
 import whaleShark from '../../assets/images/whale-shark.jpg'
 import shark from '../../assets/images/sharks.jpg'
 import shark1 from '../../assets/images/shark-1.jpg'
@@ -130,7 +134,7 @@ const Excursions = () => {
                             ' маской для снорклинга, и с аквалангом. Впечатления гарантированы!'}
                         imageUrl={ship}
                         openModal={openModal}
-                        modalImages={[ ship ]}
+                        modalImages={[ ship, ship1, ship2, ship3, ship4 ]}
                         modalText={'Хотите стать настоящим исследователем или почувствовать себя пиратом? Может быть, ' +
                             'найти сокровище? Приглашаем  погрузиться к затонувшему кораблю! Это возможно сделать и с ' +
                             'обычной маской для снорклинга  и с аквалангом. Впечатления  гарантированы!'}
