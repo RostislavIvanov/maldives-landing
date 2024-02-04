@@ -1,5 +1,5 @@
 .titleWrapper {
-    @apply text-black mb-8;
+    @apply bg-lightGrey text-black pb-8;
 }
 
 .features {
