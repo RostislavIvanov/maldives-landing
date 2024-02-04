@@ -4,7 +4,7 @@ import { FC, useState } from "react";
 // import telegram from '../../assets/icons/Telegram.svg'
 import whatsApp from '../../assets/icons/WhatsApp.svg'
 import viber from '../../assets/icons/Viber.svg'
-// import inst from '../../assets/icons/Instagram.svg'
+import inst from '../../assets/icons/Instagram.svg'
 // import facebook from '../../assets/icons/Facebook.svg'
 // import mail from '../../assets/icons/Mail.ru.svg'
 
@@ -49,9 +49,9 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ handleLinkClick }) => {
                     <a target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B9609994740">
                         <img src={viber} alt="viber"/>
                     </a>
-                    {/*<a target="_blank" rel="noopener noreferrer" href="">*/}
-                    {/*    <img src={inst} alt="inst"/>*/}
-                    {/*</a>*/}
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/rosyvilla_maldives/">
+                        <img src={inst} alt="inst"/>
+                    </a>
                     {/*<a target="_blank" rel="noopener noreferrer" href="">*/}
                     {/*    <img src={facebook} alt="facebook"/>*/}
                     {/*</a>*/}
