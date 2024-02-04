@@ -16,6 +16,7 @@ module.exports = {
             },
             boxShadow: {
                 'excursion': '11px 12px 24px -3px rgba(0,0,0,0.5);',
+                'excursion-dark': '5px 6px 12px -1px rgba(0,0,0,0.6);',
                 'burger': '0px 4px 23px -3px rgba(0,0,0,0.1);',
             },
             borderRadius: {

@@ -2,7 +2,13 @@
     @apply rounded-default overflow-hidden mb-8 h-[700px] relative shadow-excursion
     md:w-[48%]
     lg:w-[48%]
-    xl:w-[32%]
+    xl:w-[32%];
+    transition: all 0.3s ease-in-out;
+}
+
+.excursion:hover {
+    @apply scale-95 shadow-excursion-dark;
+    transition: all 0.3s ease-in-out;
 }
 
 .excursion__dark {
