@@ -7,9 +7,42 @@ import resortDay from '../../assets/images/resort-day.jpg'
 import romantic from '../../assets/images/romantic.jpeg'
 import culture from '../../assets/images/culture.jpg'
 import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
+import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
+
+type CurrentFeature = {
+    images: string[];
+    text?: string;
+}
 
 const Features:FC = () => {
+    const [ isModalOpened, setIsModalOpened ] = useState(false)
+    const [ currentFeature, setCurrentFeature ] = useState<CurrentFeature>({
+        images: [],
+        text: ''
+    })
+    const closeModal = () => {
+        setIsModalOpened(false);
+        setCurrentFeature({
+            images: [],
+            text: ''
+        })
+    }
+    const openModal = (images: string[], text?: string) => {
+        setCurrentFeature({
+            images: images,
+            text: text
+        })
+        setIsModalOpened(true)
+    }
+
+    const body = document.querySelector('body')
+    useEffect(() => {
+        if (body) {
+            body.className = isModalOpened ? classes.body : ''
+        }
+
+    }, [ body, isModalOpened ]);
     return (
         <>
             <div className={classes.titleWrapper}>
@@ -20,10 +53,25 @@ const Features:FC = () => {
                     <FeaturesItem label={'Свадьбы'}
                                   subLabel={'Организуем красивую свадебную церемонию на любой вкус и бюджет'}
                                   imageUrl={wedding} side={"left"}
+                                  openModal={openModal}
+                                  modalImages={[ wedding ]}
+                                  modalText={'Организуем красивую свадебную церемонию с фотосессией. На любой вкус и кошелек. ' +
+                                      'Ее можно сделать как на нашем локальном острове на пляже, так и на острове - резорте ' +
+                                      'и даже на необитаемом острове. Белый свадебный наряд и белая фата особенно красиво ' +
+                                      'смотрится на белом песке, на фоне бирюзового моря и такой красивый ритуал оставит ' +
+                                      'самые яркие воспоминания и фотографии счастливых моментов. Юридической силы эта ' +
+                                      'церемония не имеет, но послужит красивым началом счастливой семейной жизни!'}
                     />
                     <FeaturesItem label={'Лечение'}
                                   subLabel={'Совместите приятное с полезным. Предлагаем вам массаж и аюрведические процедуры'}
                                   imageUrl={heal} side={"left"}
+                                  openModal={openModal}
+                                  modalImages={[ heal ]}
+                                  modalText={'Предлагаем совместить и приятное и полезное. Вы можете заказать аюрведическую ' +
+                                      'программу лечения, курс массажа или косметологические уходы. Многие гости Мальдив отмечают, ' +
+                                      'что избавились от неприятных недугов, таких как аллергия, кисты, остеохондроз и даже рак. ' +
+                                      'Климат, яркие цвета, состав воды, солнце оказывают благотворное влияние на организм. ' +
+                                      'Мы предлагаем усилить это полезное влияние дополнительными оздоровительными процедурами.'}
                     />
                 </div>
                 <div className={classes.features__right}>
@@ -31,6 +79,12 @@ const Features:FC = () => {
                                   subLabel={'Арендуйте яхту с друзьями или семьей и отправьтесь в путешествие по своему ' +
                                       'уникальному маршруту'}
                                   imageUrl={cruise} side={"right"}
+                                  openModal={openModal}
+                                  modalImages={[ cruise ]}
+                                  modalText={'Вы можете арендовать яхту для вашей группы или компании и отправиться в круиз ' +
+                                      'по вашему маршруту либо по готовым вариантам. Питанием, командой, оборудованием ' +
+                                      'для снорклинга обеспечиваем. Каждый вечер можем организовать дискотеку с диджеем и баром, ' +
+                                      'танцы под луной посреди океана. И пусть вам позавидуют звезды!'}
                     />
                 </div>
             </div>
@@ -40,21 +94,44 @@ const Features:FC = () => {
                                   subLabel={'Мы отвезем вас в один из отелей-резортов, где вы сможете насладиться ' +
                                       'беззаботным отдыхом в райском месте'}
                                   imageUrl={resortDay} side={"right"}
+                                  openModal={openModal}
+                                  modalImages={[ resortDay ]}
+                                  modalText={'Мы сотрудничаем с несколькими отелями - резортами. Вы сможете насладиться ' +
+                                      'беззаботным отдыхом, находясь целый день в райском месте,  острове - отеле. Мы отвезем ' +
+                                      'на своем катере вас в отель утром и заберем вечером. В стоимость входит обед с ' +
+                                      'напитками во время обеда, включая алкоголь.'}
                     />
                 </div>
                 <div className={classes.features__left}>
                     <FeaturesItem label={'Романтический ужин'}
                                   subLabel={'Мы поможем красиво отметить любое ваше событие'}
                                   imageUrl={romantic} side={"left"}
+                                  openModal={openModal}
+                                  modalImages={[ romantic ]}
+                                  modalText={'Мы поможем красиво отметить любое ваше событие - предложение руки и сердца, ' +
+                                      'юбилей, день рождения или другой праздник. Организуем красивый романтический ужин ' +
+                                      'на пляже на закате.'}
                     />
                     <FeaturesItem label={'Культура Мальдив'}
-                                  subLabel={'Мы сможем скрасить ваше пребывание на нашем острове национальными танцами, ' +
+                                  subLabel={'Насладитесь национальными танцами, песнями, и мастер-классами на нашем острове'}
+                                  imageUrl={culture} side={"left"}
+                                  openModal={openModal}
+                                  modalImages={[ culture ]}
+                                  modalText={'Мы сможем скрасить ваше пребывание на нашем острове национальными танцами, ' +
                                       'песнями, организовать мастер-классы по изготовлению мальдивского сувенира, а так ' +
                                       'же фотосессию в национальных костюмах.'}
-                                  imageUrl={culture} side={"left"}
                     />
                 </div>
             </div>
+            {isModalOpened && (
+                <ModalPanel
+                    images={currentFeature.images}
+                    text={currentFeature.text}
+                    closeModal={closeModal}
+                    autoplay={true}
+                    autoplayTime={4000}
+                />
+            )}
         </>
     );
 };

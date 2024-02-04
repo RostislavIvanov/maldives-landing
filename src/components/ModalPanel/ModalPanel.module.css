@@ -12,6 +12,6 @@
 }
 
 .modal__text {
-    @apply w-full flex justify-between flex-col text-left gap-3
+    @apply w-full flex justify-between flex-col text-left gap-3 text-black
     sm:w-1/2 sm:text-left
 }
