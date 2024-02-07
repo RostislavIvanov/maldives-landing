@@ -14,7 +14,3 @@
 .items {
     @apply flex justify-between flex-wrap items-end text-white;
 }
-
-.body {
-    @apply overflow-hidden;
-}
