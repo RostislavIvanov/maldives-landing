@@ -28,35 +28,19 @@ import shark4 from '~/assets/images/shark-4.jpg'
 import points from '~/assets/images/points.jpg'
 import island from '~/assets/images/island.jpg'
 import dinner from '~/assets/images/dinner.jpg'
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
 import { ModalPanel } from "~/components/ModalPanel";
+import { useModal } from "~/hooks/useModal/useModal.ts";
 
-type CurrentExcursion = {
-    images: string[];
-    text?: string;
-}
 
 const Excursions = () => {
-    const [ isModalOpened, setIsModalOpened ] = useState(false)
-    const [ currentExcursion, setCurrentExcursion ] = useState<CurrentExcursion>({
-        images: [],
-        text: ''
-    })
-    const closeModal = () => {
-        setIsModalOpened(false);
-        setCurrentExcursion({
-            images: [],
-            text: ''
-        })
-    }
-    const openModal = (images: string[], text?: string) => {
-        setCurrentExcursion({
-            images: images,
-            text: text
-        })
-        setIsModalOpened(true)
-    }
+    const [
+        isModalOpened,
+        currentExcursion,
+        closeModal,
+        openModal
+    ] = useModal()
 
     useScrollLock(isModalOpened)
 

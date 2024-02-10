@@ -8,35 +8,18 @@ import romantic from '~/assets/images/romantic.jpeg'
 import culture from '~/assets/images/culture.jpg'
 import culture1 from '~/assets/images/culture-1.jpg'
 import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
-import { FC, Suspense, useState } from "react";
+import { FC, Suspense } from "react";
 import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
 import { ModalPanel } from "~/components/ModalPanel";
-
-type CurrentFeature = {
-    images: string[];
-    text?: string;
-}
+import { useModal } from "~/hooks/useModal/useModal.ts";
 
 const Features: FC = () => {
-    const [ isModalOpened, setIsModalOpened ] = useState(false)
-    const [ currentFeature, setCurrentFeature ] = useState<CurrentFeature>({
-        images: [],
-        text: ''
-    })
-    const closeModal = () => {
-        setIsModalOpened(false);
-        setCurrentFeature({
-            images: [],
-            text: ''
-        })
-    }
-    const openModal = (images: string[], text?: string) => {
-        setCurrentFeature({
-            images: images,
-            text: text
-        })
-        setIsModalOpened(true)
-    }
+    const [
+        isModalOpened,
+        currentFeature,
+        closeModal,
+        openModal
+    ] = useModal()
 
     useScrollLock(isModalOpened)
 
