@@ -1,12 +1,12 @@
 import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
 import classes from './Features.module.css'
 import wedding from '~/assets/images/wedding.jpg'
-import cruise from '../../assets/images/cruise.jpg'
-import heal from '../../assets/images/healing.jpg'
-import resortDay from '../../assets/images/resort-day.jpg'
-import romantic from '../../assets/images/romantic.jpeg'
-import culture from '../../assets/images/culture.jpg'
-import culture1 from '../../assets/images/culture-1.jpg'
+import cruise from '~/assets/images/cruise.jpg'
+import heal from '~/assets/images/healing.jpg'
+import resortDay from '~/assets/images/resort-day.jpg'
+import romantic from '~/assets/images/romantic.jpeg'
+import culture from '~/assets/images/culture.jpg'
+import culture1 from '~/assets/images/culture-1.jpg'
 import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
 import { FC, Suspense, useState } from "react";
 import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";

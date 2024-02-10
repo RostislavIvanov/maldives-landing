@@ -1,4 +1,4 @@
-import logo from "../../assets/icons/logo-white.svg";
+import logo from "~/assets/icons/logo-white.svg";
 import classes from "./Header.module.css";
 import { FC } from "react";
 import BurgerMenu from "~/components/BurgerMenu/BurgerMenu.tsx";

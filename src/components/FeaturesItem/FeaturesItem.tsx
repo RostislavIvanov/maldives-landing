@@ -1,6 +1,6 @@
 import { FC } from "react";
 import classes from "~/Blocks/Features/Features.module.css";
-import tap from '../../assets/icons/Tap.svg'
+import tap from '~/assets/icons/Tap.svg'
 
 type FeaturesItemProps = {
     label: string;

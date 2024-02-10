@@ -1,9 +1,9 @@
-import Telegram from "../../assets/icons/Telegram.svg";
-import Whatsapp from "../../assets/icons/WhatsApp.svg";
-import Viber from "../../assets/icons/Viber.svg";
-import Facebook from "../../assets/icons/Facebook.svg";
-import Instagram from "../../assets/icons/Instagram.svg";
-import Mail from "../../assets/icons/Mail.ru.svg";
+import Telegram from "~/assets/icons/Telegram.svg";
+import Whatsapp from "~/assets/icons/WhatsApp.svg";
+import Viber from "~/assets/icons/Viber.svg";
+import Facebook from "~/assets/icons/Facebook.svg";
+import Instagram from "~/assets/icons/Instagram.svg";
+import Mail from "~/assets/icons/Mail.ru.svg";
 import classes from "./Icons.module.css";
 
 const Icons = () => {

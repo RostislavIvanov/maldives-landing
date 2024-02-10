@@ -1,12 +1,12 @@
 import classes from './BurgerMenu.module.css'
-import logo from '../../assets/icons/logo-black.svg'
+import logo from '~/assets/icons/logo-black.svg'
 import { FC, useState } from "react";
-// import telegram from '../../assets/icons/Telegram.svg'
-import whatsApp from '../../assets/icons/WhatsApp.svg'
-import viber from '../../assets/icons/Viber.svg'
-import inst from '../../assets/icons/Instagram.svg'
-// import facebook from '../../assets/icons/Facebook.svg'
-// import mail from '../../assets/icons/Mail.ru.svg'
+// import telegram from '~/assets/icons/Telegram.svg'
+import whatsApp from '~/assets/icons/WhatsApp.svg'
+import viber from '~/assets/icons/Viber.svg'
+import inst from '~/assets/icons/Instagram.svg'
+// import facebook from '~/assets/icons/Facebook.svg'
+// import mail from '~/assets/icons/Mail.ru.svg'
 
 type BurgerMenuProps = {
     handleLinkClick: (e: React.MouseEvent<HTMLElement>, link: string) => void

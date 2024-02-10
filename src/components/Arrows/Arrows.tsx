@@ -1,5 +1,5 @@
 import { FC, useContext } from "react";
-import blackArrow from "../../assets/icons/black-arrow.svg";
+import blackArrow from "~/assets/icons/black-arrow.svg";
 import classes from "./Arrows.module.css";
 import SliderContext from "~/utils/SliderContext/SliderContext.ts";
 

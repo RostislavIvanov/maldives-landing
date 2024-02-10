@@ -1,5 +1,5 @@
 import classes from "./MainScreenContent.module.css";
-import Arrow from "../../assets/icons/Arrow.svg";
+import Arrow from "~/assets/icons/Arrow.svg";
 import Header from "../Header/Header.tsx";
 import HugeTitle from "../HugeTitle/HugeTitle.tsx";
 
