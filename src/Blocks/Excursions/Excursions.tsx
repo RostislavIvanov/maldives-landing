@@ -1,7 +1,6 @@
 import classes from './Excursions.module.css'
 import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
 import ExcursionItem from "~/components/ExcursionItem/ExcursionItem.tsx";
-import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
 import fishing from '../../assets/images/fishing.jpg'
 import fishing1 from '../../assets/images/fishing-1.jpg'
 import fishing2 from '../../assets/images/fishing-2.jpg'
@@ -29,7 +28,9 @@ import shark4 from '../../assets/images/shark-4.jpg'
 import points from '../../assets/images/points.jpg'
 import island from '../../assets/images/island.jpg'
 import dinner from '../../assets/images/dinner.jpg'
-import { useEffect, useState } from "react";
+import { Suspense, useState } from "react";
+import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
+import { ModalPanel } from "~/components/ModalPanel";
 
 type CurrentExcursion = {
     images: string[];
@@ -57,13 +58,7 @@ const Excursions = () => {
         setIsModalOpened(true)
     }
 
-    const body = document.querySelector('body')
-    useEffect(() => {
-        if (body) {
-            body.className = isModalOpened ? classes.body : ''
-        }
-
-    }, [ body, isModalOpened ]);
+    useScrollLock(isModalOpened)
 
 
     return (
@@ -194,13 +189,15 @@ const Excursions = () => {
                 </div>
             </div>
             {isModalOpened && (
-                <ModalPanel
-                    images={currentExcursion.images}
-                    text={currentExcursion.text}
-                    closeModal={closeModal}
-                    autoplay={true}
-                    autoplayTime={4000}
-                />
+                <Suspense>
+                    <ModalPanel
+                        images={currentExcursion.images}
+                        text={currentExcursion.text}
+                        closeModal={closeModal}
+                        autoplay={true}
+                        autoplayTime={4000}
+                    />
+                </Suspense>
             )}
         </div>
     );

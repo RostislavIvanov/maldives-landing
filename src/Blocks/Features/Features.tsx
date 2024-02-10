@@ -1,6 +1,6 @@
 import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
 import classes from './Features.module.css'
-import wedding from '../../assets/images/wedding.jpg'
+import wedding from '~/assets/images/wedding.jpg'
 import cruise from '../../assets/images/cruise.jpg'
 import heal from '../../assets/images/healing.jpg'
 import resortDay from '../../assets/images/resort-day.jpg'
@@ -8,15 +8,16 @@ import romantic from '../../assets/images/romantic.jpeg'
 import culture from '../../assets/images/culture.jpg'
 import culture1 from '../../assets/images/culture-1.jpg'
 import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
-import { FC, useEffect, useState } from "react";
-import ModalPanel from "~/components/ModalPanel/ModalPanel.tsx";
+import { FC, Suspense, useState } from "react";
+import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
+import { ModalPanel } from "~/components/ModalPanel";
 
 type CurrentFeature = {
     images: string[];
     text?: string;
 }
 
-const Features:FC = () => {
+const Features: FC = () => {
     const [ isModalOpened, setIsModalOpened ] = useState(false)
     const [ currentFeature, setCurrentFeature ] = useState<CurrentFeature>({
         images: [],
@@ -37,13 +38,8 @@ const Features:FC = () => {
         setIsModalOpened(true)
     }
 
-    const body = document.querySelector('body')
-    useEffect(() => {
-        if (body) {
-            body.className = isModalOpened ? classes.body : ''
-        }
+    useScrollLock(isModalOpened)
 
-    }, [ body, isModalOpened ]);
     return (
         <>
             <div className={classes.titleWrapper}>
@@ -125,13 +121,15 @@ const Features:FC = () => {
                 </div>
             </div>
             {isModalOpened && (
-                <ModalPanel
-                    images={currentFeature.images}
-                    text={currentFeature.text}
-                    closeModal={closeModal}
-                    autoplay={true}
-                    autoplayTime={4000}
-                />
+                <Suspense>
+                    <ModalPanel
+                        images={currentFeature.images}
+                        text={currentFeature.text}
+                        closeModal={closeModal}
+                        autoplay={true}
+                        autoplayTime={4000}
+                    />
+                </Suspense>
             )}
         </>
     );
