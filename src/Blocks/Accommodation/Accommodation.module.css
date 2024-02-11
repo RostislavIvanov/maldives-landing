@@ -1,0 +1,65 @@
+.content {
+    @apply bg-lightGrey text-black;
+}
+
+.wrapper {
+    @apply
+    container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.accommodation {
+    @apply flex max-h-[100vh] py-10
+}
+
+.accommodation__item {
+    @apply w-1/2
+}
+
+.accommodation__mainImageWrapper {
+    @apply h-full rounded-default overflow-hidden
+}
+
+.accommodation__mainImage {
+    @apply block object-cover w-full h-auto
+}
+
+.accommodation__info {
+    @apply flex flex-col justify-between h-full ml-8
+}
+
+.accommodation__text {
+
+}
+
+.accommodation__text p {
+    @apply mt-4
+}
+
+.accommodation__hotelName {
+    @apply text-5xl leading-none font-extralight
+}
+
+.accommodation__images {
+    @apply flex
+}
+
+.accommodation__imagesItemCon {
+    @apply w-1/2 mr-2 rounded-default overflow-hidden
+}
+
+.accommodation__imagesItem {
+    @apply w-full h-full object-cover
+}
+
+.accommodation__stars {
+    @apply flex mt-4
+}
+
+.accommodation__stars img {
+    @apply w-[60px] h-[60px]
+}
+
+.accommodation__btn {
+    @apply mt-4
+}
