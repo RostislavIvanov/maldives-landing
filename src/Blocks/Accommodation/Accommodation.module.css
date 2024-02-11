@@ -25,7 +25,7 @@
 }
 
 .accommodation__info {
-    @apply flex flex-col justify-between h-full ml-8
+    @apply flex flex-col justify-between h-full ml-4
 }
 
 .accommodation__text {
@@ -45,7 +45,7 @@
 }
 
 .accommodation__imagesItemCon {
-    @apply w-1/2 mr-2 rounded-default overflow-hidden
+    @apply w-1/2 mr-4 rounded-default overflow-hidden
 }
 
 .accommodation__imagesItem {
