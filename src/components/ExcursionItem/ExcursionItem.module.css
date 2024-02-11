@@ -1,5 +1,5 @@
 .excursion {
-    @apply rounded-default overflow-hidden mb-8 h-[700px] relative shadow-excursion
+    @apply rounded-default overflow-hidden mb-8 h-[700px] relative
     md:w-[48%]
     lg:w-[48%]
     xl:w-[32%];
@@ -7,7 +7,7 @@
 }
 
 .excursion:hover {
-    @apply scale-95 shadow-excursion-dark;
+    @apply scale-95;
     transition: all 0.3s ease-in-out;
 }
 
