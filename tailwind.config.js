@@ -20,7 +20,7 @@ module.exports = {
                 'burger': '0px 4px 23px -3px rgba(0,0,0,0.1);',
             },
             borderRadius: {
-                'default': '50px',
+                'default': '40px',
             },
             fontFamily: {
                 serif: ['Montserrat', 'sans-serif']
