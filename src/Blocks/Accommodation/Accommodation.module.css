@@ -45,15 +45,23 @@
 }
 
 .accommodation__imagesItemCon {
-    @apply w-1/2 mr-4 rounded-default overflow-hidden
+    @apply w-1/2 mr-4 rounded-default overflow-hidden relative
 }
 
 .accommodation__imagesItem {
     @apply w-full h-full object-cover
 }
 
+.accommodation__grade span{
+    @apply text-subtitle border border-black rounded-[50%] p-2 mr-4 w-[60px] h-[60px] flex items-center justify-center
+}
+
+.accommodation__grade {
+    @apply flex items-center
+}
+
 .accommodation__stars {
-    @apply flex mt-4
+    @apply flex my-4
 }
 
 .accommodation__stars img {
@@ -62,4 +70,17 @@
 
 .accommodation__btn {
     @apply mt-4
+}
+
+.accommodation__arrow {
+    @apply absolute bottom-3 right-3 z-50 w-8 h-8 bg-amber-300 rounded-[50%] p-1 cursor-pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.accommodation__arrow:hover {
+    @apply bg-white;
+    transition: all 0.3s ease-in-out;
+}
+.accommodation__arrow img {
+    @apply w-full h-full;
 }
