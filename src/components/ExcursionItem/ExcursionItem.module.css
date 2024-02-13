@@ -25,7 +25,6 @@
 
 .excursion__title {
     @apply text-[30px] font-bold mr-8 ml-8 relative
-    lg:text-[40px]
 }
 
 .excursion__content {
