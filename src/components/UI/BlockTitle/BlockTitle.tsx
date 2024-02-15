@@ -1,5 +1,5 @@
 import classes from './BlockTitle.module.css'
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from 'react';
 
 type BlockTitleProps = PropsWithChildren & {
     label?: string;

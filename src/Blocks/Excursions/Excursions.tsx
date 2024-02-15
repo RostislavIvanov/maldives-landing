@@ -1,6 +1,6 @@
 import classes from './Excursions.module.css'
-import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
-import ExcursionItem from "~/components/ExcursionItem/ExcursionItem.tsx";
+import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
+import ExcursionItem from '~/components/ExcursionItem/ExcursionItem.tsx';
 import fishing from '~/assets/images/fishing.jpg'
 import fishing1 from '~/assets/images/fishing-1.jpg'
 import fishing2 from '~/assets/images/fishing-2.jpg'
@@ -28,10 +28,10 @@ import shark4 from '~/assets/images/shark-4.jpg'
 import points from '~/assets/images/points.jpg'
 import island from '~/assets/images/island.jpg'
 import dinner from '~/assets/images/dinner.jpg'
-import { Suspense } from "react";
-import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
-import { ModalPanel } from "~/components/ModalPanel";
-import { useModal } from "~/hooks/useModal/useModal.ts";
+import { Suspense } from 'react';
+import { useScrollLock } from '~/hooks/useScrollLock/useScrollLock.ts';
+import { ModalPanel } from '~/components/ModalPanel';
+import { useModal } from '~/hooks/useModal/useModal.ts';
 
 
 const Excursions = () => {

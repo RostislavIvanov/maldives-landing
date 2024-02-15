@@ -1,6 +1,6 @@
-import { FC, useContext } from "react";
-import classes from "./Dot.module.css";
-import SliderContext from "~/utils/SliderContext/SliderContext.ts";
+import { FC, useContext } from 'react';
+import classes from './Dot.module.css';
+import SliderContext from '~/utils/SliderContext/SliderContext.ts';
 
 type DotProps = {
     number: number;

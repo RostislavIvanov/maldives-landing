@@ -1,5 +1,5 @@
-import classes from "./HugeTitle.module.css";
-import Button from "~/components/UI/Button/Button.tsx";
+import classes from './HugeTitle.module.css';
+import Button from '~/components/UI/Button/Button.tsx';
 
 const HugeTitle = () => {
     return (

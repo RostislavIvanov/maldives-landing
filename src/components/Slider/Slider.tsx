@@ -1,10 +1,10 @@
-import { FC, useEffect, useState } from "react";
-import * as React from "react";
-import Arrows from "~/components/Arrows/Arrows.tsx";
-import Dots from "~/components/Dots/Dots.tsx";
-import classes from "./Slider.module.css";
-import SlidesList from "~/components/SlidesList/SlidesList.tsx";
-import SliderContext from "~/utils/SliderContext/SliderContext.ts";
+import { FC, useEffect, useState } from 'react';
+import * as React from 'react';
+import Arrows from '~/components/Arrows/Arrows.tsx';
+import Dots from '~/components/Dots/Dots.tsx';
+import classes from './Slider.module.css';
+import SlidesList from '~/components/SlidesList/SlidesList.tsx';
+import SliderContext from '~/utils/SliderContext/SliderContext.ts';
 
 type SliderProps = {
     autoPlay: boolean;

@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 type SliderContextType = {
     goToSlide: (number: number) => void;

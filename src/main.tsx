@@ -3,21 +3,21 @@ import './index.css'
 import {
     createBrowserRouter,
     RouterProvider,
-} from "react-router-dom";
-import RosyVillaHotelPage from "~/pages/RosyVillaHotelPage/RosyVillaHotelPage.tsx";
-import MainLandingPage from "~/pages/MainLandingPage/MainLandingPage.tsx";
+} from 'react-router-dom';
+import RosyVillaHotelPage from '~/pages/RosyVillaHotelPage/RosyVillaHotelPage.tsx';
+import MainLandingPage from '~/pages/MainLandingPage/MainLandingPage.tsx';
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: '/',
         element: <MainLandingPage/>,
     },
     {
-        path: "/rosyVillaHotel",
+        path: '/rosyVillaHotel',
         element: <RosyVillaHotelPage/>,
     },
     {
-        path: "/palmInnHotel",
+        path: '/palmInnHotel',
         element: <>ылаоиполударпоаопроавпрвоад</>,
     },
 ]);

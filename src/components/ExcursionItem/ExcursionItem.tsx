@@ -1,6 +1,6 @@
-import { FC } from "react";
-import classes from "./ExcursionItem.module.css";
-import Button from "~/components/UI/Button/Button.tsx";
+import { FC } from 'react';
+import classes from './ExcursionItem.module.css';
+import Button from '~/components/UI/Button/Button.tsx';
 
 type ExcursionItemProps = {
     title: string;

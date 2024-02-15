@@ -1,4 +1,4 @@
-import BlockTitle from "~/components/UI/BlockTitle/BlockTitle.tsx";
+import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
 import classes from './Features.module.css'
 import wedding from '~/assets/images/wedding.jpg'
 import cruise from '~/assets/images/cruise.jpg'
@@ -7,11 +7,11 @@ import resortDay from '~/assets/images/resort-day.jpg'
 import romantic from '~/assets/images/romantic.jpeg'
 import culture from '~/assets/images/culture.jpg'
 import culture1 from '~/assets/images/culture-1.jpg'
-import FeaturesItem from "~/components/FeaturesItem/FeaturesItem.tsx";
-import { FC, Suspense } from "react";
-import { useScrollLock } from "~/hooks/useScrollLock/useScrollLock.ts";
-import { ModalPanel } from "~/components/ModalPanel";
-import { useModal } from "~/hooks/useModal/useModal.ts";
+import FeaturesItem from '~/components/FeaturesItem/FeaturesItem.tsx';
+import { FC, Suspense } from 'react';
+import { useScrollLock } from '~/hooks/useScrollLock/useScrollLock.ts';
+import { ModalPanel } from '~/components/ModalPanel';
+import { useModal } from '~/hooks/useModal/useModal.ts';
 
 const Features: FC = () => {
     const [
@@ -32,7 +32,7 @@ const Features: FC = () => {
                 <div className={classes.features__left}>
                     <FeaturesItem label={'Свадьбы'}
                                   subLabel={'Организуем красивую свадебную церемонию на любой вкус и бюджет'}
-                                  imageUrl={wedding} side={"left"}
+                                  imageUrl={wedding} side={'left'}
                                   openModal={openModal}
                                   modalImages={[ wedding ]}
                                   modalText={'Организуем красивую свадебную церемонию с фотосессией. На любой вкус и кошелек. ' +
@@ -44,7 +44,7 @@ const Features: FC = () => {
                     />
                     <FeaturesItem label={'Лечение'}
                                   subLabel={'Совместите приятное с полезным. Предлагаем вам массаж и аюрведические процедуры'}
-                                  imageUrl={heal} side={"left"}
+                                  imageUrl={heal} side={'left'}
                                   openModal={openModal}
                                   modalImages={[ heal ]}
                                   modalText={'Предлагаем совместить и приятное и полезное. Вы можете заказать аюрведическую ' +
@@ -58,7 +58,7 @@ const Features: FC = () => {
                     <FeaturesItem label={'Круизы'}
                                   subLabel={'Арендуйте яхту с друзьями или семьей и отправьтесь в путешествие по своему ' +
                                       'уникальному маршруту'}
-                                  imageUrl={cruise} side={"right"}
+                                  imageUrl={cruise} side={'right'}
                                   openModal={openModal}
                                   modalImages={[ cruise ]}
                                   modalText={'Вы можете арендовать яхту для вашей группы или компании и отправиться в круиз ' +
@@ -73,7 +73,7 @@ const Features: FC = () => {
                     <FeaturesItem label={'День на резорте'}
                                   subLabel={'Мы отвезем вас в один из отелей-резортов, где вы сможете насладиться ' +
                                       'беззаботным отдыхом в райском месте'}
-                                  imageUrl={resortDay} side={"right"}
+                                  imageUrl={resortDay} side={'right'}
                                   openModal={openModal}
                                   modalImages={[ resortDay ]}
                                   modalText={'Мы сотрудничаем с несколькими отелями - резортами. Вы сможете насладиться ' +
@@ -85,7 +85,7 @@ const Features: FC = () => {
                 <div className={classes.features__left}>
                     <FeaturesItem label={'Романтический ужин'}
                                   subLabel={'Мы поможем красиво отметить любое ваше событие'}
-                                  imageUrl={romantic} side={"left"}
+                                  imageUrl={romantic} side={'left'}
                                   openModal={openModal}
                                   modalImages={[ romantic ]}
                                   modalText={'Мы поможем красиво отметить любое ваше событие - предложение руки и сердца, ' +
@@ -94,7 +94,7 @@ const Features: FC = () => {
                     />
                     <FeaturesItem label={'Культура Мальдив'}
                                   subLabel={'Насладитесь национальными танцами, песнями, и мастер-классами на нашем острове'}
-                                  imageUrl={culture} side={"left"}
+                                  imageUrl={culture} side={'left'}
                                   openModal={openModal}
                                   modalImages={[ culture, culture1 ]}
                                   modalText={'Мы сможем скрасить ваше пребывание на нашем острове национальными танцами, ' +

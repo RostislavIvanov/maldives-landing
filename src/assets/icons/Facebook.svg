@@ -1,11 +1,11 @@
-<svg id="Icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215">
+<svg id='Icons' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 215 215'>
     <defs>
         <style>.cls-1{fill:#1877f2;}.cls-2{fill:#fff;}</style>
     </defs>
-    <g id="Facebook">
-        <circle id="Background" class="cls-1" cx="107.5" cy="107.5" r="107.5"/>
-        <path id="Facebook-2" class="cls-2"
-              d="M1223.69,116.65h18l3.43-22.45h-21.41V79.64c0-6.14,3-12.13,12.58-12.13H1246V48.4a117.7,117.7,0,0,0-17.28-1.52c-17.63,0-29.15,10.75-29.15,30.22V94.2H1180v22.45h19.59v54.26h24.12Z"
-              transform="translate(-1108)"/>
+    <g id='Facebook'>
+        <circle id='Background' class='cls-1' cx='107.5' cy='107.5' r='107.5'/>
+        <path id='Facebook-2' class='cls-2'
+              d='M1223.69,116.65h18l3.43-22.45h-21.41V79.64c0-6.14,3-12.13,12.58-12.13H1246V48.4a117.7,117.7,0,0,0-17.28-1.52c-17.63,0-29.15,10.75-29.15,30.22V94.2H1180v22.45h19.59v54.26h24.12Z'
+              transform='translate(-1108)'/>
     </g>
 </svg>

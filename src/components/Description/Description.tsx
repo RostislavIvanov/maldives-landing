@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from 'react';
 
 const Description: FC<PropsWithChildren> = ({ children }) => {
     return (

@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, PropsWithChildren } from 'react';
 import classes from './Button.module.css'
 
 type ButtonProps = PropsWithChildren & {

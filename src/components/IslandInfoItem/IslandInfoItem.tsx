@@ -1,6 +1,6 @@
-import classes from "./IslandInfoItem.module.css";
-import { FC, ReactNode } from "react";
-import Button from "~/components/UI/Button/Button.tsx";
+import classes from './IslandInfoItem.module.css';
+import { FC, ReactNode } from 'react';
+import Button from '~/components/UI/Button/Button.tsx';
 
 type IslandInfoItemProps = {
     img: string;
@@ -21,12 +21,12 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse 
                         <Button>Отправиться в тур</Button>
                     </div>
                     <div className={classes.islandInfo__img}>
-                        <img src={img} alt=""/>
+                        <img src={img} alt=''/>
                     </div>
                 </>
                 : <>
                     <div className={classes.islandInfo__img}>
-                        <img src={img} alt=""/>
+                        <img src={img} alt=''/>
                     </div>
                     <div className={classes.islandInfo__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>

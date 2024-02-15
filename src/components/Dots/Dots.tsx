@@ -1,7 +1,7 @@
-import { FC, useContext } from "react";
-import Dot from "~/components/Dot/Dot.tsx";
-import classes from "./Dots.module.css";
-import SliderContext from "~/utils/SliderContext/SliderContext.ts";
+import { FC, useContext } from 'react';
+import Dot from '~/components/Dot/Dot.tsx';
+import classes from './Dots.module.css';
+import SliderContext from '~/utils/SliderContext/SliderContext.ts';
 
 const Dots: FC = () => {
     const { slidesCount } = useContext(SliderContext);

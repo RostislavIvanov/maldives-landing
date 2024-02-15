@@ -1,7 +1,7 @@
 import classes from './ModalPanel.module.css'
-import { FC, useEffect } from "react";
-import Slider from "~/components/Slider/Slider.tsx";
-import Button from "~/components/UI/Button/Button.tsx";
+import { FC, useEffect } from 'react';
+import Slider from '~/components/Slider/Slider.tsx';
+import Button from '~/components/UI/Button/Button.tsx';
 
 type ModalPanelProps = {
     closeModal: VoidFunction;

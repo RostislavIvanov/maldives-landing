@@ -1,7 +1,7 @@
-import { FC, useContext } from "react";
-import classes from "./SlidesList.module.css";
-import Slide from "~/components/Slide/Slide.tsx";
-import SliderContext from "~/utils/SliderContext/SliderContext.ts";
+import { FC, useContext } from 'react';
+import classes from './SlidesList.module.css';
+import Slide from '~/components/Slide/Slide.tsx';
+import SliderContext from '~/utils/SliderContext/SliderContext.ts';
 
 const SlidesList: FC = () => {
     const { slideNumber, images } = useContext(SliderContext);

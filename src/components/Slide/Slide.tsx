@@ -1,5 +1,5 @@
-import { FC } from "react";
-import classes from "./Slide.module.css";
+import { FC } from 'react';
+import classes from './Slide.module.css';
 
 type SlideProps = {
     image: string;
