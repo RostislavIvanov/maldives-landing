@@ -1,8 +1,8 @@
 import { FC } from "react";
 import classes from './Accommodation.module.css'
-import rosyVilla from '~/assets/images/photo_2023-12-28_10-10-53 (1).jpg'
-import rosyVilla1 from '~/assets/images/232863959 (1).jpg'
-import rosyVilla2 from '~/assets/images/271603025.jpg'
+import rosyVilla from '~/assets/images/hotel-main.jpg'
+import rosyVilla1 from '~/assets/images/hotel-pool.jpg'
+import rosyVilla2 from '~/assets/images/deluxe.jpg'
 import star from '~/assets/icons/star.svg'
 import arrow from '~/assets/icons/arrow-right-black.svg'
 import Button from "~/components/UI/Button/Button.tsx";
