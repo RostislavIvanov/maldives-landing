@@ -1,7 +1,27 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+import RosyVillaHotelPage from "~/pages/RosyVillaHotelPage/RosyVillaHotelPage.tsx";
+import MainLandingPage from "~/pages/MainLandingPage/MainLandingPage.tsx";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <MainLandingPage/>,
+    },
+    {
+        path: "/rosyVillaHotel",
+        element: <RosyVillaHotelPage/>,
+    },
+    {
+        path: "/palmInnHotel",
+        element: <>ылаоиполударпоаопроавпрвоад</>,
+    },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-    <App />
+    <RouterProvider router={router} />
 )
