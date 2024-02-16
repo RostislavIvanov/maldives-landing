@@ -1,0 +1,16 @@
+.content {
+    @apply bg-lightGrey text-black;
+}
+
+.wrapper {
+    @apply container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.stars {
+    @apply flex justify-center my-4
+}
+
+.stars img {
+    @apply w-[60px] h-[60px]
+}
