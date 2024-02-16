@@ -16,7 +16,7 @@ type TouchPosition = number | null
 
 const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
     const [ slide, setSlide ] = useState(0);
-    const [ touchPosition, setTouchPosition ] = useState<TouchPosition>(null)
+    const [ touchPosition, setTouchPosition ] = useState<TouchPosition>(null);
 
     const changeSlide = (direction = 1) => {
         let slideNumber;
@@ -37,7 +37,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
     const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
         const touchDown = e.touches[0].clientX;
         setTouchPosition(touchDown);
-    }
+    };
 
     const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
         if (touchPosition === null) {
@@ -56,7 +56,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
         }
 
         setTouchPosition(null);
-    }
+    };
 
     useEffect(() => {
         if (!autoPlay) return;
@@ -71,7 +71,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
     }, [ images.length, slide ]);
 
     useEffect(() => {
-        setSlide(0)
+        setSlide(0);
     }, [ images.length ]);
 
     return (
@@ -90,7 +90,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
                 {images.length > 1 && <Arrows/>}
             </SliderContext.Provider>
         </div>
-    )
-}
+    );
+};
 
-export default Slider
+export default Slider;

@@ -1,14 +1,14 @@
-import room from '~/assets/icons/plans.svg'
-import monitor from '~/assets/icons/monitor.svg'
-import snowflake from '~/assets/icons/snowflake.svg'
-import soundOff from '~/assets/icons/sound-off.svg'
-import whisky from '~/assets/icons/whisky.svg'
-import balcony from '~/assets/icons/balcony.svg'
-import town from '~/assets/icons/houses.svg'
-import pool from '~/assets/icons/swimming-pool.svg'
-import wifi from '~/assets/icons/wifi.svg'
-import bath from '~/assets/icons/bath.svg'
-import shower from '~/assets/icons/shower.svg'
+import room from '~/assets/icons/plans.svg';
+import monitor from '~/assets/icons/monitor.svg';
+import snowflake from '~/assets/icons/snowflake.svg';
+import soundOff from '~/assets/icons/sound-off.svg';
+import whisky from '~/assets/icons/whisky.svg';
+import balcony from '~/assets/icons/balcony.svg';
+import town from '~/assets/icons/houses.svg';
+import pool from '~/assets/icons/swimming-pool.svg';
+import wifi from '~/assets/icons/wifi.svg';
+import bath from '~/assets/icons/bath.svg';
+import shower from '~/assets/icons/shower.svg';
 
 export type roomDataType = {
     icon: string,

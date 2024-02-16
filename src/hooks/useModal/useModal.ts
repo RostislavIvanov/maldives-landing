@@ -13,25 +13,25 @@ type ModalHookReturnType = [
 ];
 
 export const useModal = ():ModalHookReturnType => {
-    const [ isModalOpened, setIsModalOpened ] = useState(false)
+    const [ isModalOpened, setIsModalOpened ] = useState(false);
     const [ currentCard, setCurrentCard ] = useState<CurrentCard>({
         images: [],
         text: ''
-    })
+    });
     const closeModal = () => {
         setIsModalOpened(false);
         setCurrentCard({
             images: [],
             text: ''
-        })
-    }
+        });
+    };
     const openModal = (images: string[], text?: string) => {
         setCurrentCard({
             images: images,
             text: text
-        })
-        setIsModalOpened(true)
-    }
+        });
+        setIsModalOpened(true);
+    };
 
-    return [isModalOpened, currentCard, closeModal, openModal]
-}
+    return [isModalOpened, currentCard, closeModal, openModal];
+};

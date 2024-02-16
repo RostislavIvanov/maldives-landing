@@ -7,12 +7,12 @@ type DotProps = {
 }
 
 const Dot: FC<DotProps> = ({ number }) => {
-    const { goToSlide, slideNumber } = useContext(SliderContext)
+    const { goToSlide, slideNumber } = useContext(SliderContext);
 
     return <div
         className={`${classes.dot} ${slideNumber === number ? classes.selected : ''}`}
         onClick={() => goToSlide(number)}
-    />
-}
+    />;
+};
 
-export default Dot
+export default Dot;

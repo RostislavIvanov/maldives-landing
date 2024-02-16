@@ -7,18 +7,18 @@ const Dots: FC = () => {
     const { slidesCount } = useContext(SliderContext);
 
     const renderDots = () => {
-        const dots = []
+        const dots = [];
         for (let i = 0; i < slidesCount; i++) {
-            dots.push(<Dot key={`dot-${i}`} number={i}/>)
+            dots.push(<Dot key={`dot-${i}`} number={i}/>);
         }
-        return dots
-    }
+        return dots;
+    };
 
     return (
         <div className={classes.dots}>
             {renderDots()}
         </div>
-    )
-}
+    );
+};
 
-export default Dots
+export default Dots;

@@ -11,7 +11,7 @@ const MainScreenContent = () => {
             behavior: 'smooth',
             block: 'start',
         });
-    }
+    };
     return (
         <div className={classes.content}>
             <div className={classes.content__container}>

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import classes from '~/Blocks/Features/Features.module.css';
-import tap from '~/assets/icons/Tap.svg'
+import tap from '~/assets/icons/Tap.svg';
 
 type FeaturesItemProps = {
     label: string;
@@ -11,8 +11,17 @@ type FeaturesItemProps = {
     modalImages?: string[];
     modalText?: string;
 }
-const FeaturesItem: FC<FeaturesItemProps> = ({ label, subLabel, imageUrl, side, modalImages = [], openModal, modalText }) => {
-    const onItemClick = () => openModal(modalImages, modalText)
+const FeaturesItem: FC<FeaturesItemProps> = (
+    {
+        label,
+        subLabel,
+        imageUrl,
+        side,
+        modalImages = [],
+        openModal,
+        modalText
+    }) => {
+    const onItemClick = () => openModal(modalImages, modalText);
     return (
         <div className={classes.features__picture} onClick={onItemClick}
              style={{ backgroundImage: `url(${imageUrl})` }} // TODO переделать в tailwind (тут style даже алиасы не принимает)

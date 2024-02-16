@@ -1,18 +1,18 @@
 import { FC } from 'react';
-import classes from './Accommodation.module.css'
-import rosyVilla from '~/assets/images/hotel-main.jpg'
-import rosyVilla1 from '~/assets/images/hotel-pool.jpg'
-import rosyVilla2 from '~/assets/images/deluxe.jpg'
-import star from '~/assets/icons/star.svg'
-import arrow from '~/assets/icons/arrow-right-black.svg'
+import classes from './Accommodation.module.css';
+import rosyVilla from '~/assets/images/hotel-main.jpg';
+import rosyVilla1 from '~/assets/images/hotel-pool.jpg';
+import rosyVilla2 from '~/assets/images/deluxe.jpg';
+import star from '~/assets/icons/star.svg';
+import arrow from '~/assets/icons/arrow-right-black.svg';
 import Button from '~/components/UI/Button/Button.tsx';
 import { useNavigate } from 'react-router-dom';
 
 const Accommodation: FC = () => {
     const navigate = useNavigate();
     const handleLink = () => {
-        navigate('/rosyVillaHotel')
-    }
+        navigate('/rosyVillaHotel');
+    };
     return (
         <div className={classes.content}>
             <div className={classes.wrapper}>

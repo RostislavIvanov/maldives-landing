@@ -11,8 +11,16 @@ type ExcursionItemProps = {
     modalText?: string;
 }
 
-const ExcursionItem: FC<ExcursionItemProps> = ({ title, description, imageUrl, openModal, modalImages= [], modalText }) => {
-    const onItemClick = () => openModal(modalImages, modalText)
+const ExcursionItem: FC<ExcursionItemProps> = (
+    {
+        title,
+        description,
+        imageUrl,
+        openModal,
+        modalImages = [],
+        modalText
+    }) => {
+    const onItemClick = () => openModal(modalImages, modalText);
 
     return (
         <div className={classes.excursion}>

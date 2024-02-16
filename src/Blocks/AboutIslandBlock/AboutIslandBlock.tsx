@@ -1,11 +1,11 @@
 import beach from '~/assets/images/Beach.jpg';
 import underwater from '~/assets/images/under.jpg';
 import amenities from '~/assets/images/Amenities.jpg';
-import classes from './AboutIslandBlock.module.css'
+import classes from './AboutIslandBlock.module.css';
 import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
 import IslandInfoItem from '~/components/IslandInfoItem/IslandInfoItem.tsx';
-import notBoring from '~/assets/images/not-boring.jpg'
-import cheep from '~/assets/images/cheep.jpg'
+import notBoring from '~/assets/images/not-boring.jpg';
+import cheep from '~/assets/images/cheep.jpg';
 import Description from '~/components/Description/Description.tsx';
 
 const AboutIslandBlock = () => {

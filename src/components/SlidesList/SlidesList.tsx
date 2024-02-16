@@ -17,7 +17,7 @@ const SlidesList: FC = () => {
                 )}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default SlidesList
+export default SlidesList;

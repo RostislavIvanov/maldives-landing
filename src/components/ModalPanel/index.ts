@@ -1,1 +1,1 @@
-export {ModalPanelLazy as ModalPanel} from './ModalPanel.lazy.tsx'
+export {ModalPanelLazy as ModalPanel} from './ModalPanel.lazy.tsx';

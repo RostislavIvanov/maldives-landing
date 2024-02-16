@@ -18,4 +18,4 @@ const SliderContext = createContext<SliderContextType>({
     images: [],
 });
 
-export default SliderContext
+export default SliderContext;

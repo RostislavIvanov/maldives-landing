@@ -1,10 +1,10 @@
-import classes from './BurgerMenu.module.css'
-import logo from '~/assets/icons/logo-black.svg'
+import classes from './BurgerMenu.module.css';
+import logo from '~/assets/icons/logo-black.svg';
 import { FC, useState } from 'react';
 // import telegram from '~/assets/icons/Telegram.svg'
-import whatsApp from '~/assets/icons/WhatsApp.svg'
-import viber from '~/assets/icons/Viber.svg'
-import inst from '~/assets/icons/Instagram.svg'
+import whatsApp from '~/assets/icons/WhatsApp.svg';
+import viber from '~/assets/icons/Viber.svg';
+import inst from '~/assets/icons/Instagram.svg';
 // import facebook from '~/assets/icons/Facebook.svg'
 // import mail from '~/assets/icons/Mail.ru.svg'
 
@@ -15,13 +15,13 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ handleLinkClick }) => {
     const [ isMenuOpen, setIsMenuOpen ] = useState(false);
 
     const handleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     const handleBurgerClickLink = (e: React.MouseEvent<HTMLElement>, link: string) => {
         setIsMenuOpen(false);
-        handleLinkClick(e, link)
-    }
+        handleLinkClick(e, link);
+    };
     return (
         <>
             <div className={classes.burger} onClick={handleMenu}>

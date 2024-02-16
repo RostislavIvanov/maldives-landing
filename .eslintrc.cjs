@@ -15,5 +15,19 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'quotes': ['error', 'single'],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "semi": ["error", "always"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "react-hooks/exhaustive-deps": "off"
   },
 }

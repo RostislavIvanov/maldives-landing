@@ -15,7 +15,7 @@ const Arrows: FC = () => {
                 <img src={blackArrow} alt='Rigth'/>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Arrows
+export default Arrows;

@@ -10,7 +10,7 @@ const Slide: FC<SlideProps> = ({ image }) => {
         <div className={classes.slide}>
             <img className={classes.slide__image} src={image} alt=''/>
         </div>
-    )
-}
+    );
+};
 
-export default Slide
+export default Slide;

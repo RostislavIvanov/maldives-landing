@@ -1,4 +1,4 @@
-import classes from './ModalPanel.module.css'
+import classes from './ModalPanel.module.css';
 import { FC, useEffect } from 'react';
 import Slider from '~/components/Slider/Slider.tsx';
 import Button from '~/components/UI/Button/Button.tsx';
@@ -34,7 +34,7 @@ const ModalPanel: FC<ModalPanelProps> = ({ images, closeModal, autoplay, autopla
             </div>
             <div className={classes.modal__back} onClick={closeModal}/>
         </>
-    )
-}
+    );
+};
 
-export default ModalPanel
+export default ModalPanel;
