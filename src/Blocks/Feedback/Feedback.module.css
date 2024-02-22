@@ -1,0 +1,12 @@
+.content {
+    @apply bg-lightGrey text-black;
+}
+
+.wrapper {
+    @apply container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.sliderCon {
+    @apply my-8
+}
