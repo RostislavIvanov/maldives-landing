@@ -10,11 +10,12 @@ type SliderProps = {
     autoPlay: boolean;
     autoPlayTime: number;
     images: string[];
+    objectFitStyle?: 'cover' | 'contain';
 }
 
 type TouchPosition = number | null
 
-const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
+const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images, objectFitStyle }) => {
     const [ slide, setSlide ] = useState(0);
     const [ touchPosition, setTouchPosition ] = useState<TouchPosition>(null);
 
@@ -85,7 +86,7 @@ const Slider: FC<SliderProps> = ({ autoPlay, autoPlayTime, images }) => {
                     images,
                 }}
             >
-                <SlidesList/>
+                <SlidesList objectFitStyle={objectFitStyle}/>
                 {images.length > 1 && <Dots/>}
                 {images.length > 1 && <Arrows/>}
             </SliderContext.Provider>

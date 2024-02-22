@@ -3,5 +3,5 @@
 }
 
 .slide__image {
-    @apply mx-auto my-0 object-cover w-full h-full
+    @apply mx-auto my-0 w-full h-full
 }

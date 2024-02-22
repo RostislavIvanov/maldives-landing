@@ -3,7 +3,11 @@ import classes from './SlidesList.module.css';
 import Slide from '~/components/Slide/Slide.tsx';
 import SliderContext from '~/utils/SliderContext/SliderContext.ts';
 
-const SlidesList: FC = () => {
+type SlidesListProps = {
+    objectFitStyle?: 'cover' | 'contain';
+}
+
+const SlidesList: FC<SlidesListProps> = ({ objectFitStyle }) => {
     const { slideNumber, images } = useContext(SliderContext);
 
     return (
@@ -13,7 +17,7 @@ const SlidesList: FC = () => {
                 style={{ transform: `translateX(-${slideNumber * 100}%)` }}
             >
                 {images.map((image, index) =>
-                    <Slide key={`slide-${index}`} image={image}/>
+                    <Slide objectFitStyle={objectFitStyle} key={`slide-${index}`} image={image}/>,
                 )}
             </div>
         </div>
