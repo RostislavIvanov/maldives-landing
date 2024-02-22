@@ -1,0 +1,28 @@
+.content {
+    @apply bg-lightGrey text-black;
+}
+
+.wrapper {
+    @apply container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.titleWrapper {
+    @apply mb-8;
+}
+
+.questionItem {
+    @apply bg-white py-4 px-8 rounded-default shadow-md mb-2;
+}
+
+.questionItem__con {
+    @apply flex items-center justify-between cursor-pointer transition-all;
+}
+
+.questionItem__title {
+    @apply text-xl font-medium;
+}
+
+.questionItem__answer {
+    @apply mt-2;
+}
