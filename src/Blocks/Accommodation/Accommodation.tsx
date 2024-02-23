@@ -7,6 +7,7 @@ import star from '~/assets/icons/star.svg';
 import arrow from '~/assets/icons/arrow-right-black.svg';
 import Button from '~/components/UI/Button/Button.tsx';
 import { useNavigate } from 'react-router-dom';
+import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
 
 const Accommodation: FC = () => {
     const navigate = useNavigate();
@@ -16,6 +17,9 @@ const Accommodation: FC = () => {
     return (
         <div className={classes.content}>
             <div className={classes.wrapper}>
+                <div className={classes.titleWrapper}>
+                    <BlockTitle id={'accommodation'}>Размещение</BlockTitle>
+                </div>
                 <div className={classes.accommodation}>
                     <div className={classes.accommodation__item}>
                         <div className={classes.accommodation__mainImageWrapper}>
