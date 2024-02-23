@@ -1,5 +1,6 @@
 .roomCard {
-    @apply flex flex-col bg-white rounded-default overflow-hidden mb-8 w-[48%];
+    @apply flex flex-col bg-white rounded-default overflow-hidden mb-8 w-[98%]
+    sm:w-[48%];
 }
 
 .roomCard__con {

@@ -1,5 +1,5 @@
 .slidesWindow {
-    @apply bg-white h-full w-[90%] mx-auto mt-0 mb-1 overflow-hidden rounded-default
+    @apply bg-white h-full mx-auto mt-0 mb-1 overflow-hidden rounded-default
     sm:w-4/5
 }
 
