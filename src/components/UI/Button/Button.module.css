@@ -1,7 +1,6 @@
 .default {
     @apply
     border rounded-default px-6 py-4 text-[20px]
-    md:text-[24px]
     lg:text-default lg:px-8;
 }
 
