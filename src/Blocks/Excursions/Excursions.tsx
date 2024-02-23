@@ -28,19 +28,13 @@ import shark4 from '~/assets/images/shark-4.jpg';
 import points from '~/assets/images/points.jpg';
 import island from '~/assets/images/island.jpg';
 import dinner from '~/assets/images/dinner.jpg';
-import { Suspense } from 'react';
-import { useScrollLock } from '~/hooks/useScrollLock/useScrollLock.ts';
-import { ModalPanel } from '~/components/ModalPanel';
 import { useModal } from '~/hooks/useModal/useModal.ts';
 
 const Excursions = () => {
     const [
-        isModalOpened,
-        currentExcursion,
-        closeModal,
+        ModalPanel,
         openModal
-    ] = useModal();
-    useScrollLock(isModalOpened);
+    ] = useModal(4000);
 
     return (
         <div className={classes.content}>
@@ -169,17 +163,7 @@ const Excursions = () => {
                     />
                 </div>
             </div>
-            {isModalOpened && (
-                <Suspense>
-                    <ModalPanel
-                        images={currentExcursion.images}
-                        text={currentExcursion.text}
-                        closeModal={closeModal}
-                        autoplay={true}
-                        autoplayTime={4000}
-                    />
-                </Suspense>
-            )}
+            <ModalPanel />
         </div>
     );
 };
