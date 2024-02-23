@@ -9,7 +9,7 @@ import culture from '~/assets/images/culture.jpg';
 import culture1 from '~/assets/images/culture-1.jpg';
 import FeaturesItem from '~/components/FeaturesItem/FeaturesItem.tsx';
 import { FC } from 'react';
-import { useModal } from '~/hooks/useModal/useModal.ts';
+import { useModal } from '~/hooks/useModal/useModal.tsx';
 
 const Features: FC = () => {
     const [

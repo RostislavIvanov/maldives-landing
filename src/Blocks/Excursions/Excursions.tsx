@@ -28,7 +28,7 @@ import shark4 from '~/assets/images/shark-4.jpg';
 import points from '~/assets/images/points.jpg';
 import island from '~/assets/images/island.jpg';
 import dinner from '~/assets/images/dinner.jpg';
-import { useModal } from '~/hooks/useModal/useModal.ts';
+import { useModal } from '~/hooks/useModal/useModal.tsx';
 
 const Excursions = () => {
     const [
