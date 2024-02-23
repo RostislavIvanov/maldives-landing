@@ -8,12 +8,19 @@
     lg:px-8;
 }
 
+.titleWrapper {
+    @apply mb-8;
+}
+
 .accommodation {
-    @apply flex max-h-[100vh] py-10
+    @apply block
+    sm:flex
+    xl:max-h-[100vh]
 }
 
 .accommodation__item {
-    @apply w-1/2
+    @apply w-full
+    sm:w-1/2
 }
 
 .accommodation__mainImageWrapper {
@@ -21,15 +28,12 @@
 }
 
 .accommodation__mainImage {
-    @apply block object-cover w-full h-auto
+    @apply block object-cover w-full h-full
 }
 
 .accommodation__info {
-    @apply flex flex-col justify-between h-full ml-4
-}
-
-.accommodation__text {
-
+    @apply flex flex-col justify-between h-full mx-4 mt-4
+    sm:mt-0 sm:ml-4
 }
 
 .accommodation__text p {
@@ -37,11 +41,14 @@
 }
 
 .accommodation__hotelName {
-    @apply text-5xl leading-none font-extralight
+    @apply text-[50px] leading-none font-extralight
+    sm:text-5xl
 }
 
 .accommodation__images {
-    @apply flex
+    @apply flex mt-4
+    sm:hidden sm:mt-0
+    lg:flex
 }
 
 .accommodation__imagesItemCon {
@@ -53,7 +60,9 @@
 }
 
 .accommodation__grade span{
-    @apply text-subtitle border border-black rounded-[50%] p-2 mr-4 w-[60px] h-[60px] flex items-center justify-center
+    @apply border border-black rounded-[50%] p-2 mr-4 flex items-center justify-center
+    w-[40px] h-[40px]
+    lg:w-[60px] lg:h-[60px] lg:text-subtitle
 }
 
 .accommodation__grade {
