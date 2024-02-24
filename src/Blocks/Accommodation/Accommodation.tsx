@@ -23,7 +23,7 @@ const Accommodation: FC = () => {
                 <div className={classes.accommodation}>
                     <div className={classes.accommodation__item}>
                         <div className={classes.accommodation__mainImageWrapper}>
-                            <img className={classes.accommodation__mainImage} src={rosyVilla} alt=''/>
+                            <img className={classes.accommodation__mainImage} src={rosyVilla} alt=""/>
                         </div>
                     </div>
                     <div className={classes.accommodation__item}>
@@ -31,18 +31,21 @@ const Accommodation: FC = () => {
                             <div className={classes.accommodation__text}>
                                 <h2 className={classes.accommodation__hotelName}>Rosy Villa Hotel</h2>
                                 <div className={classes.accommodation__stars}>
-                                    <img src={star} alt=''/>
-                                    <img src={star} alt=''/>
-                                    <img src={star} alt=''/>
-                                    <img src={star} alt=''/>
+                                    <img src={star} alt=""/>
+                                    <img src={star} alt=""/>
+                                    <img src={star} alt=""/>
+                                    <img src={star} alt=""/>
                                 </div>
                                 <div className={classes.accommodation__grade}>
                                     <span>8.7</span> — средняя оценка среди отзывов на Букинге
                                 </div>
                                 <p>
-                                    Rosy Villa Hotel — это отель, расположенный в городе Гурайдо. К услугам гостей
-                                    бесплатные велосипеды, общий лаундж, терраса и ресторан. Вариант размещения
-                                    расположен в 100м от такой достопримечательности, как Пляж Гурайду.
+                                    Отель Rosy Villa Hotel расположен на локальном острове К. Гурайду в Южном
+                                    Мале Атолле. Мы доставляем гостей до острова на собственном катере. Это единственный
+                                    отель на острове с
+                                    бассейном, а на крыше есть открытая терраса.<br/> В 5-ти минутах ходьбы есть пляж.
+                                    Вы можете взять в отеле ласты и маску для снорклинга,
+                                    а так же заказать различные экскурсии.
                                 </p>
                                 <div className={classes.accommodation__btn}>
                                     <Button onClick={handleLink}>Подробнее</Button>
@@ -50,15 +53,15 @@ const Accommodation: FC = () => {
                             </div>
                             <div className={classes.accommodation__images}>
                                 <div className={classes.accommodation__imagesItemCon}>
-                                    <img className={classes.accommodation__imagesItem} src={rosyVilla1} alt=''/>
+                                    <img className={classes.accommodation__imagesItem} src={rosyVilla1} alt=""/>
                                     <div onClick={handleLink} className={classes.accommodation__arrow}>
-                                        <img src={arrow} alt='->'/>
+                                        <img src={arrow} alt="->"/>
                                     </div>
                                 </div>
                                 <div className={classes.accommodation__imagesItemCon}>
-                                    <img className={classes.accommodation__imagesItem} src={rosyVilla2} alt=''/>
+                                    <img className={classes.accommodation__imagesItem} src={rosyVilla2} alt=""/>
                                     <div onClick={handleLink} className={classes.accommodation__arrow}>
-                                        <img src={arrow} alt='->'/>
+                                        <img src={arrow} alt="->"/>
                                     </div>
                                 </div>
                             </div>
