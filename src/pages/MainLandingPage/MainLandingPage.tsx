@@ -4,6 +4,7 @@ import MainScreenBlock from '~/Blocks/MainScreenBlock/MainScreenBlock.tsx';
 import Excursions from '~/Blocks/Excursions/Excursions.tsx';
 import AboutIslandBlock from '~/Blocks/AboutIslandBlock/AboutIslandBlock.tsx';
 import Footer from '~/Blocks/Footer/Footer.tsx';
+import Speech from '~/Blocks/Speech/Speech.tsx';
 
 const MainLandingPage = () => {
     return (
@@ -13,6 +14,7 @@ const MainLandingPage = () => {
             <Excursions/>
             <Features/>
             <Accommodation/>
+            <Speech/>
             <Footer/>
         </>
     );
