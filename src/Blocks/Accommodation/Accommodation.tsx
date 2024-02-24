@@ -25,7 +25,7 @@ const Accommodation: FC = () => {
                     <div className={classes.accommodation__item}>
                         <div className={classes.accommodation__info}>
                             <div className={classes.accommodation__text}>
-                                <h2 className={classes.accommodation__hotelName}>Rosy Villa Hotel</h2>
+                                <h2 id={'accommodation'} className={classes.accommodation__hotelName}>Rosy Villa Hotel</h2>
                                 <div className={classes.accommodation__stars}>
                                     <img src={star} alt=""/>
                                     <img src={star} alt=""/>
