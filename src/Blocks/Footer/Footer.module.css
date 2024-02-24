@@ -1,0 +1,36 @@
+.content {
+    @apply bg-[#1A1A1AFF] text-white;
+}
+
+.wrapper {
+    @apply container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.footer {
+    @apply flex flex-col items-center
+}
+
+.footer > * {
+    @apply mb-2
+}
+
+.footer__logo img {
+    @apply h-24 w-auto
+}
+
+.footer__nav ul {
+    @apply flex
+}
+
+.footer__nav ul li {
+    @apply mx-3
+}
+
+.footer__icons {
+    @apply flex
+}
+
+.footer__icons img {
+    @apply w-[30px] h-[30px] mx-2;
+}
