@@ -78,7 +78,7 @@
 }
 
 .accommodation__arrow {
-    @apply absolute bottom-3 right-3 z-50 w-8 h-8 bg-amber-300 rounded-[50%] p-1 cursor-pointer;
+    @apply absolute bottom-3 right-3 w-8 h-8 bg-amber-300 rounded-[50%] p-1 cursor-pointer;
     transition: all 0.3s ease-in-out;
 }
 
