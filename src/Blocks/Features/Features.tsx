@@ -8,20 +8,14 @@ import romantic from '~/assets/images/romantic.jpeg';
 import culture from '~/assets/images/culture.jpg';
 import culture1 from '~/assets/images/culture-1.jpg';
 import FeaturesItem from '~/components/FeaturesItem/FeaturesItem.tsx';
-import { FC, Suspense } from 'react';
-import { useScrollLock } from '~/hooks/useScrollLock/useScrollLock.ts';
-import { ModalPanel } from '~/components/ModalPanel';
-import { useModal } from '~/hooks/useModal/useModal.ts';
+import { FC } from 'react';
+import { useModal } from '~/hooks/useModal/useModal.tsx';
 
 const Features: FC = () => {
     const [
-        isModalOpened,
-        currentFeature,
-        closeModal,
+        ModalPanel,
         openModal
-    ] = useModal();
-
-    useScrollLock(isModalOpened);
+    ] = useModal(4000);
 
     return (
         <>
@@ -103,17 +97,7 @@ const Features: FC = () => {
                     />
                 </div>
             </div>
-            {isModalOpened && (
-                <Suspense>
-                    <ModalPanel
-                        images={currentFeature.images}
-                        text={currentFeature.text}
-                        closeModal={closeModal}
-                        autoplay={true}
-                        autoplayTime={4000}
-                    />
-                </Suspense>
-            )}
+            <ModalPanel />
         </>
     );
 };
