@@ -12,11 +12,11 @@
 }
 
 .questionItem {
-    @apply bg-white py-4 px-8 rounded-default shadow-md mb-2;
+    @apply bg-white py-4 px-8 rounded-default shadow-sm mb-2 cursor-pointer;
 }
 
 .questionItem__con {
-    @apply flex items-center justify-between cursor-pointer transition-all;
+    @apply flex items-center justify-between transition-all;
 }
 
 .questionItem__title {
