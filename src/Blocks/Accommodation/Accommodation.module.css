@@ -8,10 +8,6 @@
     lg:px-8;
 }
 
-.titleWrapper {
-    @apply mb-8;
-}
-
 .accommodation {
     @apply block
     sm:flex
