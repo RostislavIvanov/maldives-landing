@@ -20,7 +20,7 @@
 }
 
 .footer__nav ul {
-    @apply flex
+    @apply flex flex-wrap justify-center
 }
 
 .footer__nav ul li {
