@@ -16,10 +16,6 @@ const router = createBrowserRouter([
         path: '/rosyVillaHotel',
         element: <RosyVillaHotelPage/>,
     },
-    {
-        path: '/palmInnHotel',
-        element: <>ылаоиполударпоаопроавпрвоад</>,
-    },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
