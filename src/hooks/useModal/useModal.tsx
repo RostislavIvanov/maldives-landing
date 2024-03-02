@@ -1,5 +1,4 @@
 import { FC, Suspense, useState } from 'react';
-import { useScrollLock } from '~/hooks/useScrollLock/useScrollLock.ts';
 import { ModalPanel } from '~/components/ModalPanel';
 
 type CurrentCard = {
@@ -34,7 +33,6 @@ export const useModal = (autoplayTime?: AutoplayTime):ModalHookReturnType => {
         });
         setIsModalOpened(true);
     };
-    useScrollLock(isModalOpened);
     const ModalWithLoading = () => {
         return isModalOpened && (
             <Suspense>

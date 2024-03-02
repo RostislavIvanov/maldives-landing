@@ -1,8 +1,8 @@
 .slidesWindow {
-    @apply bg-white h-full mx-auto mt-0 mb-1 overflow-hidden rounded-default
+    @apply bg-white h-full max-h-[90vh] mx-auto mt-0 mb-2 overflow-hidden rounded-default
     sm:w-4/5
 }
 
 .slidesList {
-    @apply flex h-full w-full transition-transform duration-500
+    @apply flex max-h-[90vh] h-full w-full transition-transform duration-500
 }
