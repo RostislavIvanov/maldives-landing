@@ -14,13 +14,20 @@ import { useModal } from '~/hooks/useModal/useModal.tsx';
 const Features: FC = () => {
     const [
         ModalPanel,
-        openModal
+        openModal,
     ] = useModal(4000);
 
     return (
         <>
             <div className={classes.titleWrapper}>
-                <BlockTitle id={'features'}>Особенности<br/> нашего острова</BlockTitle>
+                <BlockTitle
+                    label={'Мы регулярно набираем группы с тематическими программами: йога и фото туры, ' +
+                        'литературный тур, приключенческий с изучением английского языка,  туры со звездами, медитативные ' +
+                        'и психологические туры. Актуальные предложения узнавайте у наших менеджеров.'}
+                    id={'features'}
+                >
+                    Наши программы
+                </BlockTitle>
             </div>
             <div className={classes.features}>
                 <div className={classes.features__left}>
@@ -97,7 +104,7 @@ const Features: FC = () => {
                     />
                 </div>
             </div>
-            <ModalPanel />
+            <ModalPanel/>
         </>
     );
 };
