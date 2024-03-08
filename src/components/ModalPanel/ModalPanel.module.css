@@ -13,3 +13,11 @@
     @apply w-full flex justify-between flex-col text-left gap-3 text-black
     sm:max-w-[400px] sm:text-left
 }
+
+.modal__text span {
+    @apply text-[20px] font-medium
+}
+
+.modal__text p:not(:last-child) {
+    @apply mb-2
+}
