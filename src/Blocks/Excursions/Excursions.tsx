@@ -8,6 +8,7 @@ import fishing3 from '~/assets/images/fishing-3.jpg';
 import fishing4 from '~/assets/images/fishing-4.jpg';
 import fishing5 from '~/assets/images/fishing-5.jpg';
 import fishing6 from '~/assets/images/fishing-6.jpg';
+import fishing7 from '~/assets/images/fishing-7.jpg';
 import snorkeling from '~/assets/images/snorkeling.jpg';
 import snorkeling1 from '~/assets/images/snorkeling-1.jpg';
 import snorkeling2 from '~/assets/images/snorkeling-2.jpg';
@@ -20,14 +21,22 @@ import ship2 from '~/assets/images/ship-2.jpg';
 import ship3 from '~/assets/images/ship-3.jpg';
 import ship4 from '~/assets/images/ship-4.jpg';
 import whaleShark from '~/assets/images/whale-shark.jpg';
+import whaleShark1 from '~/assets/images/whale-shark-1.jpg';
+import whaleShark2 from '~/assets/images/whale-shark-2.jpg';
 import shark from '~/assets/images/sharks.jpg';
 import shark1 from '~/assets/images/shark-1.jpg';
 import shark2 from '~/assets/images/shark-2.jpg';
 import shark3 from '~/assets/images/shark-3.jpg';
 import shark4 from '~/assets/images/shark-4.jpg';
 import points from '~/assets/images/points.jpg';
+import points1 from '~/assets/images/points-1.jpg';
+import points2 from '~/assets/images/points-2.jpg';
 import island from '~/assets/images/island.jpg';
 import dinner from '~/assets/images/dinner.jpg';
+import dinner1 from '~/assets/images/dinner-1.jpg';
+import dinner2 from '~/assets/images/dinner-2.jpg';
+import dinner3 from '~/assets/images/dinner-3.jpg';
+import dinner4 from '~/assets/images/dinner-4.jpg';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 
 const Excursions = () => {
@@ -55,7 +64,7 @@ const Excursions = () => {
                             ' Также, там обитают большие морские черепахи!'}
                         imageUrl={points}
                         openModal={openModal}
-                        modalImages={[ points ]}
+                        modalImages={[ points, points1, points2 ]}
                         modalText={
                             <>
                                 <p>
@@ -86,7 +95,7 @@ const Excursions = () => {
                             'Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров.'}
                         imageUrl={fishing}
                         openModal={openModal}
-                        modalImages={[ fishing, fishing1, fishing2, fishing3, fishing4, fishing5, fishing6 ]}
+                        modalImages={[ fishing, fishing1, fishing2, fishing3, fishing4, fishing5, fishing6, fishing7 ]}
                         modalText={
                             <>
                                 <p>
@@ -204,7 +213,7 @@ const Excursions = () => {
                             ' достигать даже 20 метров!'}
                         imageUrl={whaleShark}
                         openModal={openModal}
-                        modalImages={[ whaleShark ]}
+                        modalImages={[ whaleShark, whaleShark1, whaleShark2 ]}
                         modalText={
                             <>
                                 <p>
@@ -254,7 +263,7 @@ const Excursions = () => {
                             'особенно яркие фотографии. Обязательно возьмите с собой одежду для фотосессии!'}
                         imageUrl={dinner}
                         openModal={openModal}
-                        modalImages={[ dinner ]}
+                        modalImages={[ dinner, dinner1, dinner2, dinner3, dinner4 ]}
                         modalText={
                             <>
                                 <p>
