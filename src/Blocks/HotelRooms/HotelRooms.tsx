@@ -50,7 +50,7 @@ const HotelRooms = () => {
                         image={standard}
                         roomTitle={'Standard'}
                         roomSubtitle={'Одна двуспальная кровать'}
-                        data={standardRoomData}
+                        iconData={standardRoomData}
                         openModal={openModal}
                         modalImages={[ standard, standard1, standard2, standard3, standard4, standard5 ]}
                         modalText={
@@ -79,7 +79,7 @@ const HotelRooms = () => {
                         image={deluxe}
                         roomTitle={'Deluxe'}
                         roomSubtitle={'Одна двуспальная кровать или две раздельные'}
-                        data={deluxeRoomData}
+                        iconData={deluxeRoomData}
                         openModal={openModal}
                         modalImages={[ deluxe, deluxe1, deluxe2, standard3, standard4, deluxe3 ]}
                         modalText={
@@ -111,7 +111,7 @@ const HotelRooms = () => {
                         image={familyDeluxe}
                         roomTitle={'Deluxe семейный'}
                         roomSubtitle={'Три односпальные кровати'}
-                        data={familyDeluxeRoomData}
+                        iconData={familyDeluxeRoomData}
                         openModal={openModal}
                         modalImages={[ familyDeluxe, familyDeluxe1, familyDeluxe2, standard3, standard4 ]}
                         modalText={
@@ -133,7 +133,7 @@ const HotelRooms = () => {
                         image={premium}
                         roomTitle={'Premium'}
                         roomSubtitle={'Две двуспальные кровати'}
-                        data={premiumRoomData}
+                        iconData={premiumRoomData}
                         openModal={openModal}
                         modalImages={[ premium, premium1, premium3, standard4 ]}
                         modalText={

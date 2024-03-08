@@ -7,7 +7,7 @@ type RoomCardProps = {
     image: string;
     roomTitle: string;
     roomSubtitle: string;
-    data: roomDataType[];
+    iconData: roomDataType[];
     openModal: (images: string[], text?: ReactNode) => void;
     modalImages?: string[];
     modalText?: ReactNode;
@@ -17,7 +17,7 @@ const RoomCard: FC<RoomCardProps> = (
         image,
         roomTitle,
         roomSubtitle,
-        data,
+        iconData,
         modalText,
         modalImages = [],
         openModal,
@@ -30,7 +30,7 @@ const RoomCard: FC<RoomCardProps> = (
                 <h5 className={classes.roomCard__title}>{roomTitle}</h5>
                 <h6>{roomSubtitle}</h6>
                 <div className={classes.roomCard__features}>
-                    {data.map(el =>
+                    {iconData.map(el =>
                         <div className={classes.roomFeatures}>
                             <img src={el.icon} alt=""/>
                             <div>{el.text}</div>
