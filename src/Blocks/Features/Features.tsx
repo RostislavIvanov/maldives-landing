@@ -10,6 +10,7 @@ import culture1 from '~/assets/images/culture-1.jpg';
 import FeaturesItem from '~/components/FeaturesItem/FeaturesItem.tsx';
 import { FC } from 'react';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
+import Description from '~/components/Description/Description.tsx';
 
 const Features: FC = () => {
     const [
@@ -103,6 +104,12 @@ const Features: FC = () => {
                                       'же фотосессию в национальных костюмах.'}
                     />
                 </div>
+            </div>
+            <div className={classes.features__description}>
+                <Description>
+                    Может быть планируете свадьбу? Или хотите восстановить здоровье? А возможно вы участник дайверского
+                    или спортивного клуба? Мы можем организовать под ваше мероприятие индивидуальную программу.
+                </Description>
             </div>
             <ModalPanel/>
         </>
