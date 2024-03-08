@@ -1,5 +1,5 @@
 .arrows {
-    @apply hidden justify-between w-[110%] absolute -left-[5%] top-1/2 -translate-y-1/2
+    @apply p-8 hidden justify-between w-[110%] absolute -left-[5%] top-1/2 -translate-y-1/2
     sm:w-full sm:left-0 sm:flex
 }
 
