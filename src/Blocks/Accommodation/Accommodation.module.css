@@ -11,7 +11,8 @@
 .accommodation {
     @apply block
     sm:flex
-    xl:max-h-[100vh]
+    xl:max-h-none
+    2xl:max-h-[100vh]
 }
 
 .accommodation__item {
@@ -43,7 +44,7 @@
 
 .accommodation__images {
     @apply flex mt-4
-    sm:hidden sm:mt-0
+    sm:hidden
     lg:flex
 }
 
