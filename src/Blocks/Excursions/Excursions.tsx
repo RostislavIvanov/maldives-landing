@@ -38,7 +38,6 @@ import island from '~/assets/images/island.jpg';
 import dinner from '~/assets/images/dinner.jpg';
 import dinner1 from '~/assets/images/dinner-1.jpg';
 import dinner2 from '~/assets/images/dinner-2.jpg';
-import dinner3 from '~/assets/images/dinner-3.jpg';
 import dinner4 from '~/assets/images/dinner-4.jpg';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 
@@ -266,7 +265,7 @@ const Excursions = () => {
                             'особенно яркие фотографии. Обязательно возьмите с собой одежду для фотосессии!'}
                         imageUrl={dinner}
                         openModal={openModal}
-                        modalImages={[ dinner, dinner1, dinner2, dinner3, dinner4 ]}
+                        modalImages={[ dinner, dinner1, dinner2, dinner4 ]}
                         modalText={
                             <>
                                 <p>
