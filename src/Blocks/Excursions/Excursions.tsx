@@ -3,6 +3,7 @@ import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
 import ExcursionItem from '~/components/ExcursionItem/ExcursionItem.tsx';
 import fishing from '~/assets/images/fishing.jpg';
 import fishing1 from '~/assets/images/fishing-1.jpg';
+import fishing2 from '~/assets/images/fishing-2.jpg';
 import fishing3 from '~/assets/images/fishing-3.jpg';
 import fishing4 from '~/assets/images/fishing-4.jpg';
 import fishing5 from '~/assets/images/fishing-5.jpg';
@@ -96,7 +97,7 @@ const Excursions = () => {
                             'Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров.'}
                         imageUrl={fishing}
                         openModal={openModal}
-                        modalImages={[ fishing, fishing1, fishing3, fishing4, fishing5, fishing6 ]}
+                        modalImages={[ fishing, fishing1, fishing2, fishing3, fishing4, fishing5, fishing6 ]}
                         modalText={
                             <>
                                 <p>
