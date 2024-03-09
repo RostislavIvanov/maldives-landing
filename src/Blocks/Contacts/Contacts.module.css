@@ -1,0 +1,61 @@
+.content {
+    @apply bg-lightGrey text-black;
+}
+
+.wrapper {
+    @apply
+    container mx-auto py-8 px-2
+    lg:px-8;
+}
+
+.titleWrapper {
+    @apply mb-8;
+}
+
+.contacts {
+    @apply flex justify-center items-stretch;
+}
+
+.contacts__column {
+    @apply flex flex-col mx-4 w-1/3
+}
+
+.contacts__logo {
+    @apply w-1/5 mr-4
+}
+
+.contacts__title {
+    @apply text-label uppercase font-light;
+}
+
+.contacts__label {
+    @apply font-light
+}
+
+.contacts__link {
+    @apply font-medium text-[20px]
+}
+
+.contacts__link:hover {
+    @apply underline
+}
+
+.contacts__item {
+    @apply mt-4
+}
+
+.contacts__section {
+    @apply w-auto
+}
+
+.contacts__desc {
+    @apply mt-6
+}
+
+.contacts__icons {
+    @apply flex flex-wrap justify-center mb-16;
+}
+
+.contacts__icons img {
+    @apply w-[50px] h-[50px] mx-[5px];
+}
