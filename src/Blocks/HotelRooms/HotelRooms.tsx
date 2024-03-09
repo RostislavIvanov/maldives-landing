@@ -8,6 +8,7 @@ import standard2 from '~/assets/images/standard-2.jpg';
 import standard3 from '~/assets/images/standard-3.jpg';
 import standard4 from '~/assets/images/standard-4.jpg';
 import standard5 from '~/assets/images/standard-5.jpg';
+import standard6 from '~/assets/images/standard-6.jpg';
 import {
     deluxeRoomData,
     familyDeluxeRoomData,
@@ -21,8 +22,8 @@ import deluxe3 from '~/assets/images/deluxe-3.jpg';
 import familyDeluxe from '~/assets/images/family-deluxe.jpg';
 import familyDeluxe1 from '~/assets/images/family-deluxe-1.jpg';
 import familyDeluxe2 from '~/assets/images/family-deluxe-2.jpg';
-import premium1 from '~/assets/images/premium-1.jpg';
 import premium3 from '~/assets/images/premium-3.jpg';
+import premium4 from '~/assets/images/premium-4.jpg';
 import premium from '~/assets/images/premium.jpg';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 
@@ -52,7 +53,8 @@ const HotelRooms = () => {
                         roomSubtitle={'Одна двуспальная кровать'}
                         iconData={standardRoomData}
                         openModal={openModal}
-                        modalImages={[ standard, standard1, standard2, standard3, standard4, standard5 ]}
+                        modalImages={[ standard, standard1, standard2, standard3, standard4, standard5, standard6,
+                            familyDeluxe1 ]}
                         modalText={
                             <>
                                 <p>
@@ -81,7 +83,7 @@ const HotelRooms = () => {
                         roomSubtitle={'Одна двуспальная кровать или две раздельные'}
                         iconData={deluxeRoomData}
                         openModal={openModal}
-                        modalImages={[ deluxe, deluxe1, deluxe2, standard3, standard4, deluxe3 ]}
+                        modalImages={[ deluxe, deluxe1, deluxe2, standard3, standard4, deluxe3, familyDeluxe1 ]}
                         modalText={
                             <>
                                 <p>
@@ -113,7 +115,7 @@ const HotelRooms = () => {
                         roomSubtitle={'Три односпальные кровати'}
                         iconData={familyDeluxeRoomData}
                         openModal={openModal}
-                        modalImages={[ familyDeluxe, familyDeluxe1, familyDeluxe2, standard3, standard4 ]}
+                        modalImages={[ familyDeluxe, familyDeluxe2, standard3, standard4, familyDeluxe1 ]}
                         modalText={
                             <>
                                 <p>
@@ -135,7 +137,7 @@ const HotelRooms = () => {
                         roomSubtitle={'Две двуспальные кровати'}
                         iconData={premiumRoomData}
                         openModal={openModal}
-                        modalImages={[ premium, premium1, premium3, standard4 ]}
+                        modalImages={[ premium, premium3, standard4, premium4 ]}
                         modalText={
                             <>
                                 <p>
