@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import classes from '~/Blocks/Features/Features.module.css';
 import tap from '~/assets/icons/Tap.svg';
 
@@ -7,9 +7,9 @@ type FeaturesItemProps = {
     subLabel: string;
     imageUrl: string;
     side: 'left' | 'right';
-    openModal: (images: string[], text?: string) => void;
+    openModal: (images: string[], text?: ReactNode) => void;
     modalImages?: string[];
-    modalText?: string;
+    modalText?: ReactNode;
 }
 const FeaturesItem: FC<FeaturesItemProps> = (
     {

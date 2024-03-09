@@ -1,5 +1,5 @@
 import classes from './ModalPanel.module.css';
-import { FC, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { FC, ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Slider from '~/components/Slider/Slider.tsx';
 import Button from '~/components/UI/Button/Button.tsx';
 
@@ -8,7 +8,7 @@ type ModalPanelProps = {
     images: string[];
     autoplay: boolean;
     autoplayTime: number;
-    text?: string;
+    text?: ReactNode;
 }
 
 const ModalPanel: FC<ModalPanelProps> = (
@@ -32,9 +32,6 @@ const ModalPanel: FC<ModalPanelProps> = (
     }, [ closeModal ]);
 
     const modalRef = useRef<HTMLDivElement>(null);
-    // const handleTopInit = () => {
-    //     return `${modalRef.current.clientHeight + window.scrollY / 2}px`;
-    // };
     const [modalHeight, setModalHeight] = useState<number | null>(null);
 
     useLayoutEffect(() => {
@@ -52,7 +49,7 @@ const ModalPanel: FC<ModalPanelProps> = (
             <div ref={modalRef} style={{ top: handleTopInit() }} className={classes.modal}>
                 <Slider autoPlay={autoplay} autoPlayTime={autoplayTime} images={images}/>
                 <div className={classes.modal__text}>
-                    <p>{text}</p>
+                    <div>{text}</div>
                     <Button onClick={closeModal}>Закрыть</Button>
                 </div>
             </div>

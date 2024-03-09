@@ -8,6 +8,7 @@ import standard2 from '~/assets/images/standard-2.jpg';
 import standard3 from '~/assets/images/standard-3.jpg';
 import standard4 from '~/assets/images/standard-4.jpg';
 import standard5 from '~/assets/images/standard-5.jpg';
+import standard6 from '~/assets/images/standard-6.jpg';
 import {
     deluxeRoomData,
     familyDeluxeRoomData,
@@ -21,8 +22,8 @@ import deluxe3 from '~/assets/images/deluxe-3.jpg';
 import familyDeluxe from '~/assets/images/family-deluxe.jpg';
 import familyDeluxe1 from '~/assets/images/family-deluxe-1.jpg';
 import familyDeluxe2 from '~/assets/images/family-deluxe-2.jpg';
-import premium1 from '~/assets/images/premium-1.jpg';
 import premium3 from '~/assets/images/premium-3.jpg';
+import premium4 from '~/assets/images/premium-4.jpg';
 import premium from '~/assets/images/premium.jpg';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 
@@ -46,43 +47,110 @@ const HotelRooms = () => {
                     <img src={star} alt=""/>
                 </div>
                 <div className={'flex justify-center sm:justify-between flex-wrap'}>
-                    <RoomCard image={standard}
-                              roomTitle={'Standard'}
-                              roomSubtitle={'Одна двуспальная кровать'}
-                              data={standardRoomData}
-                              openModal={openModal}
-                              modalImages={[ standard, standard1, standard2, standard3, standard4, standard5 ]}
-                              modalText={'Двухместный номер с собственной ванной комнатой с душем, биде, феном и бесплатными ' +
-                                  'туалетно-косметическими принадлежностями. В числе удобств этого звукоизолированного ' +
-                                  'номера с отдельным входом кондиционер, гостиная зона с телевизором с плоским экраном, ' +
-                                  'мини-бар и шкаф для одежды. К услугам гостей 1 кровать.'}
+                    <RoomCard
+                        image={standard}
+                        roomTitle={'Standard'}
+                        roomSubtitle={'Одна двуспальная кровать'}
+                        iconData={standardRoomData}
+                        openModal={openModal}
+                        modalImages={[ standard, standard1, standard2, standard3, standard4, standard5, standard6,
+                            familyDeluxe1 ]}
+                        modalText={
+                            <>
+                                <p>
+                                    Двухместный номер с двуспальной нераздвигающейся кроватью, с собственной ванной
+                                    комнатой и душем. Есть фен, мини-холодильник, телевизор, кондиционер, вентилятор,
+                                    чайник, набор чашек, питьевая вода, чай и кофе, фирменное пляжное полотенце, шкаф,
+                                    сейф. Без балкона. В номере маленькое окошко без вида. Номера расположены на трех
+                                    этажах. Всего 3 номера. Подселение третьего человека в номер, к сожалению,
+                                    невозможно.
+                                </p>
+                                <p>Уборка и пополнение питьевой воды ежедневные (если оставить ключ на ресепшен).</p>
+                                <p><u>Стоимость номера в сутки с завтраком при групповом заезде:</u></p>
+                                <p>Одноместное размещение - <span>80$</span></p>
+                                <p>Двухместное размещение - <span>86$</span></p>
+                                <p>Доплата за ужин или обед (шведский стол) по <span>12$</span> на человека (по желанию)
+                                </p>
+                                <p>Трансфер из аэропорта на собственном катере в обе стороны <span>70$</span> за
+                                    человека</p>
+                                <p><strong>Налоги и таксы включены в стоимость.</strong></p>
+                            </>
+                        }
                     />
-                    <RoomCard image={deluxe}
-                              roomTitle={'Deluxe'}
-                              roomSubtitle={'Одна двуспальная кровать'}
-                              data={deluxeRoomData}
-                              openModal={openModal}
-                              modalImages={[ deluxe, deluxe1, deluxe2, standard3, standard4, deluxe3 ]}
-                              modalText={'Двухместный номер с кондиционером, отдельным входом, балконом с видом на бассейн, ' +
-                                  'а также собственной ванной комнатой с душем. К услугам гостей 1 кровать.'}
+                    <RoomCard
+                        image={deluxe}
+                        roomTitle={'Deluxe'}
+                        roomSubtitle={'Одна двуспальная кровать или две раздельные'}
+                        iconData={deluxeRoomData}
+                        openModal={openModal}
+                        modalImages={[ deluxe, deluxe1, deluxe2, standard3, standard4, deluxe3, familyDeluxe1 ]}
+                        modalText={
+                            <>
+                                <p>
+                                    Двухместный номер с двуспальной кроватью, которую можно разделить на две кровати, с
+                                    балконом, с креслом. Собственная ванная комната с душем. Есть фен, мини холодильник,
+                                    телевизор, кондиционер, вентилятор, чайник, набор чашек, питьевая вода, чай и кофе,
+                                    фирменное пляжное полотенце, шкаф, сейф. В номере маленькое окошко без вида. Номера
+                                    расположены на разных этажах. Всего 6 таких номеров. Возможно подселение одного
+                                    ребенка.
+                                </p>
+                                <p>Уборка и пополнение питьевой воды ежедневное (если оставить ключ на ресепшен).</p>
+                                <p><u>Стоимость номера в сутки с завтраком при групповом заезде:</u></p>
+                                <p>Одноместное размещение - <span>85$</span></p>
+                                <p>Двухместное размещение - <span>90$</span></p>
+                                <p>Два взрослых и ребенок - <span>110$</span></p>
+                                <p>Дети от 2 до 16 лет. Ребенок до 2х лет без питания размещается бесплатно. Кроватка на
+                                    младенца предоставляется по запросу.</p>
+                                <p>Доплата за ужин или обед (шведский стол) по <span>12$</span> на человека (по желанию)
+                                </p>
+                                <p>Трансфер из аэропорта на собственном катере в обе стороны <span>70$</span> за
+                                    человека</p>
+                                <p><strong>Налоги и таксы включены в стоимость.</strong></p>
+                            </>
+                        }
                     />
-                    <RoomCard image={familyDeluxe}
-                              roomTitle={'Deluxe семейный'}
-                              roomSubtitle={'Три односпальные кровати'}
-                              data={familyDeluxeRoomData}
-                              openModal={openModal}
-                              modalImages={[ familyDeluxe, familyDeluxe1, familyDeluxe2, standard3, standard4 ]}
-                              modalText={'Трехместный номер располагает кондиционером, приватным входом, балконом с видом ' +
-                                  'на бассейн, а также собственной ванной комнатой с душевой кабиной. В номере имеется 2 кровати.'}
+                    <RoomCard
+                        image={familyDeluxe}
+                        roomTitle={'Deluxe семейный'}
+                        roomSubtitle={'Три односпальные кровати'}
+                        iconData={familyDeluxeRoomData}
+                        openModal={openModal}
+                        modalImages={[ familyDeluxe, familyDeluxe2, standard3, standard4, familyDeluxe1 ]}
+                        modalText={
+                            <>
+                                <p>
+                                    Трехместный номер располагает кондиционером, приватным входом, балконом с видом на
+                                    бассейн, а также собственной ванной комнатой с душевой кабиной. В номере имеется 2
+                                    кровати.
+                                </p>
+                                <p>Доплата за ужин или обед (шведский стол) по <span>12$</span> на человека (по желанию)
+                                </p>
+                                <p>Трансфер из аэропорта на собственном катере в обе стороны <span>70$</span> за
+                                    человека</p>
+                                <p><strong>Налоги и таксы включены в стоимость.</strong></p>
+                            </>
+                        }
                     />
-                    <RoomCard image={premium}
-                              roomTitle={'Premium'}
-                              roomSubtitle={'Две двуспальные кровати'}
-                              data={premiumRoomData}
-                              openModal={openModal}
-                              modalImages={[ premium, premium1, premium3, standard4 ]}
-                              modalText={'Двухместный номер с кондиционером, отдельным входом, балконом с видом на бассейн, ' +
-                                  'а также собственной ванной комнатой с душем. К услугам гостей 2 кровати.'}
+                    <RoomCard
+                        image={premium}
+                        roomTitle={'Premium'}
+                        roomSubtitle={'Две двуспальные кровати'}
+                        iconData={premiumRoomData}
+                        openModal={openModal}
+                        modalImages={[ premium, premium3, standard4, premium4 ]}
+                        modalText={
+                            <>
+                                <p>
+                                    Двухместный номер с кондиционером, отдельным входом, балконом с видом на бассейн, а
+                                    также собственной ванной комнатой с душем. К услугам гостей 2 кровати.
+                                </p>
+                                <p>Доплата за ужин или обед (шведский стол) по <span>12$</span> на человека (по желанию)
+                                </p>
+                                <p>Трансфер из аэропорта на собственном катере в обе стороны <span>70$</span> за
+                                    человека</p>
+                                <p><strong>Налоги и таксы включены в стоимость.</strong></p>
+                            </>
+                        }
                     />
                 </div>
             </div>

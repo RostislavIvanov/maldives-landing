@@ -61,3 +61,7 @@
 .features__icon {
     @apply block w-8 h-8 mt-4 animate-bounce;
 }
+
+.features__description {
+    @apply py-8 bg-lightGrey;
+}

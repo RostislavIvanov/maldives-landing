@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import classes from './ExcursionItem.module.css';
 import Button from '~/components/UI/Button/Button.tsx';
 
@@ -6,9 +6,9 @@ type ExcursionItemProps = {
     title: string;
     description: string;
     imageUrl: string;
-    openModal: (images: string[], text?: string) => void;
+    openModal: (images: string[], text?: ReactNode) => void;
     modalImages?: string[];
-    modalText?: string;
+    modalText?: ReactNode;
 }
 
 const ExcursionItem: FC<ExcursionItemProps> = (

@@ -1,5 +1,5 @@
 import Button from '~/components/UI/Button/Button.tsx';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { roomDataType } from '~/data/RosyVillaHotelPageData.ts';
 import classes from './RoomCard.module.css';
 
@@ -7,17 +7,17 @@ type RoomCardProps = {
     image: string;
     roomTitle: string;
     roomSubtitle: string;
-    data: roomDataType[];
-    openModal: (images: string[], text?: string) => void;
+    iconData: roomDataType[];
+    openModal: (images: string[], text?: ReactNode) => void;
     modalImages?: string[];
-    modalText?: string;
+    modalText?: ReactNode;
 }
 const RoomCard: FC<RoomCardProps> = (
     {
         image,
         roomTitle,
         roomSubtitle,
-        data,
+        iconData,
         modalText,
         modalImages = [],
         openModal,
@@ -30,7 +30,7 @@ const RoomCard: FC<RoomCardProps> = (
                 <h5 className={classes.roomCard__title}>{roomTitle}</h5>
                 <h6>{roomSubtitle}</h6>
                 <div className={classes.roomCard__features}>
-                    {data.map(el =>
+                    {iconData.map(el =>
                         <div className={classes.roomFeatures}>
                             <img src={el.icon} alt=""/>
                             <div>{el.text}</div>
