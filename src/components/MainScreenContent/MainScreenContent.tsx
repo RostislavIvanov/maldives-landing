@@ -9,7 +9,7 @@ const MainScreenContent = () => {
         <div className={classes.content}>
             <div className={classes.content__container}>
                 <Header handleLinkClick={scrollToElement}/>
-                <HugeTitle/>
+                <HugeTitle handleLinkClick={scrollToElement}/>
                 <div onClick={e => scrollToElement(e, 'about')} className={classes.content__arrow}>
                     <img src={Arrow} alt='Arrow'/>
                 </div>
