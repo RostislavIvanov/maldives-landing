@@ -31,6 +31,9 @@ import shark4 from '~/assets/images/shark-4.jpg';
 import points from '~/assets/images/points.jpg';
 import points1 from '~/assets/images/points-1.jpg';
 import points2 from '~/assets/images/points-2.jpg';
+import points3 from '~/assets/images/points-3.jpg';
+import points4 from '~/assets/images/points-4.jpg';
+import points5 from '~/assets/images/points-5.jpg';
 import island from '~/assets/images/island.jpg';
 import dinner from '~/assets/images/dinner.jpg';
 import dinner1 from '~/assets/images/dinner-1.jpg';
@@ -64,7 +67,7 @@ const Excursions = () => {
                             ' Также, там обитают большие морские черепахи!'}
                         imageUrl={points}
                         openModal={openModal}
-                        modalImages={[ points, points1, points2 ]}
+                        modalImages={[ points, points1, points2, points3, points4, points5 ]}
                         modalText={
                             <>
                                 <p>
