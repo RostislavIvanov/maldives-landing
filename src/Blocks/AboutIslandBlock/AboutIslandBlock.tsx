@@ -7,6 +7,7 @@ import IslandInfoItem from '~/components/IslandInfoItem/IslandInfoItem.tsx';
 import notBoring from '~/assets/images/not-boring.jpg';
 import cheep from '~/assets/images/cheep.jpg';
 import Description from '~/components/Description/Description.tsx';
+import { scrollToElement } from '~/utils/ScrollToElement/ScrollToElement.ts';
 
 const AboutIslandBlock = () => {
     return (
@@ -19,17 +20,20 @@ const AboutIslandBlock = () => {
                     <div className={classes.aboutIslandBlock__list}>
                         <IslandInfoItem
                             img={notBoring}
+                            handleLinkClick={scrollToElement}
                             subtitle={'Это НЕскучный пляжный отдых'}
                             text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
                         />
                         <IslandInfoItem
                             img={cheep}
+                            handleLinkClick={scrollToElement}
                             subtitle={'У нас недорого!'}
                             text={'Вопреки всеобщему мнению, отдых на Мальдивах, который мы предлагаем, не обойдется Вам в огромную сумму. Каждый желающий сможет ощутить красоту Мальдив на собственном примере!'}
                             reverse
                         />
                         <IslandInfoItem
                             img={beach}
+                            handleLinkClick={scrollToElement}
                             subtitle={'Мы САМИ обустраивали пляж для вашего удобства на острове'}
                             text={'Для красивого загара и пляжного отдыха есть пляж «бикини» с белым песком и\n' +
                                 'бесплатными шезлонгами.\n' +
@@ -39,6 +43,7 @@ const AboutIslandBlock = () => {
                         />
                         <IslandInfoItem
                             img={underwater}
+                            handleLinkClick={scrollToElement}
                             subtitle={'Подводная жизнь, которая Вас удивит!'}
                             text={<>
                                 <p>Вы увидите стаи диких дельфинов, огромных океанских мант, скатов, черепах, китовых
@@ -56,6 +61,7 @@ const AboutIslandBlock = () => {
                         />
                         <IslandInfoItem
                             img={amenities}
+                            handleLinkClick={scrollToElement}
                             subtitle={'На острове есть всё для полноценной беззаботной жизни'}
                             text={' Здесь есть все необходимое для отдыха в безопасности: отели, кафе и рестораны,\n' +
                                 'больница, полиция, магазины с продуктами,\n' +

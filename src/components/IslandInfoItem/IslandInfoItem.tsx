@@ -7,9 +7,10 @@ type IslandInfoItemProps = {
     subtitle: string;
     text: ReactNode;
     reverse?: boolean;
+    handleLinkClick: (e: React.MouseEvent<HTMLElement>, link: string) => void;
 }
 
-const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse }) => {
+const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse, handleLinkClick }) => {
     return (
         <div className={reverse ? classes.islandInfoReverse__con : classes.islandInfo__con}>
             {reverse
@@ -18,7 +19,9 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse 
                     <div className={classes.islandInfoReverse__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
                         <div className={classes.islandInfo__desc}>{text}</div>
-                        <Button>Отправиться в тур</Button>
+                        <Button onClick={e => handleLinkClick(e, 'prices')}>
+                            Отправиться в тур
+                        </Button>
                     </div>
                     <div className={classes.islandInfo__img}>
                         <img src={img} alt=''/>
@@ -31,7 +34,9 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse 
                     <div className={classes.islandInfo__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
                         <div className={classes.islandInfo__desc}>{text}</div>
-                        <Button>Отправиться в тур</Button>
+                        <Button onClick={e => handleLinkClick(e, 'prices')}>
+                            Отправиться в тур
+                        </Button>
                     </div>
                 </>
             }
