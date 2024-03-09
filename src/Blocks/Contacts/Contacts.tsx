@@ -32,6 +32,7 @@ const Contacts: FC = () => {
                             <div className={classes.contacts__label}>Почта:</div>
                             <div className={classes.contacts__link}>
                                 <div>reservations@rosyvillamaldives.com</div>
+                                <div>Rosyc19mid@gmail.com</div>
                             </div>
                         </div>
 
