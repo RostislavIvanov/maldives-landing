@@ -4,7 +4,7 @@
 
 .wrapper {
     @apply
-    container mx-auto py-8 px-2
+    container mx-auto pb-8 px-2
     lg:px-8;
 }
 
