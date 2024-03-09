@@ -1,8 +1,10 @@
 import { FC, PropsWithChildren } from 'react';
 import classes from './Button.module.css';
 
-type ButtonProps = PropsWithChildren & {
-    onClick?: VoidFunction;
+type ButtonProps =
+    PropsWithChildren
+    & React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+    & {
     color?: 'black' | 'white';
 }
 
