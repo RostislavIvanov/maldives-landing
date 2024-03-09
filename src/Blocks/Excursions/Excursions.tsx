@@ -7,7 +7,6 @@ import fishing3 from '~/assets/images/fishing-3.jpg';
 import fishing4 from '~/assets/images/fishing-4.jpg';
 import fishing5 from '~/assets/images/fishing-5.jpg';
 import fishing6 from '~/assets/images/fishing-6.jpg';
-import fishing7 from '~/assets/images/fishing-7.jpg';
 import snorkeling from '~/assets/images/snorkeling.jpg';
 import snorkeling1 from '~/assets/images/snorkeling-1.jpg';
 import snorkeling2 from '~/assets/images/snorkeling-2.jpg';
@@ -97,7 +96,7 @@ const Excursions = () => {
                             'Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров.'}
                         imageUrl={fishing}
                         openModal={openModal}
-                        modalImages={[ fishing, fishing1, fishing3, fishing4, fishing5, fishing6, fishing7 ]}
+                        modalImages={[ fishing, fishing1, fishing3, fishing4, fishing5, fishing6 ]}
                         modalText={
                             <>
                                 <p>
