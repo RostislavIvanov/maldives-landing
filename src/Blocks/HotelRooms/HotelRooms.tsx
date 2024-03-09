@@ -22,6 +22,7 @@ import deluxe3 from '~/assets/images/deluxe-3.jpg';
 import familyDeluxe from '~/assets/images/family-deluxe.jpg';
 import familyDeluxe1 from '~/assets/images/family-deluxe-1.jpg';
 import familyDeluxe2 from '~/assets/images/family-deluxe-2.jpg';
+import familyDeluxe3 from '~/assets/images/family-deluxe-3.jpg';
 import premium3 from '~/assets/images/premium-3.jpg';
 import premium4 from '~/assets/images/premium-4.jpg';
 import premium from '~/assets/images/premium.jpg';
@@ -65,7 +66,7 @@ const HotelRooms = () => {
                                     этажах. Всего 3 номера. Подселение третьего человека в номер, к сожалению,
                                     невозможно.
                                 </p>
-                                <p>Уборка и пополнение питьевой воды ежедневные (если оставить ключ на ресепшен).</p>
+                                <p>Уборка и пополнение питьевой воды ежедневное (если оставить ключ на ресепшен).</p>
                                 <p><u>Стоимость номера в сутки с завтраком при групповом заезде:</u></p>
                                 <p>Одноместное размещение - <span>80$</span></p>
                                 <p>Двухместное размещение - <span>86$</span></p>
@@ -115,14 +116,26 @@ const HotelRooms = () => {
                         roomSubtitle={'Три односпальные кровати'}
                         iconData={familyDeluxeRoomData}
                         openModal={openModal}
-                        modalImages={[ familyDeluxe, familyDeluxe2, standard3, standard4, familyDeluxe1 ]}
+                        modalImages={[ familyDeluxe, familyDeluxe2, familyDeluxe3, standard3,
+                            standard4, familyDeluxe1 ]}
                         modalText={
                             <>
                                 <p>
-                                    Трехместный номер располагает кондиционером, приватным входом, балконом с видом на
-                                    бассейн, а также собственной ванной комнатой с душевой кабиной. В номере имеется 2
-                                    кровати.
+                                    Трехместный номер с балконом, с тремя кроватями, которые можно объединить.
+                                    Собственная ванная комната с душем. Есть фен, мини холодильник, телевизор,
+                                    кондиционер, вентилятор, чайник, набор чашек, питьевая вода, чай и кофе, фирменное
+                                    пляжное полотенце, шкаф, сейф. В номере маленькое окошко без вида. Номера
+                                    расположены на разных этажах. Всего 3 таких номера. Возможно подселение одного
+                                    ребенка.
                                 </p>
+                                <p>
+                                    <p><u>Стоимость номера в сутки с завтраком при групповом заезде:</u></p>
+                                </p>
+                                <p><span>135$</span></p>
+                                <p>Можно разместить в номере четвертого гостя - ребенка.</p>
+                                <p>Доплата за ребенка <span>15$</span> (завтрак включен)</p>
+                                <p>Дети от 2 до 16 лет. Ребенок до 2х лет без питания размещается бесплатно. Кроватка на
+                                    младенца предоставляется по запросу.</p>
                                 <p>Доплата за ужин или обед (шведский стол) по <span>12$</span> на человека (по желанию)
                                 </p>
                                 <p>Трансфер из аэропорта на собственном катере в обе стороны <span>70$</span> за
