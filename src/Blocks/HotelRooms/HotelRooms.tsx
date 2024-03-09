@@ -147,7 +147,7 @@ const HotelRooms = () => {
                     <RoomCard
                         image={premium}
                         roomTitle={'Premium'}
-                        roomSubtitle={'Две двуспальные кровати'}
+                        roomSubtitle={'Очень большая двуспальная кровать'}
                         iconData={premiumRoomData}
                         openModal={openModal}
                         modalImages={[ premium, premium3, standard4, premium4 ]}
