@@ -96,6 +96,7 @@ const Contacts: FC = () => {
                         </div>
                     </div>
                 </div>
+                <hr/>
                 <div className={classes.contacts__desc}>
                     <Description>
                         Мы предлагаем присоединиться к уже готовой программе или можем просчитать индивидуальный маршрут

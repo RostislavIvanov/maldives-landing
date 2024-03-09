@@ -13,19 +13,19 @@
 }
 
 .contacts {
-    @apply flex justify-center items-stretch;
+    @apply block sm:flex sm:justify-center sm:items-stretch;
 }
 
 .contacts__column {
-    @apply flex flex-col mx-4 w-1/3
+    @apply flex flex-col mx-4 sm:w-1/3
 }
 
 .contacts__logo {
-    @apply w-1/5 mr-4
+    @apply w-1/5 mr-4 hidden sm:block
 }
 
 .contacts__title {
-    @apply text-label uppercase font-light;
+    @apply text-label uppercase font-light break-words;
 }
 
 .contacts__label {
@@ -33,7 +33,7 @@
 }
 
 .contacts__link {
-    @apply font-medium text-[20px]
+    @apply font-medium text-[20px] break-words
 }
 
 .contacts__link:hover {
@@ -49,11 +49,11 @@
 }
 
 .contacts__desc {
-    @apply mt-6
+    @apply mt-4
 }
 
 .contacts__icons {
-    @apply flex flex-wrap justify-center mb-16;
+    @apply flex flex-wrap justify-center my-4;
 }
 
 .contacts__icons img {
