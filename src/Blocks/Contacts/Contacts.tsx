@@ -38,14 +38,14 @@ const Contacts: FC = () => {
                         <div className={classes.contacts__item}>
                             <div className={classes.contacts__label}>Телефон:</div>
                             <div className={classes.contacts__link}>
-                                <a href="tel:+960787001">+960 787 001</a>
+                                <a href="tel:+960787001">+960 999 4740</a>
                             </div>
                         </div>
 
                         <div className={'flex-1 flex flex-col-reverse'}>
                             <div className={classes.contacts__icons}>
                                 <a target="_blank" rel="noopener noreferrer"
-                                   href="https://api.whatsapp.com/send/?phone=9607870001">
+                                   href="https://api.whatsapp.com/send/?phone=9609994740">
                                     <img src={whatsApp} alt="whatsApp"/>
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B9609994740">
