@@ -33,7 +33,7 @@
 }
 
 .contacts__link {
-    @apply font-medium text-[20px] break-words
+    @apply font-medium sm:text-[20px] break-words
 }
 
 .contacts__link:hover {
@@ -49,7 +49,7 @@
 }
 
 .contacts__desc {
-    @apply mt-4
+    @apply mt-4 mx-4
 }
 
 .contacts__icons {

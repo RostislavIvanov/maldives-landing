@@ -46,7 +46,7 @@ const Contacts: FC = () => {
                         <div className={'flex-1 flex flex-col-reverse'}>
                             <div className={classes.contacts__icons}>
                                 <a target="_blank" rel="noopener noreferrer"
-                                   href="https://api.whatsapp.com/send/?phone=9609994740">
+                                   href="https://wa.me/9609994740">
                                     <img src={whatsApp} alt="whatsApp"/>
                                 </a>
                                 <a target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B9609994740">

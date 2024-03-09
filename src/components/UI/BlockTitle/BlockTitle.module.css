@@ -6,7 +6,7 @@
 
 .label {
     @apply
-    mt-4 text-center container m-auto font-light text-[#505050] text-[20px]
+    mt-4 text-center container m-auto font-light text-[#505050] text-[20px] px-6
     sm:text-2xl
     md:text-2xl
     lg:text-subtitle
