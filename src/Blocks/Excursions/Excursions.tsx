@@ -14,6 +14,7 @@ import snorkeling2 from '~/assets/images/snorkeling-2.jpg';
 import snorkeling3 from '~/assets/images/snorkeling-3.jpg';
 import snorkeling4 from '~/assets/images/snorkeling-4.jpg';
 import dolphin from '~/assets/images/dolphine-tour.jpg';
+import dolphin1 from '~/assets/images/dolphine-tour-1.jpg';
 import ship from '~/assets/images/Ship.jpg';
 import ship1 from '~/assets/images/ship-1.jpg';
 import ship2 from '~/assets/images/ship-2.jpg';
@@ -126,7 +127,7 @@ const Excursions = () => {
                         description={'Мы отправимся в настоящее морское сафари - будем искать диких дельфинов. ' +
                             'Вы увидите несколько стай, сможете наблюдать их грациозные прыжки и даже поплавать с ними под водой.'}
                         imageUrl={dolphin}
-                        modalImages={[ dolphin ]}
+                        modalImages={[ dolphin, dolphin1 ]}
                         openModal={openModal}
                         modalText={
                             <>

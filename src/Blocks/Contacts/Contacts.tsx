@@ -78,7 +78,7 @@ const Contacts: FC = () => {
                         <div className={classes.contacts__item}>
                             <div className={classes.contacts__label}>Сайт:</div>
                             <div className={classes.contacts__link}>
-                                <a href="https://tkveterperemen.ru/">ООО ТК «Ветер Перемен» tkveterperemen.ru</a>
+                                <a target="_blank" href="https://tkveterperemen.ru/">ООО ТК «Ветер Перемен» tkveterperemen.ru</a>
                             </div>
                         </div>
 
