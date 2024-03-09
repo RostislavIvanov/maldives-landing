@@ -1,7 +1,0 @@
- .icon {
-     @apply flex;
- }
-
- .icon div {
-     @apply w-8 h-8 ml-1;
- }
