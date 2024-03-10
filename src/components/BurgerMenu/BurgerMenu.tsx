@@ -1,12 +1,10 @@
 import classes from './BurgerMenu.module.css';
 import logo from '~/assets/icons/logo-black.svg';
 import { FC, useState } from 'react';
-// import telegram from '~/assets/icons/Telegram.svg'
 import whatsApp from '~/assets/icons/WhatsApp.svg';
 import viber from '~/assets/icons/Viber.svg';
 import inst from '~/assets/icons/Instagram.svg';
-// import facebook from '~/assets/icons/Facebook.svg'
-// import mail from '~/assets/icons/Mail.ru.svg'
+import telegram from '~/assets/icons/Telegram.svg';
 
 type BurgerMenuProps = {
     handleLinkClick: (e: React.MouseEvent<HTMLElement>, link: string) => void
@@ -40,24 +38,20 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ handleLinkClick }) => {
                     <li onClick={(e) => handleBurgerClickLink(e, 'prices')}>Цены и контакты</li>
                 </ul>
                 <div className={classes.burger__icons}>
-                    {/*<a target='_blank' rel='noopener noreferrer' href='https://t.me/9607473345'>*/}
-                    {/*    <img src={telegram} alt='telegram'/>*/}
-                    {/*</a>*/}
-                    <a target='_blank' rel='noopener noreferrer' href='https://api.whatsapp.com/send/?phone=9607870001'>
+
+                    <a target='_blank' rel='noopener noreferrer'
+                       href='https://api.whatsapp.com/send/?phone=79858982743'>
                         <img src={whatsApp} alt='whatsApp'/>
                     </a>
                     <a target='_blank' rel='noopener noreferrer' href='viber://chat?number=%2B9609994740'>
                         <img src={viber} alt='viber'/>
                     </a>
+                    <a target='_blank' rel='noopener noreferrer' href='https://t.me/veterperementur'>
+                        <img src={telegram} alt='telegram'/>
+                    </a>
                     <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/rosyvilla_maldives/'>
                         <img src={inst} alt='inst'/>
                     </a>
-                    {/*<a target='_blank' rel='noopener noreferrer' href=''>*/}
-                    {/*    <img src={facebook} alt='facebook'/>*/}
-                    {/*</a>*/}
-                    {/*<a target='_blank' rel='noopener noreferrer' href=''>*/}
-                    {/*    <img src={mail} alt='mail'/>*/}
-                    {/*</a>*/}
                 </div>
             </div>
             {isMenuOpen && <div className={classes.blur} onClick={handleMenu}/>}

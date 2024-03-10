@@ -45,7 +45,7 @@ const Footer: FC = () => {
                     </nav>
                     <div className={classes.footer__icons}>
                         <a target="_blank" rel="noopener noreferrer"
-                           href="https://api.whatsapp.com/send/?phone=9607870001">
+                           href="https://wa.me/9609994740">
                             <img src={whatsApp} alt="whatsApp"/>
                         </a>
                         <a target="_blank" rel="noopener noreferrer" href="viber://chat?number=%2B9609994740">
