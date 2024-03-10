@@ -1,5 +1,5 @@
 .content {
-  @apply bg-lightGrey text-black;
+  @apply text-black bg-gradient-to-b from-transparent to-lightGrey;
 }
 
 .wrapper {

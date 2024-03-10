@@ -6,11 +6,13 @@ import AboutIslandBlock from '~/Blocks/AboutIslandBlock/AboutIslandBlock.tsx';
 import Footer from '~/Blocks/Footer/Footer.tsx';
 import Speech from '~/Blocks/Speech/Speech.tsx';
 import Contacts from '~/Blocks/Contacts/Contacts.tsx';
+import PalmList from '~/components/PalmList/PalmList.tsx';
 
 const MainLandingPage = () => {
     return (
         <>
             <MainScreenBlock/>
+            <PalmList/>
             <AboutIslandBlock/>
             <Excursions/>
             <Features/>

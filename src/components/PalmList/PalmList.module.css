@@ -1,0 +1,19 @@
+.palm {
+    @apply hidden sm:block -z-10 top-[100vh] w-full absolute right-0;
+}
+
+.palm {
+    transition: transform 0.3s ease-out;
+}
+
+.palmItem {
+    @apply absolute
+}
+
+.palmItem:first-child {
+    @apply right-0
+}
+
+.palmItem:last-child {
+    @apply mt-[100vh]
+}
