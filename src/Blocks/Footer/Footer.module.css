@@ -34,3 +34,19 @@
 .footer__icons img {
     @apply w-[30px] h-[30px] mx-2;
 }
+
+.footer__adv {
+    @apply flex font-light
+}
+
+.footer__adv p {
+    @apply mr-2
+}
+
+.footer__adv a {
+    @apply text-yellow-500
+}
+
+.footer__adv a:hover {
+    @apply underline
+}

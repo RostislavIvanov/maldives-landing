@@ -56,6 +56,12 @@ const Footer: FC = () => {
                             <img src={inst} alt="inst"/>
                         </a>
                     </div>
+                    <div className={classes.footer__adv}>
+                        <p>Сайт разработал:</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://t.me/rostislav_ivanov">
+                            @rostislav_ivanov
+                        </a>
+                    </div>
                 </footer>
             </div>
         </div>
