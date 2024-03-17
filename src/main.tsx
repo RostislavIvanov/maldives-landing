@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import RosyVillaHotelPage from '~/pages/RosyVillaHotelPage/RosyVillaHotelPage.tsx';
 import MainLandingPage from '~/pages/MainLandingPage/MainLandingPage.tsx';
+import './i18n';
 
 const router = createBrowserRouter([
     {
