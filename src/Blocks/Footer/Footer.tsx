@@ -38,8 +38,8 @@ const Footer: FC = () => {
                             <li><a href={'#features'} onClick={e => handleScroll(e, 'features')}>
                                 Наши программы
                             </a></li>
-                            <li><a href={'#features'} onClick={e => handleScroll(e, 'prices')}>
-                                Цены и контакты
+                            <li><a href={'#contacts'} onClick={e => handleScroll(e, 'contacts')}>
+                                Контакты
                             </a></li>
                         </ul>
                     </nav>

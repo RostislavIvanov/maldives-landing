@@ -12,8 +12,8 @@ const Contacts: FC = () => {
         <div className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
-                    <BlockTitle id={'prices'}>
-                        Цены и контакты
+                    <BlockTitle id={'contacts'}>
+                        Контакты
                     </BlockTitle>
                 </div>
                 <div className={classes.contacts}>
