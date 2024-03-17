@@ -27,7 +27,7 @@
 }
 
 .nav__right {
-    @apply items-center relative;
+    @apply items-center;
 }
 
 .nav__right li {
@@ -37,7 +37,7 @@
 }
 
 .nav__switch {
-    @apply absolute right-16;
+    @apply md:-right-4 right-16;
 }
 
 .nav__logo img {
