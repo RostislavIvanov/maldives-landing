@@ -1,0 +1,19 @@
+.switch {
+    @apply flex cursor-pointer;
+}
+
+.switch__langEn, .switch__langRu {
+    @apply transition-colors duration-300 ease-in-out w-1/2 py-1 px-4 border-[1px] border-white text-center
+}
+
+.switch__langRu {
+    @apply rounded-tl-default rounded-bl-default
+}
+
+.switch__langEn {
+    @apply rounded-tr-default rounded-br-default
+}
+
+.switch__chosen {
+    @apply bg-white text-black
+}
