@@ -8,71 +8,30 @@ import notBoring from '~/assets/images/not-boring.jpg';
 import cheep from '~/assets/images/cheep.jpg';
 import Description from '~/components/Description/Description.tsx';
 import { scrollToElement } from '~/utils/ScrollToElement/ScrollToElement.ts';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 const AboutIslandBlock = () => {
+    const t = useTranslate('aboutIsland');
+    const imageData = [notBoring, cheep, beach, underwater, amenities];
+
     return (
         <div className={classes.content}>
             <div className={classes.wrapper}>
                 <div>
                     <div className={classes.titleWrapper}>
-                        <BlockTitle label={'Причины, почему стоит выбрать нас'} children={'Об острове'} id={'about'}/>
+                        <BlockTitle label={t('subTitle')} children={t('title')} id={'about'}/>
                     </div>
                     <div className={classes.aboutIslandBlock__list}>
-                        <IslandInfoItem
-                            img={notBoring}
-                            handleLinkClick={scrollToElement}
-                            subtitle={'Это НЕскучный пляжный отдых'}
-                            text={'У многих путешественников Мальдивы ассоциируются только с дорогим пляжным отдыхом. Мы разбиваем эти стереотипы и предложим вам настоящие приключения на этих райских островах по демократичным ценам.'}
-                        />
-                        <IslandInfoItem
-                            img={cheep}
-                            handleLinkClick={scrollToElement}
-                            subtitle={'У нас недорого!'}
-                            text={'Вопреки всеобщему мнению, отдых на Мальдивах, который мы предлагаем, не обойдется Вам в огромную сумму. Каждый желающий сможет ощутить красоту Мальдив на собственном примере!'}
-                            reverse
-                        />
-                        <IslandInfoItem
-                            img={beach}
-                            handleLinkClick={scrollToElement}
-                            subtitle={'Мы САМИ обустраивали пляж для вашего удобства на острове'}
-                            text={'Для красивого загара и пляжного отдыха есть пляж «бикини» с белым песком и\n' +
-                                'бесплатными шезлонгами.\n' +
-                                'На пляже высажены пальмы, под кронами которых можно спрятаться от солнца.\n' +
-                                'Вход в воду комфортный, а вода - изумрудная. Этот пляж был открыт усилиями нашей\n' +
-                                'компании. Мы следим за его чистотой для своих гостей.'}
-                        />
-                        <IslandInfoItem
-                            img={underwater}
-                            handleLinkClick={scrollToElement}
-                            subtitle={'Подводная жизнь, которая Вас удивит!'}
-                            text={<>
-                                <p>Вы увидите стаи диких дельфинов, огромных океанских мант, скатов, черепах, китовых
-                                    акул,
-                                    акул-нянек и других обитателей Мальдив,
-                                    а со многими из них вы сможете безопасно поплавать и даже поймать - у нас большой
-                                    выбор
-                                    морского сафари и рыбалки.</p>
-                                <br/>
-                                <p>С декабря по февраль вам посчастливится увидеть настоящее чудо природы - светящийся
-                                    планктон.
-                                    А коралловые рифы потрясут своей красотой даже искушённых дайверов!</p>
-                            </>}
-                            reverse
-                        />
-                        <IslandInfoItem
-                            img={amenities}
-                            handleLinkClick={scrollToElement}
-                            subtitle={'На острове есть всё для полноценной беззаботной жизни'}
-                            text={' Здесь есть все необходимое для отдыха в безопасности: отели, кафе и рестораны,\n' +
-                                'больница, полиция, магазины с продуктами,\n' +
-                                'одеждой и сувенирами, дайвинг-центры, банкомат. По набережной можно безопасно\n' +
-                                'гулять в любое время суток,\n' +
-                                'наслаждаясь ласковой летней погодой круглый год.'}
-                        />
-                        <Description>Локальный остров K. Guraidhoo (Гурайду) находится в 31 км южнее Мале,
-                            в атолле Каафу и относится к Южному Мале Атоллу. Добраться до острова можно на общественном
-                            транспорте (пароме),
-                            но своих гостей мы встречаем на собственном брендированном катере.</Description>
+                        {imageData.map((el, ind) =>
+                            <IslandInfoItem
+                                img={el}
+                                handleLinkClick={scrollToElement}
+                                subtitle={t(`items.${ind}.label`)}
+                                text={t(`items.${ind}.description`)}
+                                reverse={ind % 2 === 1}
+                            />
+                        )}
+                        <Description>{t('description')}</Description>
                     </div>
                 </div>
 
