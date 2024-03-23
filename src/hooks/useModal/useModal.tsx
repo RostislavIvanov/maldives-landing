@@ -1,32 +1,32 @@
-import { FC, ReactNode, Suspense, useState } from 'react';
+import { FC, Suspense, useState } from 'react';
 import { ModalPanel } from '~/components/ModalPanel';
 
 type CurrentCard = {
     images: string[];
-    text?: ReactNode;
+    text: string;
 }
 
 type AutoplayTime = number
 
 type ModalHookReturnType = [
     FC,
-    (images: string[], text?: ReactNode) => void
+    (images: string[], text: string) => void
 ];
 
 export const useModal = (autoplayTime?: AutoplayTime):ModalHookReturnType => {
     const [ isModalOpened, setIsModalOpened ] = useState(false);
     const [ currentCard, setCurrentCard ] = useState<CurrentCard>({
         images: [],
-        text: <div></div>,
+        text: '',
     });
     const closeModal = () => {
         setIsModalOpened(false);
         setCurrentCard({
             images: [],
-            text: <div></div>
+            text: ''
         });
     };
-    const openModal = (images: string[], text?: ReactNode) => {
+    const openModal = (images: string[], text: string) => {
         setCurrentCard({
             images: images,
             text: text

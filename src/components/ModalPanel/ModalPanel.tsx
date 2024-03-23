@@ -1,5 +1,5 @@
 import classes from './ModalPanel.module.css';
-import { FC, ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { FC, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Slider from '~/components/Slider/Slider.tsx';
 import Button from '~/components/UI/Button/Button.tsx';
 
@@ -8,7 +8,7 @@ type ModalPanelProps = {
     images: string[];
     autoplay: boolean;
     autoplayTime: number;
-    text?: ReactNode;
+    text: string;
 }
 
 const ModalPanel: FC<ModalPanelProps> = (
@@ -49,7 +49,7 @@ const ModalPanel: FC<ModalPanelProps> = (
             <div ref={modalRef} style={{ top: handleTopInit() }} className={classes.modal}>
                 <Slider autoPlay={autoplay} autoPlayTime={autoplayTime} images={images}/>
                 <div className={classes.modal__text}>
-                    <div>{text}</div>
+                    <div dangerouslySetInnerHTML={{ __html: text }}/>
                     <Button onClick={closeModal}>Закрыть</Button>
                 </div>
             </div>
