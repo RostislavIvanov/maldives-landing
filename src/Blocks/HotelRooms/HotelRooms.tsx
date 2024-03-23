@@ -2,14 +2,15 @@ import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
 import classes from './HotelRooms.module.css';
 import star from '~/assets/icons/star.svg';
 import RoomCard from '~/components/RoomCard/RoomCard.tsx';
-import { hotelRoomsIconData } from '~/data/hotelRoomsIconData.ts';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 import { hotelRoomsImageData } from '~/data/hotelRoomsImageData.ts';
 import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
+import { useHotelRoomData } from '~/hooks/useHotelRoomData/useHotelRoomData.ts';
 
 const HotelRooms = () => {
     const [ ModalPanel, openModal ] = useModal(4000);
     const t = useTranslate('hotel');
+    const hotelRoomsIconData = useHotelRoomData();
 
     return (
         <div className={classes.content}>
