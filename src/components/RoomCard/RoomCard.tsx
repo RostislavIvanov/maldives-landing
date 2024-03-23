@@ -1,13 +1,13 @@
 import Button from '~/components/UI/Button/Button.tsx';
 import { FC } from 'react';
-import { roomDataType } from '~/data/hotelRoomsIconData.ts';
 import classes from './RoomCard.module.css';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 type RoomCardProps = {
     image: string;
     roomTitle: string;
     roomSubtitle: string;
-    iconData: roomDataType[];
+    iconData: { icon: string, text: string }[];
     openModal: (images: string[], text: string) => void;
     modalImages?: string[];
     modalText: string;
@@ -23,6 +23,8 @@ const RoomCard: FC<RoomCardProps> = (
         openModal,
     }) => {
     const onItemClick = () => openModal(modalImages, modalText);
+    const t = useTranslate('hotel');
+
     return (
         <div className={classes.roomCard}>
             <img src={image} alt=""/>
@@ -38,9 +40,9 @@ const RoomCard: FC<RoomCardProps> = (
                     )}
                 </div>
                 <div className={classes.roomCard__btn}>
-                    <div>
-                        <Button onClick={onItemClick}>Подробнее</Button>
-                    </div>
+                    <Button onClick={onItemClick}>
+                        {t('button')}
+                    </Button>
                 </div>
             </div>
         </div>
