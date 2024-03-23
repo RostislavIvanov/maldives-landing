@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import classes from './ExcursionItem.module.css';
 import Button from '~/components/UI/Button/Button.tsx';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 type ExcursionItemProps = {
     title: string;
@@ -21,6 +22,7 @@ const ExcursionItem: FC<ExcursionItemProps> = (
         modalText
     }) => {
     const onItemClick = () => openModal(modalImages, modalText);
+    const t = useTranslate('excursions');
 
     return (
         <div className={classes.excursion}>
@@ -33,7 +35,7 @@ const ExcursionItem: FC<ExcursionItemProps> = (
                     <h5 className={classes.excursion__title}>{title}</h5>
                     <div className={classes.excursion__content}>
                         <div className={classes.excursion__desc}>{description}</div>
-                        <Button color={'white'} onClick={onItemClick}>Подробнее</Button>
+                        <Button color={'white'} onClick={onItemClick}>{t('button')}</Button>
                     </div>
                 </div>
             </div>
