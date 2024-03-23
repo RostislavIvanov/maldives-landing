@@ -14,3 +14,7 @@
 .stars img {
     @apply w-[60px] h-[60px]
 }
+
+.hotelRooms {
+    @apply flex justify-center sm:justify-between flex-wrap
+}

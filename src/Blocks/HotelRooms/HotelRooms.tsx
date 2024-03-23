@@ -47,7 +47,7 @@ const HotelRooms = () => {
                     <img src={star} alt=""/>
                     <img src={star} alt=""/>
                 </div>
-                <div className={'flex justify-center sm:justify-between flex-wrap'}>
+                <div className={classes.hotelRooms}>
                     <RoomCard
                         image={standard}
                         roomTitle={'Standard'}
