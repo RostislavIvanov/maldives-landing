@@ -1,6 +1,6 @@
 import Button from '~/components/UI/Button/Button.tsx';
 import { FC } from 'react';
-import { roomDataType } from '~/data/RosyVillaHotelPageData.ts';
+import { roomDataType } from '~/data/hotelRoomsIconData.ts';
 import classes from './RoomCard.module.css';
 
 type RoomCardProps = {
