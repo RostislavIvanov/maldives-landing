@@ -6,9 +6,11 @@ import inst from '~/assets/icons/Instagram.svg';
 import logo from '~/assets/icons/logo-white.svg';
 import { useNavigate } from 'react-router-dom';
 import { scrollToElement } from '~/utils/ScrollToElement/ScrollToElement.ts';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 const Footer: FC = () => {
     const navigate = useNavigate();
+    const t = useTranslate('footer');
     const handleScroll = (e: React.MouseEvent<HTMLElement>, link: string) => {
         e.preventDefault();
         navigate('/');
@@ -27,19 +29,19 @@ const Footer: FC = () => {
                     <nav className={classes.footer__nav}>
                         <ul>
                             <li><a href={'#about'} onClick={e => handleScroll(e, 'about')}>
-                                Об острове
+                                {t('nav.about')}
                             </a></li>
                             <li><a href={'#excursions'} onClick={e => handleScroll(e, 'excursions')}>
-                                Экскурсии
+                                {t('nav.excursions')}
                             </a></li>
                             <li><a href={'#accommodation'} onClick={e => handleScroll(e, 'accommodation')}>
-                                Размещение
+                                {t('nav.accommodation')}
                             </a></li>
                             <li><a href={'#features'} onClick={e => handleScroll(e, 'features')}>
-                                Наши программы
+                                {t('nav.features')}
                             </a></li>
                             <li><a href={'#contacts'} onClick={e => handleScroll(e, 'contacts')}>
-                                Контакты
+                                {t('nav.contacts')}
                             </a></li>
                         </ul>
                     </nav>
@@ -57,7 +59,9 @@ const Footer: FC = () => {
                         </a>
                     </div>
                     <div className={classes.footer__adv}>
-                        <p>Сайт разработал:</p>
+                        <p>
+                            {t('label')}
+                        </p>
                         <a target="_blank" rel="noopener noreferrer" href="https://t.me/rostislav_ivanov">
                             @rostislav_ivanov
                         </a>
