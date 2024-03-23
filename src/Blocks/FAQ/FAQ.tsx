@@ -1,7 +1,8 @@
 import { FC, useState } from 'react';
 import classes from './FAQ.module.css';
 import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
-import { FaqDataType } from '~/data/faqData.ts';
+import { FaqDataType } from '~/hooks/useFaqData/useFaqData.ts';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 type FAQProps = {
     data: FaqDataType[];
@@ -15,12 +16,15 @@ const FAQ: FC<FAQProps> = ({ data }) => {
             setIsOpen(index);
         }
     };
+    const t = useTranslate('faq');
 
     return (
         <div className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
-                    <BlockTitle>Часто задаваемые вопросы</BlockTitle>
+                    <BlockTitle>
+                        {t('title')}
+                    </BlockTitle>
                 </div>
                 {data.map((faq, index) => (
                     <div key={index}>
