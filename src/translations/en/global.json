@@ -261,5 +261,8 @@
       "features": "Special Programs",
       "contacts": "Contacts Us"
     }
+  },
+  "modal": {
+    "button": "Go back"
   }
 }

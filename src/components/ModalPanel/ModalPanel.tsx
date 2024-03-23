@@ -2,6 +2,7 @@ import classes from './ModalPanel.module.css';
 import { FC, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Slider from '~/components/Slider/Slider.tsx';
 import Button from '~/components/UI/Button/Button.tsx';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 type ModalPanelProps = {
     closeModal: VoidFunction;
@@ -43,6 +44,8 @@ const ModalPanel: FC<ModalPanelProps> = (
     const handleTopInit = () => {
         return modalHeight ? `${modalHeight  / 2 + window.scrollY + 30}px` : 'auto';
     };
+    const t = useTranslate('modal');
+
     return (
         <>
             <div className={classes.modal__back} onClick={closeModal}/>
@@ -50,7 +53,9 @@ const ModalPanel: FC<ModalPanelProps> = (
                 <Slider autoPlay={autoplay} autoPlayTime={autoplayTime} images={images}/>
                 <div className={classes.modal__text}>
                     <div dangerouslySetInnerHTML={{ __html: text }}/>
-                    <Button onClick={closeModal}>Закрыть</Button>
+                    <Button onClick={closeModal}>
+                        {t('button')}
+                    </Button>
                 </div>
             </div>
         </>
