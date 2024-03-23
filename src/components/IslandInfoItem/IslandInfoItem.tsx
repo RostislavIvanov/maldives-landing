@@ -22,7 +22,7 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse,
                     <div className={classes.islandInfoReverse__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
                         <div dangerouslySetInnerHTML={{ __html: text }} className={classes.islandInfo__desc}/>
-                        <Button onClick={e => handleLinkClick(e, 'prices')}>
+                        <Button onClick={e => handleLinkClick(e, 'contacts')}>
                             {t('button')}
                         </Button>
                     </div>
@@ -37,7 +37,7 @@ const IslandInfoItem: FC<IslandInfoItemProps> = ({ img, text, subtitle, reverse,
                     <div className={classes.islandInfo__text}>
                         <h5 className={classes.islandInfo__label}>{subtitle}</h5>
                         <div dangerouslySetInnerHTML={{ __html: text }} className={classes.islandInfo__desc}/>
-                        <Button onClick={e => handleLinkClick(e, 'prices')}>
+                        <Button onClick={e => handleLinkClick(e, 'contacts')}>
                             {t('button')}
                         </Button>
                     </div>
