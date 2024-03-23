@@ -4,12 +4,12 @@
       "about": "About Island",
       "excursions": "Experiences",
       "accommodation": "Accommodation",
-      "features": "Special Plans",
-      "contacts": "Contacts"
+      "features": "Special Programs",
+      "contacts": "Contacts Us"
     },
     "main": {
       "title": "Maldives",
-      "subTitle": "Unforgettable Adventure",
+      "subTitle": "Your Ultimate Adventure",
       "button": "Find a tour"
     }
   },
@@ -42,111 +42,224 @@
     "description": "The local island of K. Guraidhoo is located 31 km south of Male in Kaafu Atoll and belongs to the South Male Atoll. We are thrilled to offer our guests a warm welcome on our own branded boat, making your journey even more special. While the public ferry is also available, we believe that our personalized service truly sets us apart."
   },
   "excursions": {
-    "title": "Экскурсии",
-    "subTitle": "Насладитесь возможностями нашего острова",
+    "title": "Experiences",
+    "subTitle": "Enjoy the endless possibilities on our island!",
     "items": [
       {
-        "title": "3 точки для плавания с маской",
-        "description": "Вы посетите Manta Point и сможете поплавать рядом с мантами - древними и величественными животными. Также, там обитают большие морские черепахи!"
+        "title": "3 Snorkeling Points",
+        "description": "You’ll visit Manta Point, where you'll have the opportunity to swim alongside the ancient and majestic mantas. You'll also get to see large sea turtles in their natural habitat!",
+        "modalText": "<p>At Manta Point, you will get to swim alongside the ancient and majestic animals mantas, who move so gracefully by flapping their pectoral fins like wings. Don't worry, it's completely safe to do so since mantas feed on plankton. You will have the opportunity to observe giant stingrays, which can reach up to 9 meters long and are often called sea devils due to their impressive and unusual appearance. You can also enjoy the company of large turtles and take in the breathtaking views of the beautiful Garden Reef, where the corals look like blossoming flowers.</p><p><span>100$</span></p><p>Join us for a full-day trip to a desert island! You'll receive a lunch box with your choice of pasta or rice with meat, plus a refreshing drink. And if you're feeling extra hungry, you can add on additional meals for a small fee.</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, snorkeling training, life jackets, lunch, and water.</p><p>For the more adventurous, you can even go scuba diving!</p>"
       },
       {
-        "title": "Рыбалка",
-        "description": "Предлагаем несколько видов рыбалок: вечерняя рыбалка на закате и утренняя на восходе. Вы своими руками сможете поймать тунца, сможете устроить подводную охоту на лобстеров, и так же собственноручно поймать кальмаров."
+        "title": "Fishing",
+        "description": "We have several types of fishing available, including evening fishing at sunset and morning fishing at sunrise. You'll have the opportunity to catch tuna with your own hands, organize an underwater hunt for lobsters, and even catch squid!",
+        "modalText": "<p>We offer several types of fishing: evening fishing and morning fishing, tuna fishing, lobster hunting, and squid fishing. Each type of fishing is unique and offers a different experience, so you can safely go sea hunting every day and always have new and exciting adventures. Our experienced guides ensure that everyone, including beginners, will have a successful catch. We even offer master classes on cooking the delicacy lobster!</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p>Night fishing with dinner from the catch - <span>50$</span></p><p>Lobster hunting and cooking master class - <span>55$</span></p><p>Tuna fishing - <span>50$</span></p><p>Fish dinner on the beach with candles - <span>50$</span></p><p><strong>We've got everything covered for you, </strong>including organization, boat, gas, crew, equipment, training, cutting, and cooking.</p>"
       },
       {
-        "title": "Тур с дельфинами",
-        "description": "Мы отправимся в настоящее морское сафари - будем искать диких дельфинов. Вы увидите несколько стай, сможете наблюдать их грациозные прыжки и даже поплавать с ними под водой."
+        "title": "Dolphin Tour",
+        "description": "Get ready for a real sea safari where we'll search for wild dolphins. You'll witness several packs, watch their graceful jumps, and even have the opportunity to swim with them underwater.",
+        "modalText": "<p>We're going on a real sea safari to look for wild dolphins! You'll see several packs, watch their graceful jumps, and even swim with them underwater. These beautiful animals are very fast, so you'll have to be even faster to see them. But don't worry, the Rosy Villa boat will help with our photo hunt!</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p><span>60$</span></p><p>Join us for a full-day trip with lunch on a desert island! You'll receive a lunch box with your choice of pasta or rice with meat, plus a refreshing drink. And if you're feeling extra hungry, you can add on additional meals for a small fee.</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, snorkeling training, life jackets, lunch, and water.</p>"
       },
       {
-        "title": "Приключение с акулами",
-        "description": "Плавание с акулами \"няньками\" - настоящая психологическая терапия. Если соблюдать инструктаж - нахождение с ними безопасно и более того, акулы очень тактильные, к ними приятно прикасаться и они не сопротивляются."
+        "title": "Shark Adventure",
+        "description": "Swimming with nurse sharks can be a truly therapeutic experience. As long as you follow the instructions, it is completely safe to be around them. These sharks are surprisingly tactile and it's a real pleasure to touch them. They are so gentle that they won't even resist your touch!",
+        "modalText": "<p>Do you want to impress everyone with your courage? Or to overcome your fears? Swimming with nurse sharks is an amazing experience that can be incredibly therapeutic for your mind and soul! As long as you follow the instructions, it is completely safe to be around them. These sharks are surprisingly tactile and it's a real pleasure to touch them. They are so gentle that they won't even resist your touch! You will have an exciting experience and will surprise your friends with bold videos!</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p><span>75$</span></p><p>Join us for this half-day trip!</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, training, life jackets, and water.</p>"
       },
       {
-        "title": "Путешествие на затонувший корабль",
-        "description": "Приглашаем Вас погрузиться к затонувшему кораблю! Это возможно сделать и с обычной маской для снорклинга, и с аквалангом. Впечатления гарантированы!"
+        "title": "Journey to the Shipwreck",
+        "description": "We are thrilled to invite you to explore the shipwreck! You can choose to snorkel or scuba dive, and we promise you won't be disappointed with the amazing experience!",
+        "modalText": "<p>Do you want to explore like a real adventurer or feel like a pirate searching for treasure? We invite you to dive down to the shipwreck! We guarantee an unforgettable experience! You can do it with just a snorkeling mask or with scuba diving gear.'</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p><span>100$</span></p><p>Join us for a full-day trip with lunch on a desert island! You'll receive a lunch box with your choice of pasta or rice with meat, plus a refreshing drink. And if you're feeling extra hungry, you can add on additional meals for a small fee.</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, snorkeling training, life jackets, lunch, and water.</p><p>For the more adventurous, you can even go scuba diving!</p>"
       },
       {
-        "title": "Тур с китовыми акулами",
-        "description": "Это приключение оставит впечатление на всю жизнь! Гигантское морское животное может достигать даже 20 метров!"
+        "title": "Whale Shark Tour",
+        "description": "Get ready for an adventure that will leave a lasting impression on you! These giant marine animals can reach up to 20 meters in length, making for an unforgettable experience!",
+        "modalText": "<p>Get ready for an adventure that will leave a lasting impression on you! These giant marine animals can reach up to 20 meters in length, making for an unforgettable experience! There is indeed a resemblance to the whale, the king of the sea. Swimming, snorkeling, or diving with a whale shark is one of the most exciting experiences in the Maldives! It feeds on plankton, so it is safe to be around, but its gigantic size will thrill anyone. Vivid emotions and stunning photos are guaranteed!'</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p><span>120$</span></p><p>Join us for this half-day trip!</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, snorkeling training, life jackets, lunch, and water.</p>"
       },
       {
-        "title": "Ночь на необитаемом острове",
-        "description": "Почувствуйте себя как Робинзон Крузо - проведите ночь на необитаемом острове! Мы так же можем организовать тематическую вечеринку, танцы под звездами. С вами остается наша команда, которая поможет все обустроить: поставит палатки, приготовит ужин."
+        "title": "Night on a Desert Island",
+        "description": "Spend a night on a desert island, just like Robinson Crusoe! We can also organize a fantastic theme party where you can dance under the stars. Our team will be there to assist you with everything, from pitching tents to cooking dinner.",
+        "modalText": "<p>You'll be surrounded by white sand and turquoise sea on a beautiful island! Plus, you'll have great company, a cozy campfire, fried fish, and even some guitar songs. You'll feel just like Robinson Crusoe as you spend the night on this desert island. And if you're up for it, we can even organize a fun theme party with dancing under the stars! Our team is here to support you every step of the way. We'll help you organize everything, from setting up tents to cooking dinner.</p><p>The cost will be individually calculated based on your specific needs.</p>"
       },
       {
-        "title": "Обед на необитаемом острове",
-        "description": "Вы попадете на необитаемый остров, где сможете заняться чем угодно. Можете купаться, наслаждаться видами или вкусно пообедать. На таких островах получаются особенно яркие фотографии. Обязательно возьмите с собой одежду для фотосессии!"
+        "title": "Lunch on a Desert Island",
+        "description": "You get to go to a beautiful desert island where you can do absolutely anything your heart desires! Swim, take in the breathtaking views, and enjoy a delicious lunch. And let's not forget about the amazing photo opportunities - these islands are so vibrant and picturesque! Pack some stylish outfits for your photoshoot!",
+        "modalText": "<p>While the picnic is included in our other trips, we can also organize this activity separately. After snorkeling and swimming, we will visit one of the most beautiful desert islands with white sand and crystal-clear water. You will have about an hour and a half to enjoy the stunning views, swim, and have lunch. These islands are perfect for taking vivid photos, so don't forget to bring clothes for a photo shoot!</p>"
       },
       {
-        "title": "Снорклинг на домашнем рифе",
-        "description": "Не выезжая с острова Вы получите удовольствие от наблюдения за кораллами и разноцветными рыбками. Отличительной особенностью нашего домашнего рифа являются затонувшие предметы: качели с надписью Guraidhoo, катер, велосипеды с \"глазами\", смотрящие на вас со дна."
+        "title": "Snorkeling on the House Reef",
+        "description": "You don't even have to leave the island to experience the beauty of coral and colourful fish. It's an amazing sight! Our house reef has a special feature - wrecks! There's a swing labeled Guraidhoo, a boat, and even bicycles with \"eyes\"' that seem to be looking right at you from the bottom.",
+        "modalText": "<p>You don't even have to leave the island to experience the beauty of coral and colourful fish. It's an amazing sight! Our house reef has a special feature - wrecks! There's a swing labeled Guraidhoo, a boat, and even bicycles with 'eyes' that seem to be looking right at you from the bottom. We will give you a briefing and provide you with all the necessary equipment. Plus, our instructor will be with you during the tour, taking photos and showing you all the most interesting locations.</p><p><u>The cost of the trip for a group of 10 people or more (price per person)</u></p><p><span>15$</span></p><p>Join us for this half-day trip!</p><p><strong>We've got everything covered for you, </strong>including the organization, boat, gas, crew, masks and fins, GoPro shooting, snorkeling training, life jackets, lunch, and water.</p><p>For the more adventurous, you can even go scuba diving!</p>"
       }
     ],
-    "button": "Подробнее"
+    "button": "Read more"
   },
-  "features": {
-    "title": "Наши программы",
-    "subTitle": "Мы регулярно набираем группы с тематическими программами: йога и фото туры, литературный тур, приключенческий с изучением английского языка, туры со звездами, медитативные и психологические туры. Актуальные предложения узнавайте у наших менеджеров. Может быть планируете свадьбу? Или хотите восстановить здоровье? А возможно вы участник дайверского или спортивного клуба? Мы можем организовать под ваше мероприятие индивидуальную программу.",
+  "programs": {
+    "title": "Special Programs",
+    "subTitle": "We regularly recruit groups for our thematic programs! We offer yoga and photo tours, literary tours, adventure tours with English learning, and meditative and psychological tours. Don't hesitate to ask our managers for current offers. Are you planning a wedding? Or do you want to restore your health? Maybe you're a member of a diving or sports club? We can organize an individual program for your event!",
     "items": [
       {
-        "label": "Свадьбы",
-        "subLabel": "Организуем красивую свадебную церемонию на любой вкус и бюджет"
+        "label": "Weddings",
+        "subLabel": "Plan a beautiful wedding for your taste and budget",
+        "modalText": "<p>We are thrilled to offer you a beautiful wedding ceremony complete with a photoshoot! Our services cater to all tastes and budgets. The ceremony can be held on our local island beach, at a resort on the island, or even on a deserted island. Imagine the stunning contrast of a white wedding dress and veil against the white sand and turquoise sea - the perfect backdrop for capturing your happiest moments. Please note that this ceremony does not hold any legal weight, but it will certainly serve as a beautiful beginning to your happy family life!</p>"
       },
       {
-        "label": "Лечение",
-        "subLabel": "Совместите приятное с полезным. Предлагаем вам массаж и аюрведические процедуры"
+        "label": "Treatment",
+        "subLabel": "Combine pleasure and wellness! We offer massages and Ayurvedic treatments",
+        "modalText": "<p>We are thrilled to offer you the perfect combination of pleasure and wellness! You can choose from a variety of options, including Ayurvedic treatment programs, massage courses, and cosmetological treatments. The Maldives' climate, vibrant colours, water composition, and sunshine all have a positive impact on the body, and we are excited to offer additional health-improving procedures to enhance these benefits.</p>"
       },
       {
-        "label": "Круизы",
-        "subLabel": "Арендуйте яхту с друзьями или семьей и отправьтесь в путешествие по своему уникальному маршруту"
+        "label": "Cruises",
+        "subLabel": "Charter a yacht with your friends or family and sail on your own unique itinerary",
+        "modalText": "<p>You can rent a yacht for your group and go on a cruise according to your itinerary or according to ready-made options. We provide delicious food, an experienced crew, and snorkeling equipment. Every evening we can organize a disco with a talented DJ and a fully stocked bar, so you can dance under the moon in the middle of the ocean.</p><p>The cost of rent is calculated individually, depending on your objectives. Don't hesitate to contact our manager at the phone numbers indicated on the site for a personalized quote.</p>"
       },
       {
-        "label": "День на резорте",
-        "subLabel": "Мы отвезем вас в один из отелей-резортов, где вы сможете насладиться беззаботным отдыхом в райском месте"
+        "label": "A Day at the Resort",
+        "subLabel": "We will take you to one of the resort hotels where you can enjoy a carefree vacation in a magical location",
+        "modalText": "<p>We cooperate with several resort hotels. You can enjoy a carefree vacation in a true paradise - an island hotel! Our boat will take you to the hotel in the morning and pick you up in the evening, so you can make the most of your stay. The price also covers lunch and drinks, including alcohol.</p><p><strong>Our partners:</strong></p><p>Sun Siyam Olhuveli 4*, Adaaran Club Rannalhi 4*, Fihalhohi Maldives 4*</p><p>Join us for a Day at the Resort for $120 per person.</p><p><span>120$</span></p><p><strong>We've got everything covered for you, </strong>including round-trip transportation and a delicious lunch, with beverages provided throughout the day. The tour starts at 9 am and ends at 5 pm.</p>"
       },
       {
-        "label": "Романтический ужин",
-        "subLabel": "Мы поможем красиво отметить любое ваше событие"
+        "label": "Romantic Dinner",
+        "subLabel": "Our team is here to help you create a beautiful and romantic dinner that you'll never forget",
+        "modalText": "<p>We are thrilled to help you celebrate any of your special moments, whether it's a marriage proposal, anniversary, birthday, or any other occasion! Our team will organize a stunning and romantic dinner on the beach at sunset, creating a truly unforgettable experience for you and your loved ones.</p>"
       },
       {
-        "label": "Культура Мальдив",
-        "subLabel": "Насладитесь национальными танцами, песнями, и мастер-классами на нашем острове"
+        "label": "Maldives Culture",
+        "subLabel": "Explore national dances, songs, and workshops on our island",
+        "modalText": "<p>Our team can't wait to share with you the vibrant culture of the Maldives through traditional dances, songs, and exciting master classes on creating local souvenirs. And don't forget to capture the memories with a fun photo session in traditional Maldivian costumes!</p><p>How about a fun karaoke night on the rooftop of our hotel? Or maybe a team dinner with delicious food and great company? We also have board games, drawing lessons, water activities, sports, diving, massages, and medical procedures available. We can even arrange a trip to neighboring local islands or to the capital city of Male!</p><p>Our managers can provide you with a personalized estimate, so don't hesitate to give us a call at the phone numbers listed on our website.</p>"
       }
     ],
-    "description": "В каждой нашей программе включено проживание в отеле."
+    "description": "All our programs include hotel accommodation!"
   },
   "accommodation": {
     "hotel": "Rosy Villa Hotel",
-    "grade": "<span>8.7</span> — средняя оценка среди отзывов на Букинге",
-    "info": "Отель Rosy Villa Hotel расположен на локальном острове К. Гурайду в Южном Мале Атолле. Мы доставляем гостей до острова на собственном катере. Это единственный отель на острове с бассейном, а на крыше есть открытая терраса.<br/> В 5-ти минутах ходьбы есть пляж. Вы можете взять в отеле ласты и маску для снорклинга, а так же заказать различные экскурсии.",
-    "button": "Подробнее"
+    "grade": " — rating on Booking.com",
+    "info": "Welcome to the Rosy Villa Hotel, located on the beautiful local island of K. Guraidhoo in South Male Atoll! We are proud to be the only hotel on the island with a luxurious swimming pool and a stunning outdoor rooftop terrace.\nOur guests are transported to the island on our very own boat.<br/> Just a 5-minute walk away is a breathtaking beach where you can borrow fins and masks for snorkeling. And don't forget to book one of our exciting tours!",
+    "button": "Read more"
+  },
+  "hotel": {
+    "subtitle": "Every guest becomes our friend!",
+    "items": [
+      {
+        "roomTitle": "Standard",
+        "roomSubtitle": "1 double bed",
+        "modalText": "<p>This double room includes a double bed that cannot be split into 2 single beds and a private bathroom with a walk-in shower. The room is equipped with a range of amenities, including a hairdryer, mini fridge, TV, air conditioning, fan, kettle, set of cups, drinking water, tea and coffee, branded beach towel, closet, and safe. This particular room does not feature a balcony but does have a small window. The rooms are spread across three floors, with a total of 3 rooms available. Please note that it is not possible to accommodate a third person in the room.</p><p>Daily cleaning and replenishment of drinking water can be arranged if the key is left at the reception.</p><p><u>Room prices per night with breakfast included for group check-in:</u></p><p>1 adult - <span>80$</span></p><p>2 adults - <span>86$</span></p><p>Additional fee for dinner or lunch (buffet) - <span>12$</span> per person (optional)</p><p>Transfer from the airport on our own boat in both directions - <span>70$</span> per person</p><p><strong>Taxes included.</strong></p>"
+      },
+      {
+        "roomTitle": "Deluxe",
+        "roomSubtitle": "1 double bed or 2 single beds",
+        "modalText": "<p>This double room includes a double bed that can be split into 2 single beds, a private bathroom with a walk-in shower, a balcony, and a couch. The room is equipped with a range of amenities, including a hairdryer, mini fridge, TV, air conditioning, fan, kettle, set of cups, drinking water, tea and coffee, branded beach towel, closet, and safe. The rooms are spread across multiple floors, with a total of 6 rooms available. It is possible to accommodate an additional child in the room.</p><p>Daily cleaning and replenishment of drinking water can be arranged if the key is left at the reception.</p><p><u>Room prices per night with breakfast included for group check-in:</u></p><p>1 adult - <span>85$</span></p><p>2 adults - <span>90$</span></p><p>2 adults + 1 child (2 - 16 years old) - <span>110$</span></p><p>A child under the age of 2 without meals is accommodated free of charge. We offer baby cribs upon request.</p><p>Additional fee for dinner or lunch (buffet) <span>12$</span> per person (optional)</p><p>Transfer from the airport on our own boat in both directions <span>70$</span> per person</p><p><strong>Taxes included.</strong></p>"
+      },
+      {
+        "roomTitle": "Family Deluxe",
+        "roomSubtitle": "3 single beds",
+        "modalText": "<p>This triple room includes 3 single beds that can be combined if needed, a private bathroom with a walk-in shower, and a balcony. The room is equipped with a range of amenities, including a hairdryer, mini fridge, TV, air conditioning, fan, kettle, set of cups, drinking water, tea and coffee, branded beach towel, closet, and safe. The rooms are spread across multiple floors, with a total of 3 rooms available. It is possible to accommodate an additional child in the room.\nDaily cleaning and replenishment of drinking water can be arranged if the key is left at the reception.</p><p><u>Room prices per night with breakfast included for group check-in:</u></p><p>1-3 adults - <span>135$</span></p><p>1-3 adults + 1 child (2 - 16 years old) - <span>150$</span></p><p>A child under the age of 2 without meals is accommodated free of charge. We offer baby cribs upon request.</p><p>Additional fee for dinner or lunch (buffet) <span>12$</span> per person (optional)</p><p>Transfer from the airport on our own boat in both directions <span>70$</span> per person</p><p><strong>Taxes included.</strong></p>"
+      },
+      {
+        "roomTitle": "Premium",
+        "roomSubtitle": "1 extra-large double bed",
+        "modalText": "<p>This double room offers the highest level of comfort with a spacious balcony and stunning views of both sunrise and sunset. The balcony is equipped with a table, chairs, and a tumble dryer for your convenience. The room features an extra-large double bed (cannot be split into two beds) and a spacious bathroom with both a shower stall and a bathtub. The room is equipped with a range of amenities including a hairdryer, mini fridge, TV, air conditioning, fan, kettle, set of cups, drinking water, tea, and coffee, branded beach towel, closet, and safe.</p><p>Please note that this room is not suitable for accommodating a third person. It is an ideal choice for couples on their honeymoon.</p><p><u>Room prices per night with breakfast included for group check-in:</u></p><p>1 adult - <span>90$</span></p><p>2 adults - <span>110$</span></p><p>Additional fee for dinner or lunch (buffet) <span>12$</span> per person (optional)</p><p>Transfer from the airport on our own boat in both directions <span>70$</span> per person</p><p><strong>Taxes included.</strong></p>"
+      }
+    ],
+    "icons": [
+      {
+        "text": "m²"
+      },
+      {
+        "text": "Air conditioning"
+      },
+      {
+        "text": "Flat-screen TV"
+      },
+      {
+        "text": "Free WiFi"
+      },
+      {
+        "text": "Soundproofing"
+      },
+      {
+        "text": "Minibar"
+      },
+      {
+        "text": "Walk-in shower"
+      },
+      {
+        "text": "Balcony"
+      },
+      {
+        "text": "Pool view"
+      },
+      {
+        "text": "City view"
+      },
+      {
+        "text": "Private bathroom with a bath"
+      }
+    ],
+    "button": "Read more"
+  },
+  "feedback": {
+    "title": "Reviews"
+  },
+  "faq": {
+    "title": "FAQ",
+    "data": [
+      {
+        "question": "Can I join you after living on another island?",
+        "answer": "Absolutely! We would be delighted to have you stay with us both before and after your visit to another local island or resort."
+      },
+      {
+        "question": "What meals does the hotel offer?",
+        "answer": "At Rosy Villa Hotel, we offer a wide range of delicious buffet meals for our guests for breakfasts, lunches, and dinners. Our meals come complete with refreshing soft drinks, and we always have coffee, tea, and water available for your convenience. Additionally, our menu offers a variety of dishes that you can order at any time, and our talented chef is always happy to prepare your catch."
+      },
+      {
+        "question": "What facilities does the hotel have for groups?",
+        "answer": "On the first floor, we have a spacious table that can comfortably seat up to 18 people, making it perfect for business negotiations, workshops, or board games. We are more than happy to accommodate your group and ensure that you have a pleasant stay.\n\t Additionally, on the roof, we have a beautiful terrace that can be used for a variety of events, including discos, karaoke, sports classes such as yoga, weddings, dinners, and corporate events. It is possible to book a personalized dinner for your company, various tours, and other events at the hotel."
+      },
+      {
+        "question": "What is the infrastructure near the hotel?",
+        "answer": "In addition to several grocery stores, cafes, souvenir stores, and ATMs, there is also a hospital, public transport to neighboring local islands and to Male, a \"bikini\" beach, a spa, police, diving centers, and even a large soccer field. The island boasts plenty of amenities to ensure a comfortable and carefree vacation."
+      },
+      {
+        "question": "What free services does the hotel offer? What do I have to pay extra for?",
+        "answer": "Taxes and breakfasts are included in the price. You can enjoy daily room cleaning, bed linen change on request, towel replacement, shampoos and soaps, adapter rentals, a hairdryer, room air conditioning, and a refrigerator, all included in the price.\n\t If you wish to have more meals, you can order them at an additional fee or choose to purchase accommodation at a half-board/full-board rate. We provide complimentary drinking water in your room on a daily basis. Additionally, we offer a wide selection of beverages including coffee and tea, which are available throughout the day in our hotel restaurant. As our valued guests, you are welcome to enjoy our swimming pool and roof terrace free of charge.\n\t For your convenience, we also have a small library located next to the reception area. Furthermore, the beach is just a short five-minute walk from the hotel. It is a public beach, but we provide sunbeds and umbrellas free of charge. If you are interested in exploring the underwater world, we offer complimentary rental of fins and snorkeling masks. We have helped to create this beautiful beach for our guests, and we are committed to ensuring that it remains clean and pristine for everyone to enjoy. We offer high-quality beach towels in every room, and our guests can rest assured that they can exchange them for fresh ones at any time.\n\t For those looking to enhance their stay even further, we offer a variety of tours, massages, transfers, master classes, and cooking classes, all of which can be booked for an additional fee."
+      }
+    ]
   },
   "contacts": {
-    "title": "Контакты",
-    "mail": "Почта:",
-    "tel": "Телефон:",
-    "site": "Сайт:",
+    "title": "Contact Us",
+    "mail": "Email:",
+    "tel": "Call us:",
+    "site": "Learn more:",
     "en": {
       "header": "ROSY VILLA PVT LTD",
-      "consulting": "Для консультаций и бронирования на английском языке"
+      "consulting": "For consultation and booking in English"
     },
     "ru": {
-      "header": "НАШИ ПАРТНЕРЫ",
-      "consulting": "Для консультаций и бронирования на русском языке"
+      "header": "Our Partners in Russia",
+      "consulting": "For consultation and booking in Russian"
     },
-    "description": "Мы предлагаем присоединиться к уже готовой программе или можем просчитать индивидуальный маршрут для ваших задач. Для консультации, расчета и бронирования на русском языке обращайтесь к нашим партнерам в России."
+    "description": "We are pleased to offer you our special programs or we can create a bespoke itinerary tailored to your specific needs. If you require any assistance with consultation, calculation, or booking in Russian, please do not hesitate to contact our partners in Russia."
   },
   "speech": {
-    "title": "Слово руководителя",
+    "title": "Our Mission",
     "text": {
-      "first": "Мальдивы у многих людей ассоциируются только с пляжным отдыхом в дорогих отелях, и туристы уезжают с нашей страны так и не узнав ее историю, её быт, её возможности.",
-      "second": "Я хочу показать путешественникам невероятную красоту подводного мира и изменить мнение, что Мальдивы – это только пляжный отдых.",
-      "third": "Приехав к нам, вы окунётесь в захватывающее мальдивское приключение - сможете переночевать на необитаемом острове, перебороть свои страхи во время плавания с акулами и мантами, нырнуть к затонувшему кораблю, поймать большого лобстера или тунца, отправиться в круиз на яхте по своему маршруту, погрузиться в быт мальдивского населения и почувствовать наше гостеприимство."
+      "first": "Many people associate the Maldives only with beach vacations in expensive hotels, and tourists leave our country without learning about its history, its life, and its opportunities.",
+      "second": "I want to show travelers the incredible beauty of the underwater world and change the opinion that the Maldives is only a beach vacation.",
+      "third": "When you come to us, you will plunge into an exciting Maldivian adventure - you can spend the night on a deserted island, overcome your fears while swimming with sharks and mantas, dive into a sunken ship, catch a big lobster or tuna, go on a yacht cruise on your own route, immerse yourself in the life of the Maldivian population and feel our hospitality."
     },
     "sign": {
-      "first": "Будем рады видеть Вас у нас в гостях на острове К. Гурайду!",
-      "second": "Управляющий директор компании HASSAN ZILAAL"
+      "first": "We look forward to seeing you on K. Guraidhoo Island!",
+      "second": "CEO of HASSAN ZILAAL Company"
     }
   },
-  "footer": "Сайт разработал:"
+  "footer": {
+    "label": "Made by:",
+    "nav": {
+      "about": "About Island",
+      "excursions": "Experiences",
+      "accommodation": "Accommodation",
+      "features": "Special Programs",
+      "contacts": "Contacts Us"
+    }
+  }
 }
