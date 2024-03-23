@@ -10,12 +10,7 @@ import wifi from '~/assets/icons/wifi.svg';
 import bath from '~/assets/icons/bath.svg';
 import shower from '~/assets/icons/shower.svg';
 
-export type roomDataType = {
-    icon: string,
-    text: string,
-}
-
-export const standardRoomData: roomDataType[] = [
+export const standardRoomData = [
     {
         icon: room,
         text: '18 кв. м.',
@@ -46,7 +41,7 @@ export const standardRoomData: roomDataType[] = [
     },
 ];
 
-export const deluxeRoomData: roomDataType[] = [
+export const deluxeRoomData = [
     {
         icon: room,
         text: '19 кв. м.',
@@ -89,7 +84,7 @@ export const deluxeRoomData: roomDataType[] = [
     },
 ];
 
-export const familyDeluxeRoomData: roomDataType[] = [
+export const familyDeluxeRoomData = [
     {
         icon: room,
         text: '23 кв. м.',
@@ -132,7 +127,7 @@ export const familyDeluxeRoomData: roomDataType[] = [
     },
 ];
 
-export const premiumRoomData: roomDataType[] = [
+export const premiumRoomData = [
     {
         icon: room,
         text: '25 кв. м.',
