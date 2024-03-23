@@ -1,5 +1,5 @@
 import Button from '~/components/UI/Button/Button.tsx';
-import { FC, ReactNode } from 'react';
+import { FC } from 'react';
 import { roomDataType } from '~/data/RosyVillaHotelPageData.ts';
 import classes from './RoomCard.module.css';
 
@@ -8,9 +8,9 @@ type RoomCardProps = {
     roomTitle: string;
     roomSubtitle: string;
     iconData: roomDataType[];
-    openModal: (images: string[], text?: ReactNode) => void;
+    openModal: (images: string[], text: string) => void;
     modalImages?: string[];
-    modalText?: ReactNode;
+    modalText: string;
 }
 const RoomCard: FC<RoomCardProps> = (
     {
