@@ -24,6 +24,7 @@ const AboutIslandBlock = () => {
                     <div className={classes.aboutIslandBlock__list}>
                         {imageData.map((el, ind) =>
                             <IslandInfoItem
+                                key={ind}
                                 img={el}
                                 handleLinkClick={scrollToElement}
                                 subtitle={t(`items.${ind}.label`)}
