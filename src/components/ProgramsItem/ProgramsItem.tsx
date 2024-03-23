@@ -2,7 +2,7 @@ import { FC } from 'react';
 import classes from '~/Blocks/Programs/Programs.module.css';
 import tap from '~/assets/icons/Tap.svg';
 
-type FeaturesItemProps = {
+type ProgramsItemProps = {
     label: string;
     subLabel: string;
     imageUrl: string;
@@ -11,7 +11,7 @@ type FeaturesItemProps = {
     modalImages?: string[];
     modalText: string;
 }
-const ProgramsItem: FC<FeaturesItemProps> = (
+const ProgramsItem: FC<ProgramsItemProps> = (
     {
         label,
         subLabel,
