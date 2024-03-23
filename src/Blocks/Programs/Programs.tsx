@@ -1,5 +1,5 @@
 import BlockTitle from '~/components/UI/BlockTitle/BlockTitle.tsx';
-import classes from './Features.module.css';
+import classes from './Programs.module.css';
 import wedding from '~/assets/images/wedding.jpg';
 import cruise from '~/assets/images/cruise.jpg';
 import heal from '~/assets/images/healing.jpg';
@@ -7,12 +7,12 @@ import resortDay from '~/assets/images/resort-day.jpg';
 import romantic from '~/assets/images/romantic.jpeg';
 import culture from '~/assets/images/culture.jpg';
 import culture1 from '~/assets/images/culture-1.jpg';
-import FeaturesItem from '~/components/FeaturesItem/FeaturesItem.tsx';
+import ProgramsItem from '~/components/ProgramsItem/ProgramsItem.tsx';
 import { FC } from 'react';
 import { useModal } from '~/hooks/useModal/useModal.tsx';
 import Description from '~/components/Description/Description.tsx';
 
-const Features: FC = () => {
+const Programs: FC = () => {
     const [
         ModalPanel,
         openModal,
@@ -33,7 +33,7 @@ const Features: FC = () => {
             </div>
             <div className={classes.features}>
                 <div className={classes.features__left}>
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'Свадьбы'}
                         subLabel={'Организуем красивую свадебную церемонию на любой вкус и бюджет'}
                         imageUrl={wedding} side={'left'}
@@ -41,7 +41,7 @@ const Features: FC = () => {
                         modalImages={[ wedding ]}
                         modalText={'<p>Организуем красивую свадебную церемонию с фотосессией. На любой вкус и кошелек. Ее можно сделать как на нашем локальном острове на пляже, так и на острове - резорте и даже на необитаемом острове. Белый свадебный наряд и белая фата особенно красиво смотрится на белом песке, на фоне бирюзового моря и такой красивый ритуал оставит самые яркие воспоминания и фотографии счастливых моментов. Юридической силы эта церемония не имеет, но послужит красивым началом счастливой семейной жизни!</p>'}
                     />
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'Лечение'}
                         subLabel={'Совместите приятное с полезным. Предлагаем вам массаж и аюрведические процедуры'}
                         imageUrl={heal} side={'left'}
@@ -51,7 +51,7 @@ const Features: FC = () => {
                     />
                 </div>
                 <div className={classes.features__right}>
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'Круизы'}
                         subLabel={'Арендуйте яхту с друзьями или семьей и отправьтесь в путешествие по своему ' +
                             'уникальному маршруту'}
@@ -64,7 +64,7 @@ const Features: FC = () => {
             </div>
             <div className={classes.features}>
                 <div className={classes.features__right}>
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'День на резорте'}
                         subLabel={'Мы отвезем вас в один из отелей-резортов, где вы сможете насладиться ' +
                             'беззаботным отдыхом в райском месте'}
@@ -75,7 +75,7 @@ const Features: FC = () => {
                     />
                 </div>
                 <div className={classes.features__left}>
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'Романтический ужин'}
                         subLabel={'Мы поможем красиво отметить любое ваше событие'}
                         imageUrl={romantic} side={'left'}
@@ -83,7 +83,7 @@ const Features: FC = () => {
                         modalImages={[ romantic ]}
                         modalText={'<p>Мы поможем красиво отметить любое ваше событие - предложение руки и сердца, юбилей, день рождения или другой праздник. Организуем красивый романтический ужин на пляже на закате.</p>'}
                     />
-                    <FeaturesItem
+                    <ProgramsItem
                         label={'Культура Мальдив'}
                         subLabel={'Насладитесь национальными танцами, песнями, и мастер-классами на нашем острове'}
                         imageUrl={culture} side={'left'}
@@ -103,4 +103,4 @@ const Features: FC = () => {
     );
 };
 
-export default Features;
+export default Programs;

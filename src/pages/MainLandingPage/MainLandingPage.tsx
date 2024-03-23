@@ -1,4 +1,4 @@
-import Features from '~/Blocks/Features/Features.tsx';
+import Programs from '~/Blocks/Programs/Programs.tsx';
 import Accommodation from '~/Blocks/Accommodation/Accommodation.tsx';
 import MainScreenBlock from '~/Blocks/MainScreenBlock/MainScreenBlock.tsx';
 import Excursions from '~/Blocks/Excursions/Excursions.tsx';
@@ -15,7 +15,7 @@ const MainLandingPage = () => {
             <PalmList/>
             <AboutIslandBlock/>
             <Excursions/>
-            <Features/>
+            <Programs/>
             <Accommodation/>
             <Contacts/>
             <Speech/>

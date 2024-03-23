@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import classes from '~/Blocks/Features/Features.module.css';
+import classes from '~/Blocks/Programs/Programs.module.css';
 import tap from '~/assets/icons/Tap.svg';
 
 type FeaturesItemProps = {
@@ -11,7 +11,7 @@ type FeaturesItemProps = {
     modalImages?: string[];
     modalText: string;
 }
-const FeaturesItem: FC<FeaturesItemProps> = (
+const ProgramsItem: FC<FeaturesItemProps> = (
     {
         label,
         subLabel,
@@ -37,4 +37,4 @@ const FeaturesItem: FC<FeaturesItemProps> = (
     );
 };
 
-export default FeaturesItem;
+export default ProgramsItem;
