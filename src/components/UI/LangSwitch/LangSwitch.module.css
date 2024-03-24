@@ -1,9 +1,9 @@
 .switch {
-    @apply flex cursor-pointer;
+    @apply flex cursor-pointer max-w-[120px];
 }
 
 .switch__langEn, .switch__langRu {
-    @apply transition-colors duration-300 ease-in-out w-1/2 py-1 px-4 border-[1px] border-white text-center
+    @apply hidden sm:block transition-colors duration-300 ease-in-out w-1/2 py-1 px-4 border-[1px] border-white text-center
 }
 
 .switch__langRu {
@@ -15,5 +15,20 @@
 }
 
 .switch__chosen {
-    @apply bg-white text-black
+    @apply block bg-white text-black
 }
+
+.switch__chosen.switch__langEn {
+    @apply rounded-tr-default rounded-br-default
+    rounded-tl-default rounded-bl-default
+    sm:rounded-tl-[0px] sm:rounded-bl-[0px]
+    sm:rounded-tr-default sm:rounded-br-default
+}
+
+.switch__chosen.switch__langRu {
+    @apply rounded-tr-default rounded-br-default
+    rounded-tl-default rounded-bl-default
+    sm:rounded-tr-[0px] sm:rounded-br-[0px]
+    sm:rounded-tl-default sm:rounded-bl-default
+}
+

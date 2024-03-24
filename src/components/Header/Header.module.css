@@ -8,8 +8,7 @@
 
 .nav ul {
     @apply
-    w-2/5 hidden
-    lg:flex;
+    w-2/5 flex
 }
 
 .nav__left {
@@ -36,12 +35,20 @@
     lg:block;
 }
 
+.nav__right li:last-child {
+    @apply absolute top-6 left-0 lg:static block;
+}
+
 .nav__switch {
     @apply md:-right-4 right-16;
 }
 
+.nav__logo {
+    @apply flex justify-center
+}
+
 .nav__logo img {
-    @apply
+    @apply flex-shrink-0 mx-8
     h-20 w-auto
     xl:h-24 xl:w-auto;
 }
