@@ -4,7 +4,7 @@ import palm2 from '~/assets/images/palmList-2.png';
 import classes from './PalmList.module.css';
 
 const PalmList = () => {
-    const palmRef = useRef<HTMLDivElement>(null);
+    const palmRef = useRef<HTMLElement>(null);
     const palmPosition = () => {
         if (palmRef.current) {
             const translateY = window.scrollY / 4;
@@ -20,14 +20,14 @@ const PalmList = () => {
     }, []);
 
     return (
-        <div ref={palmRef} className={classes.palm}>
+        <section ref={palmRef} className={classes.palm}>
             <div className={classes.palmItem}>
                 <img src={palm} alt=""/>
             </div>
             <div className={classes.palmItem}>
                 <img src={palm2} alt=""/>
             </div>
-        </div>
+        </section>
     );
 };
 

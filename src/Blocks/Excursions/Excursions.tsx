@@ -10,7 +10,7 @@ const Excursions = () => {
     const t = useTranslate('excursions');
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
                     <BlockTitle label={t('subTitle')} id={'excursions'}>
@@ -32,7 +32,7 @@ const Excursions = () => {
                 </div>
             </div>
             <ModalPanel/>
-        </div>
+        </section>
     );
 };
 

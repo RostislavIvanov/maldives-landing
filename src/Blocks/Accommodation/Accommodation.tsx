@@ -17,7 +17,7 @@ const Accommodation: FC = () => {
     };
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.accommodation}>
                     <div className={classes.accommodation__item}>
@@ -63,7 +63,7 @@ const Accommodation: FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

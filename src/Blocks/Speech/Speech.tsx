@@ -9,7 +9,7 @@ const Speech: FC = () => {
     const t = useTranslate('speech');
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
                     <BlockTitle>
@@ -42,7 +42,7 @@ const Speech: FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

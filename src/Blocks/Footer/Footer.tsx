@@ -18,7 +18,7 @@ const Footer: FC = () => {
     };
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <footer className={classes.footer}>
                     <div className={classes.footer__logo}>
@@ -68,7 +68,7 @@ const Footer: FC = () => {
                     </div>
                 </footer>
             </div>
-        </div>
+        </section>
     );
 };
 

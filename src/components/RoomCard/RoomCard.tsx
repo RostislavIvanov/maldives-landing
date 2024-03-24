@@ -26,7 +26,7 @@ const RoomCard: FC<RoomCardProps> = (
     const t = useTranslate('hotel');
 
     return (
-        <div className={classes.roomCard}>
+        <article className={classes.roomCard}>
             <img src={image} alt=""/>
             <div className={classes.roomCard__con}>
                 <h5 className={classes.roomCard__title}>{roomTitle}</h5>
@@ -45,7 +45,7 @@ const RoomCard: FC<RoomCardProps> = (
                     </Button>
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 

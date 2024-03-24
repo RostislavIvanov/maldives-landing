@@ -15,7 +15,7 @@ const AboutIslandBlock = () => {
     const imageData = [notBoring, cheep, beach, underwater, amenities];
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div>
                     <div className={classes.titleWrapper}>
@@ -37,7 +37,7 @@ const AboutIslandBlock = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 };
 

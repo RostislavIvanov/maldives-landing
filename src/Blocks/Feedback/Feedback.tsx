@@ -12,7 +12,7 @@ const Feedback = () => {
     const t = useTranslate('feedback');
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <BlockTitle>
                     {t('title')}
@@ -22,7 +22,7 @@ const Feedback = () => {
                             images={[ fb1, fb2, fb3, fb4, fb5 ]}/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

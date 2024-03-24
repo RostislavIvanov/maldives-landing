@@ -18,7 +18,7 @@ const Programs: FC = () => {
     const t = useTranslate('programs');
 
     return (
-        <>
+        <section>
             <div className={classes.titleWrapper}>
                 <BlockTitle label={t('subTitle')} id={'features'}>
                     {t('title')}
@@ -90,7 +90,7 @@ const Programs: FC = () => {
                 </Description>
             </div>
             <ModalPanel/>
-        </>
+        </section>
     );
 };
 

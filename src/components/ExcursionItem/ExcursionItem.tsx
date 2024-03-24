@@ -25,7 +25,7 @@ const ExcursionItem: FC<ExcursionItemProps> = (
     const t = useTranslate('excursions');
 
     return (
-        <div className={classes.excursion}>
+        <article className={classes.excursion}>
             <div className={classes.excursion__dark}></div>
             <div
                 style={{ backgroundImage: `url(${imageUrl})` }} // TODO переделать в tailwind (тут style даже алиасы не принимает)
@@ -39,7 +39,7 @@ const ExcursionItem: FC<ExcursionItemProps> = (
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 

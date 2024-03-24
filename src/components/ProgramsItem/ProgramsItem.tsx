@@ -23,7 +23,7 @@ const ProgramsItem: FC<ProgramsItemProps> = (
     }) => {
     const onItemClick = () => openModal(modalImages, modalText);
     return (
-        <div className={classes.features__picture} onClick={onItemClick}
+        <article className={classes.features__picture} onClick={onItemClick}
              style={{ backgroundImage: `url(${imageUrl})` }} // TODO переделать в tailwind (тут style даже алиасы не принимает)
         >
             <div className={side === 'right' ? classes.featuresCard__right : classes.featuresCard__left}>
@@ -33,7 +33,7 @@ const ProgramsItem: FC<ProgramsItemProps> = (
                     <img className={classes.features__icon} src={tap} alt=''/>
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 

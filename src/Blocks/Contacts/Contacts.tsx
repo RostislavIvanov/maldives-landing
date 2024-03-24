@@ -12,7 +12,7 @@ const Contacts: FC = () => {
     const t = useTranslate('contacts');
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
                     <BlockTitle id={'contacts'}>
@@ -120,7 +120,7 @@ const Contacts: FC = () => {
                     </Description>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

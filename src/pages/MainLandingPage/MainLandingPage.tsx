@@ -12,13 +12,15 @@ const MainLandingPage = () => {
     return (
         <>
             <MainScreenBlock/>
-            <PalmList/>
-            <AboutIslandBlock/>
-            <Excursions/>
-            <Programs/>
-            <Accommodation/>
-            <Contacts/>
-            <Speech/>
+            <main>
+                <PalmList/>
+                <AboutIslandBlock/>
+                <Excursions/>
+                <Programs/>
+                <Accommodation/>
+                <Contacts/>
+                <Speech/>
+            </main>
             <Footer/>
         </>
     );

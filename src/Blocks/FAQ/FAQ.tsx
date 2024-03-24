@@ -19,7 +19,7 @@ const FAQ: FC<FAQProps> = ({ data }) => {
     const t = useTranslate('faq');
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <div className={classes.titleWrapper}>
                     <BlockTitle>
@@ -51,7 +51,7 @@ const FAQ: FC<FAQProps> = ({ data }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

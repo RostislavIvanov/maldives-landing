@@ -13,7 +13,7 @@ const HotelRooms = () => {
     const hotelRoomsIconData = useHotelRoomData();
 
     return (
-        <div className={classes.content}>
+        <section className={classes.content}>
             <div className={classes.wrapper}>
                 <BlockTitle label={t('subtitle')}>
                     Rosy Villa Hotel
@@ -40,7 +40,7 @@ const HotelRooms = () => {
                 </div>
             </div>
             <ModalPanel/>
-        </div>
+        </section>
     );
 };
 
