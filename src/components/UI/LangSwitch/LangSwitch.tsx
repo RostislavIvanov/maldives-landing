@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import classes from './LangSwitch.module.css';
 
 const LangSwitch: FC = () => {
-    const [ toggleLang, setToggleLang ] = useState('ru');
+    const defaultLanguage = localStorage.getItem('i18nextLng') === 'ru' ? 'ru' : 'en';
+    const [ toggleLang, setToggleLang ] = useState(defaultLanguage);
     const { i18n } = useTranslation('global');
 
     useEffect(() => {
