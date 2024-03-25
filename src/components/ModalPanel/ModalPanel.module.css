@@ -6,7 +6,7 @@
 }
 
 .modal__back {
-    @apply fixed inset-0 bg-black/30 h-screen w-screen z-40
+    @apply fixed inset-0 bg-black/30 h-[120vh] w-screen z-40
 }
 
 .modal__text {
