@@ -5,21 +5,22 @@ import whatsApp from '~/assets/icons/WhatsApp.svg';
 import viber from '~/assets/icons/Viber.svg';
 import inst from '~/assets/icons/Instagram.svg';
 import telegram from '~/assets/icons/Telegram.svg';
+import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 type BurgerMenuProps = {
     handleLinkClick: (e: React.MouseEvent<HTMLElement>, link: string) => void
 }
 const BurgerMenu: FC<BurgerMenuProps> = ({ handleLinkClick }) => {
     const [ isMenuOpen, setIsMenuOpen ] = useState(false);
-
+    const t = useTranslate('header');
     const handleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
     const handleBurgerClickLink = (e: React.MouseEvent<HTMLElement>, link: string) => {
         setIsMenuOpen(false);
         handleLinkClick(e, link);
     };
+
     return (
         <>
             <div className={classes.burger} onClick={handleMenu}>
@@ -31,11 +32,21 @@ const BurgerMenu: FC<BurgerMenuProps> = ({ handleLinkClick }) => {
                     <div onClick={handleMenu}/>
                 </div>
                 <ul className={classes.burger__list}>
-                    <li onClick={(e) => handleBurgerClickLink(e, 'about')}>Об острове</li>
-                    <li onClick={(e) => handleBurgerClickLink(e, 'excursions')}>Экскурсии</li>
-                    <li onClick={(e) => handleBurgerClickLink(e, 'accommodation')}>Размещение</li>
-                    <li onClick={(e) => handleBurgerClickLink(e, 'features')}>Наши программы</li>
-                    <li onClick={(e) => handleBurgerClickLink(e, 'prices')}>Цены и контакты</li>
+                    <li onClick={(e) => handleBurgerClickLink(e, 'about')}>
+                        {t('nav.about')}
+                    </li>
+                    <li onClick={(e) => handleBurgerClickLink(e, 'excursions')}>
+                        {t('nav.excursions')}
+                    </li>
+                    <li onClick={(e) => handleBurgerClickLink(e, 'accommodation')}>
+                        {t('nav.accommodation')}
+                    </li>
+                    <li onClick={(e) => handleBurgerClickLink(e, 'features')}>
+                        {t('nav.features')}
+                    </li>
+                    <li onClick={(e) => handleBurgerClickLink(e, 'contacts')}>
+                        {t('nav.contacts')}
+                    </li>
                 </ul>
                 <div className={classes.burger__icons}>
 
