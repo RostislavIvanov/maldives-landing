@@ -23,6 +23,12 @@ const Programs: FC = () => {
                 <BlockTitle label={t('subTitle')} id={'features'}>
                     {t('title')}
                 </BlockTitle>
+                <Description>
+                    {t('advertisement')}
+                    <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://t.me/veterperemen_maldives">
+                        {t('channel')}
+                    </a>
+                </Description>
             </div>
             <div className={classes.features}>
                 <div className={classes.features__left}>

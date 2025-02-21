@@ -95,7 +95,7 @@ const Contacts: FC = () => {
                             </div>
                             <div className={classes.contacts__link}>
                                 <a target="_blank" href="https://tkveterperemen.ru/">
-                                    https://tkveterperemen.ru
+                                    www.tkveterperemen.ru
                                 </a>
                             </div>
                         </div>
@@ -115,6 +115,18 @@ const Contacts: FC = () => {
                 </div>
                 <hr/>
                 <div className={classes.contacts__desc}>
+                    <Description>
+                        {t('moreInfo')}
+                        <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://t.me/veterperemen_maldives">
+                            {t('link')}
+                        </a>
+                    </Description>
+                    <Description>
+                        {t('advertisement')}
+                        <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://t.me/rosy_villa_maldives">
+                            {t('link')}
+                        </a>
+                    </Description>
                     <Description>
                         {t('description')}
                     </Description>

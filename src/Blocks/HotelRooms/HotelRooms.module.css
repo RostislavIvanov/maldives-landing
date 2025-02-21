@@ -18,3 +18,11 @@
 .hotelRooms {
     @apply flex justify-center sm:justify-between flex-wrap
 }
+
+.link {
+    @apply text-blue-500
+}
+
+.link:hover {
+    @apply text-blue-600
+}

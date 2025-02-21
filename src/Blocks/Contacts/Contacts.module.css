@@ -59,3 +59,11 @@
 .contacts__icons img {
     @apply w-[50px] h-[50px] mx-[5px];
 }
+
+.link {
+    @apply text-blue-500
+}
+
+.link:hover {
+    @apply text-blue-600
+}

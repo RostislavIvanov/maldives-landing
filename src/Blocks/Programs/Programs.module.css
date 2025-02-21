@@ -65,3 +65,11 @@
 .features__description {
     @apply py-8 bg-lightGrey;
 }
+
+.link {
+    @apply text-blue-500
+}
+
+.link:hover {
+    @apply text-blue-600
+}

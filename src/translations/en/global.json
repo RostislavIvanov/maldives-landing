@@ -96,6 +96,8 @@
   "programs": {
     "title": "Special Programs",
     "subTitle": "We regularly recruit groups for our thematic programs! We offer yoga and photo tours, literary tours, adventure tours with English learning, and meditative and psychological tours. Don't hesitate to ask our managers for current offers. Are you planning a wedding? Or do you want to restore your health? Maybe you're a member of a diving or sports club? We can organize an individual program for your event!",
+    "advertisement": "Stay tuned to our ",
+    "channel": "channel",
     "items": [
       {
         "label": "Weddings",
@@ -138,6 +140,8 @@
   },
   "hotel": {
     "subtitle": "Every guest becomes our friend!",
+    "advertisement": "For a more detailed description of the rooms, please follow ",
+    "link": "link",
     "items": [
       {
         "roomTitle": "Standard",
@@ -238,7 +242,10 @@
       "header": "Our Partners in Russia",
       "consulting": "For consultation and booking in Russian"
     },
-    "description": "We are pleased to offer you our special programs or we can create a bespoke itinerary tailored to your specific needs. If you require any assistance with consultation, calculation, or booking in Russian, please do not hesitate to contact our partners in Russia."
+    "description": "We are pleased to offer you our special programs or we can create a bespoke itinerary tailored to your specific needs. If you require any assistance with consultation, calculation, or booking in Russian, please do not hesitate to contact our partners in Russia.",
+    "advertisement": "For a more detailed description of the rooms, please follow ",
+    "moreInfo": "See more information about traveling to our island at the ",
+    "link": "link"
   },
   "speech": {
     "title": "Our Mission",

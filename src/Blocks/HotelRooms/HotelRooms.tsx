@@ -6,6 +6,7 @@ import { useModal } from '~/hooks/useModal/useModal.tsx';
 import { hotelRoomsImageData } from '~/data/hotelRoomsImageData.ts';
 import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 import { useHotelRoomData } from '~/hooks/useHotelRoomData/useHotelRoomData.ts';
+import Description from '~/components/Description/Description';
 
 const HotelRooms = () => {
     const [ ModalPanel, openModal ] = useModal(4000);
@@ -38,6 +39,12 @@ const HotelRooms = () => {
                         />,
                     )}
                 </div>
+                <Description>
+                    {t('advertisement')}
+                    <a className={classes.link} target="_blank" rel="noopener noreferrer" href="https://t.me/rosy_villa_maldives">
+                        {t('link')}
+                    </a>
+                </Description>
             </div>
             <ModalPanel/>
         </section>
