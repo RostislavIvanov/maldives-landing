@@ -42,18 +42,18 @@ import whaleShark1 from '~/assets/images/whale-shark-1.jpg';
 import whaleShark2 from '~/assets/images/whale-shark-2.jpg';
 
 import island from '~/assets/images/island.jpg';
-import island1 from '~/assets/images/island.jpg';
-import island2 from '~/assets/images/island-1.jpg';
-import island3 from '~/assets/images/island-2.jpg';
-import island4 from '~/assets/images/island-3.jpg';
-import island5 from '~/assets/images/island-4.jpg';
-import island6 from '~/assets/images/island-5.jpg';
-import island7 from '~/assets/images/island-6.jpg';
-import island8 from '~/assets/images/island-7.jpg';
 
 import dinner from '~/assets/images/dinner.jpg';
 import dinner1 from '~/assets/images/dinner-1.jpg';
 import dinner2 from '~/assets/images/dinner-2.jpg';
+import dinner3 from '~/assets/images/dinner-3.jpg';
+import dinner4 from '~/assets/images/dinner-4.jpg';
+import dinner5 from '~/assets/images/dinner-5.jpg';
+import dinner6 from '~/assets/images/dinner-6.jpg';
+import dinner7 from '~/assets/images/dinner-7.jpg';
+import dinner8 from '~/assets/images/dinner-8.jpg';
+import dinner9 from '~/assets/images/dinner-9.jpg';
+import dinner10 from '~/assets/images/dinner-10.jpg';
 
 import snorkeling from '~/assets/images/snorkeling.jpg';
 import snorkeling1 from '~/assets/images/snorkeling-1.jpg';
@@ -71,7 +71,7 @@ export const excursionImageData = [
     [ shark, shark1, shark2, shark3, shark4 ],
     [ ship, ship1, ship2, ship3, ship4 ],
     [ whaleShark, whaleShark1, whaleShark2 ],
-    [ island, island1, island2, island3, island4, island5, island6, island7, island8 ],
-    [ dinner, dinner1, dinner2 ],
+    [ island ],
+    [ dinner, dinner1, dinner2, dinner3, dinner4, dinner5, dinner6, dinner7, dinner8, dinner9, dinner10 ],
     [ snorkeling, snorkeling1, snorkeling2, snorkeling3, snorkeling4, snorkeling5, snorkeling6, snorkeling7 ]
 ];

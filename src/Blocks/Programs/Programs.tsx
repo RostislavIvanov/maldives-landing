@@ -22,7 +22,7 @@ import resort15 from '~/assets/images/resort-15.jpg';
 import resort16 from '~/assets/images/resort-16.jpg';
 import resort17 from '~/assets/images/resort-17.jpg';
 import resort18 from '~/assets/images/resort-18.jpg';
-import resort19 from '~/assets/images/resort-18.jpg';
+import resort19 from '~/assets/images/resort-19.jpg';
 import romantic from '~/assets/images/romantic.jpeg';
 import culture from '~/assets/images/culture.jpg';
 import culture1 from '~/assets/images/culture-1.jpg';
@@ -88,7 +88,7 @@ const Programs: FC = () => {
                         openModal={openModal}
                         modalImages={[ resortDay, resort1, resort2, resort3, resort4,
                             resort5, resort6, resort7, resort8, resort9, resort10, resort11,
-                            resort12, resort13, resort14, resort15, resort16, resort17, resort18, resort18, resort19
+                            resort12, resort13, resort14, resort15, resort16, resort17, resort18, resort19
                         ]}
                         modalText={t(`items.${3}.modalText`)}
                     />
