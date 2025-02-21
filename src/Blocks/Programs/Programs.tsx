@@ -4,6 +4,25 @@ import wedding from '~/assets/images/wedding.jpg';
 import cruise from '~/assets/images/cruise.jpg';
 import heal from '~/assets/images/healing.jpg';
 import resortDay from '~/assets/images/resort-day.jpg';
+import resort1 from '~/assets/images/resort-1.jpg';
+import resort2 from '~/assets/images/resort-2.jpg';
+import resort3 from '~/assets/images/resort-3.jpg';
+import resort4 from '~/assets/images/resort-4.jpg';
+import resort5 from '~/assets/images/resort-5.jpg';
+import resort6 from '~/assets/images/resort-6.jpg';
+import resort7 from '~/assets/images/resort-7.jpg';
+import resort8 from '~/assets/images/resort-8.jpg';
+import resort9 from '~/assets/images/resort-9.jpg';
+import resort10 from '~/assets/images/resort-10.jpg';
+import resort11 from '~/assets/images/resort-11.jpg';
+import resort12 from '~/assets/images/resort-12.jpg';
+import resort13 from '~/assets/images/resort-13.jpg';
+import resort14 from '~/assets/images/resort-14.jpg';
+import resort15 from '~/assets/images/resort-15.jpg';
+import resort16 from '~/assets/images/resort-16.jpg';
+import resort17 from '~/assets/images/resort-17.jpg';
+import resort18 from '~/assets/images/resort-18.jpg';
+import resort19 from '~/assets/images/resort-18.jpg';
 import romantic from '~/assets/images/romantic.jpeg';
 import culture from '~/assets/images/culture.jpg';
 import culture1 from '~/assets/images/culture-1.jpg';
@@ -67,7 +86,10 @@ const Programs: FC = () => {
                         subLabel={t(`items.${3}.subLabel`)}
                         imageUrl={resortDay} side={'right'}
                         openModal={openModal}
-                        modalImages={[ resortDay ]}
+                        modalImages={[ resortDay, resort1, resort2, resort3, resort4,
+                            resort5, resort6, resort7, resort8, resort9, resort10, resort11,
+                            resort12, resort13, resort14, resort15, resort16, resort17, resort18, resort18, resort19
+                        ]}
                         modalText={t(`items.${3}.modalText`)}
                     />
                 </div>
