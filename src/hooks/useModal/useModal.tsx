@@ -13,7 +13,7 @@ type ModalHookReturnType = [
     (images: string[], text: string) => void
 ];
 
-export const useModal = (autoplayTime?: AutoplayTime):ModalHookReturnType => {
+export const useModal = (autoplayTime?: AutoplayTime, showPrices: boolean = false):ModalHookReturnType => {
     const [ isModalOpened, setIsModalOpened ] = useState(false);
     const [ currentCard, setCurrentCard ] = useState<CurrentCard>({
         images: [],
@@ -37,6 +37,7 @@ export const useModal = (autoplayTime?: AutoplayTime):ModalHookReturnType => {
         return isModalOpened && (
             <Suspense>
                 <ModalPanel
+                    showPrices={showPrices}
                     images={currentCard.images}
                     text={currentCard.text}
                     closeModal={closeModal}

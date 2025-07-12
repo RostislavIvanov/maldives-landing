@@ -9,7 +9,7 @@ import { useHotelRoomData } from '~/hooks/useHotelRoomData/useHotelRoomData.ts';
 import Description from '~/components/Description/Description';
 
 const HotelRooms = () => {
-    const [ ModalPanel, openModal ] = useModal(4000);
+    const [ ModalPanel, openModal ] = useModal(4000, true);
     const t = useTranslate('hotel');
     const hotelRoomsIconData = useHotelRoomData();
 

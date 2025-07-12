@@ -6,7 +6,7 @@ import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 import { excursionImageData } from '~/data/excursionImageData.ts';
 
 const Excursions = () => {
-    const [ ModalPanel, openModal ] = useModal(4000);
+    const [ ModalPanel, openModal ] = useModal(4000, true);
     const t = useTranslate('excursions');
 
     return (

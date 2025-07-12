@@ -10,6 +10,7 @@ type ModalPanelProps = {
     autoplay: boolean;
     autoplayTime: number;
     text: string;
+    showPrices: boolean
 }
 
 const ModalPanel: FC<ModalPanelProps> = (
@@ -19,6 +20,7 @@ const ModalPanel: FC<ModalPanelProps> = (
         autoplay,
         autoplayTime,
         text,
+        showPrices = false,
     }) => {
     useEffect(() => {
         const handleEscape = (event: KeyboardEvent) => {
@@ -52,7 +54,22 @@ const ModalPanel: FC<ModalPanelProps> = (
             <div ref={modalRef} style={{ top: handleTopInit() }} className={classes.modal}>
                 <Slider autoPlay={autoplay} autoPlayTime={autoplayTime} images={images}/>
                 <div className={classes.modal__text}>
-                    <div dangerouslySetInnerHTML={{ __html: text }}/>
+                    <div>
+                        <div dangerouslySetInnerHTML={{ __html: text }}/>
+                        { showPrices &&
+                            <div className={classes.modal__prices}>
+                                { t('pricesText') + ' ' }
+                                <a
+                                    className={classes.modal__link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://t.me/veterperemen_maldives/1101"
+                                >
+                                    { t('link') }
+                                </a>
+                            </div>
+                        }
+                    </div>
                     <Button onClick={closeModal}>
                         {t('button')}
                     </Button>

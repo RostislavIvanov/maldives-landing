@@ -33,7 +33,7 @@ import Description from '~/components/Description/Description.tsx';
 import { useTranslate } from '~/hooks/useTranslate/useTranslate.ts';
 
 const Programs: FC = () => {
-    const [ ModalPanel, openModal ] = useModal(4000);
+    const [ ModalPanel, openModal ] = useModal(4000, true);
     const t = useTranslate('programs');
 
     return (
